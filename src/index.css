@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --gradient: linear-gradient(50deg, #c70028, #a900a3);
+    --brown: #2F2D01;
+    --white: rgb(255, 255, 255);
+    --fin-neutral-1: rgb(117, 117, 117);
+    --fin-neutral-2: rgb(148, 148, 148);
+    --fin-neutral-3: rgb(172, 172, 172);
+    --fin-neutral-3-transparent: rgba(172, 172, 172, 0.2);
+    --fin-neutral-3-transparent-2: rgba(172, 172, 172, 0.6);
+    --grey: rgb(228, 228, 228);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 0
+}
+
+.App {
+    text-align: center;
+}
+
+.hero {
+    background: var(--gradient);
+    border-radius: 0rem 0rem 2rem 2rem;
+    padding-top: 2rem;
+}
+
+.center-container {
+    align-items: center;
+}
+
+.header {
+    color: var(--white);
+    font-size: 5rem;
+    padding-left: 2rem;
+}
+
+.subheader {
+    font-weight: 400;
+}
+
+.tag-line {
+    color: var(--white);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-text {
+    background-color: var(--grey);
+    border-radius: 140px;
+    height: 100%;
+    min-height: 30rem;
+    width: 70vw;
+    padding: 3rem;
+    color: var(--brown)
+}
+
+a {
+    text-decoration: none;
+    color: var(--brown);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#nav {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#nav li {
+    display: inline-block;
+    padding-right: 6rem;
+}
+
+img {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.footer {
+    padding-top: 1rem;
+}
