@@ -132,3 +132,9 @@ p {
     padding-top: 1rem;
     text-align: center;
 }
+
+iframe {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
