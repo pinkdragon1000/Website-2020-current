@@ -10,12 +10,12 @@ class ExperienceContent extends Component {
         <CardSubcontent
           header={educationContent[0].header}
           textcontent={educationContent[0].textcontent}
-        ></CardSubcontent>
+        />
 
         <CardSubcontent
           header={workExperienceContent[0].header}
           textcontent={workExperienceContent[0].textcontent}
-        ></CardSubcontent>
+        />
       </div>
     );
   }

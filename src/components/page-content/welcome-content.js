@@ -9,12 +9,12 @@ class WelcomeContent extends Component {
         <CardSubcontent
           header={welcomeContent[0].header}
           textcontent={welcomeContent[0].textcontent}
-        ></CardSubcontent>
+        />
 
         <CardSubcontent
           header={welcomeContent[1].header}
           textcontent={welcomeContent[1].textcontent}
-        ></CardSubcontent>
+        />
       </div>
     );
   }
