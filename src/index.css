@@ -17,10 +17,6 @@ body {
     color: var(--brown);
 }
 
-.App {
-    text-align: center;
-}
-
 
 /* Shared */
 
@@ -30,10 +26,6 @@ a {
 
 p {
     font-size: 1.5rem;
-}
-
-.footer {
-    padding-top: 1rem;
 }
 
 .center-container {
@@ -74,6 +66,7 @@ p {
 .subheader {
     font-weight: 400;
     color: var(--white);
+    text-align: center;
 }
 
 
@@ -97,8 +90,16 @@ p {
     font-size: 1.5rem;
 }
 
+.card-subcontent-header {
+    text-align: center;
+}
+
 
 /* Tab */
+
+.tab-list {
+    text-align: center;
+}
 
 .tab-list-active {
     font-weight: 600;
@@ -109,4 +110,11 @@ p {
 .tab-list-active::before {
     content: "✿ ";
     color: var(--purple);
+}
+
+
+/* Footer */
+
+.footer {
+    padding-top: 1rem;
 }

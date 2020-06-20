@@ -9,7 +9,6 @@ class Header extends Component {
             <img className="header-img" src={this.props.imgdir} alt="" />
             <h1 className="header">{this.props.header}</h1>
           </div>
-
           <h1 className="subheader">{this.props.subheader}</h1>
         </div>
       </div>

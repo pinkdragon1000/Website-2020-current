@@ -1,16 +1,18 @@
 import React, { Component } from "react";
-import "./index.css";
-import Header from "./components/header";
-import WelcomeContent from "./components/page-content/welcome-content";
-import ExperienceContent from "./components/page-content/experience-content";
-import ProjectsContent from "./components/page-content/projects-content";
-import Tabs from "./components/tabs";
-import TravelContent from "./components/page-content/travel-content";
+import "../index.css";
+import Header from "./header";
+import WelcomeContent from "./page-content/welcome-content";
+import ExperienceContent from "./page-content/experience-content";
+import ProjectsContent from "./page-content/projects-content";
+import TravelContent from "./page-content/travel-content";
+import PhotosContent from "./page-content/photos-content";
+import Tabs from "./tabs";
+import Footer from "./footer";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Header
           imgdir="../me.png"
           header="Sita Robinson"
@@ -33,11 +35,11 @@ class App extends Component {
           </div>
 
           <div label="Photos">
-            <TravelContent />
+            <PhotosContent />
           </div>
         </Tabs>
 
-        <div className="footer">Ⓒ Sita Robinson 2020</div>
+        <Footer label="Ⓒ Sita Robinson 2020" />
       </div>
     );
   }

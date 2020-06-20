@@ -11,7 +11,7 @@ export const welcomeContent = [
   {
     header: "About Me",
     textcontent:
-      "My name is Sita Robinson. I will work at Vanguard as a Software Developer starting in mid-July. I graduated from Drexel University with a BS in Data Science and minor in Computer Science in 2020. Some of my hobbies nclude programming, landscape photography, playing the clarinet, playing Scrabble and traveling around the world. I am originally a Northern Virginia/Metro D.C. native.",
+      "My name is Sita Robinson. I will work at Vanguard as a Software Developer starting in mid-July. I graduated from Drexel University with a BS in Data Science and minor in Computer Science in 2020. Some of my hobbies include programming, landscape photography, playing the clarinet, playing Scrabble and traveling around the world. I am originally a Northern Virginia/Metro D.C. native.",
   },
   {
     header: "Skills",
@@ -31,7 +31,7 @@ export const educationContent = [
   {
     header: "Education",
     textcontent:
-      "Bachelor of Science in Data Science, Minor in Computer Science",
+      "Bachelor of Science in Data Science, Minor in Computer Science from Drexel University",
   },
 ];
 
