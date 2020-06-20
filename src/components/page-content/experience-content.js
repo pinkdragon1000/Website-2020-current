@@ -20,19 +20,17 @@ class ExperienceContent extends Component {
           />
         ))}
 
+        <CardSubcontent header={experienceHeader[0]} />
         {workExperienceContent.map((option, i) => (
-          <div>
-            <CardSubcontent key={i} header={experienceHeader[i]} />
-            <ExperienceBox
-              key={i + 100}
-              title={option.title}
-              date={option.date}
-              linktext={option.linktext}
-              link={option.link}
-            >
-              {option.description}
-            </ExperienceBox>
-          </div>
+          <ExperienceBox
+            key={i + 100}
+            title={option.title}
+            date={option.date}
+            linktext={option.linktext}
+            link={option.link}
+          >
+            {option.description}
+          </ExperienceBox>
         ))}
       </div>
     );
