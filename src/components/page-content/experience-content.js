@@ -7,15 +7,21 @@ class ExperienceContent extends Component {
   render() {
     return (
       <div>
-        <CardSubcontent
-          header={educationContent[0].header}
-          textcontent={educationContent[0].textcontent}
-        />
+        {educationContent.map((option, i) => (
+          <CardSubcontent
+            key={i}
+            header={option.header}
+            textcontent={option.textcontent}
+          />
+        ))}
 
-        <CardSubcontent
-          header={workExperienceContent[0].header}
-          textcontent={workExperienceContent[0].textcontent}
-        />
+        {workExperienceContent.map((option, i) => (
+          <CardSubcontent
+            key={i}
+            header={option.header}
+            textcontent={option.textcontent}
+          />
+        ))}
       </div>
     );
   }

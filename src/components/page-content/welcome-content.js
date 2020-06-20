@@ -6,15 +6,13 @@ class WelcomeContent extends Component {
   render() {
     return (
       <div>
-        <CardSubcontent
-          header={welcomeContent[0].header}
-          textcontent={welcomeContent[0].textcontent}
-        />
-
-        <CardSubcontent
-          header={welcomeContent[1].header}
-          textcontent={welcomeContent[1].textcontent}
-        />
+        {welcomeContent.map((option, i) => (
+          <CardSubcontent
+            key={i}
+            header={option.header}
+            textcontent={option.textcontent}
+          />
+        ))}
       </div>
     );
   }
