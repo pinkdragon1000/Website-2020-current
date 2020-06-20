@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 :root {
-    --gradient: linear-gradient(50deg, #c70028, #a900a3);
-    --brown: #2F2D01;
+    --gradient: linear-gradient(45deg, #4383c6, #642a98);
+    --purple: #642a98;
+    --blue: #43a8c6;
+    --brown: #2f2d01;
     --white: rgb(255, 255, 255);
     --fin-neutral-1: rgb(117, 117, 117);
     --fin-neutral-2: rgb(148, 148, 148);
@@ -12,11 +14,12 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 0 0
+    margin: 0 0;
+    color: var(--brown);
 }
 
 .App {
@@ -26,7 +29,7 @@ body {
 .hero {
     background: var(--gradient);
     border-radius: 0rem 0rem 2rem 2rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 
 .center-container {
@@ -41,9 +44,6 @@ body {
 
 .subheader {
     font-weight: 400;
-}
-
-.tag-line {
     color: var(--white);
 }
 
@@ -65,12 +65,10 @@ body {
     min-height: 30rem;
     width: 70vw;
     padding: 3rem;
-    color: var(--brown)
 }
 
 a {
     text-decoration: none;
-    color: var(--brown);
 }
 
 p {
@@ -81,7 +79,6 @@ p {
     width: 100%;
     padding: 0;
     list-style: none;
-    font-size: 1.5rem;
 }
 
 #nav li {
@@ -96,4 +93,29 @@ img {
 
 .footer {
     padding-top: 1rem;
+}
+
+.tab-list-item {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: -1px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.tab-list-active {
+    font-weight: 600;
+    border-bottom: 0.2rem solid;
+    border-radius: 0.4rem;
+}
+
+.tab-list-active::before {
+    content: "✿ ";
+    color: var(--purple);
+}
+
+.spacer {
+    width: 100%;
+    line-height: 80%;
 }
