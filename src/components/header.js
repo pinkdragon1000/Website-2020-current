@@ -3,10 +3,10 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     return (
-      <div className="hero">
+      <div className="gradient-bg">
         <div className="column">
           <div className="row center-container">
-            <img src={this.props.imgdir} alt="" />
+            <img className="header-img" src={this.props.imgdir} alt="" />
             <h1 className="header">{this.props.header}</h1>
           </div>
 

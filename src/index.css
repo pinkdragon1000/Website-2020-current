@@ -21,25 +21,23 @@ body {
     text-align: center;
 }
 
-.hero {
-    background: var(--gradient);
-    border-radius: 0rem 0rem 2rem 2rem;
-    padding-top: 1.5rem;
+
+/* Shared */
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.footer {
+    padding-top: 1rem;
 }
 
 .center-container {
     align-items: center;
-}
-
-.header {
-    color: var(--white);
-    font-size: 5rem;
-    padding-left: 2rem;
-}
-
-.subheader {
-    font-weight: 400;
-    color: var(--white);
 }
 
 .column {
@@ -53,6 +51,34 @@ body {
     justify-content: center;
 }
 
+
+/* Header */
+
+.gradient-bg {
+    background: var(--gradient);
+    border-radius: 0rem 0rem 2rem 2rem;
+    padding-top: 1.5rem;
+}
+
+.header-img {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.header {
+    color: var(--white);
+    font-size: 5rem;
+    padding-left: 2rem;
+}
+
+.subheader {
+    font-weight: 400;
+    color: var(--white);
+}
+
+
+/* Card */
+
 .content-text {
     background-color: var(--grey);
     border-radius: 140px;
@@ -60,34 +86,6 @@ body {
     min-height: 30rem;
     width: 70vw;
     padding: 3rem;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    font-size: 1.5rem;
-}
-
-#nav {
-    width: 100%;
-    padding: 0;
-    list-style: none;
-}
-
-#nav li {
-    display: inline-block;
-    padding-right: 6rem;
-}
-
-img {
-    vertical-align: middle;
-    border-radius: 50%;
-}
-
-.footer {
-    padding-top: 1rem;
 }
 
 .tab-list-item {
@@ -99,6 +97,9 @@ img {
     font-size: 1.5rem;
 }
 
+
+/* Tab */
+
 .tab-list-active {
     font-weight: 600;
     border-bottom: 0.2rem solid;
@@ -108,9 +109,4 @@ img {
 .tab-list-active::before {
     content: "✿ ";
     color: var(--purple);
-}
-
-.spacer {
-    width: 100%;
-    line-height: 80%;
 }
