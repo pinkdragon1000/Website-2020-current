@@ -5,7 +5,7 @@ class CardSubcontent extends Component {
     return (
       <div>
         <h2>{this.props.header}</h2>
-        <p>{this.props.textcontent}</p>
+        <div>{this.props.textcontent}</div>
       </div>
     );
   }

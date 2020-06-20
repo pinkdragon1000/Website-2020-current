@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CardSubcontent from "../card-subcontent";
-
 import { welcomeContent } from "../../utils/app-utils";
+
 class WelcomeContent extends Component {
   render() {
     return (
