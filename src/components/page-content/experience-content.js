@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import CardSubcontent from "../card-subcontent";
+import ExperienceBox from "../experience-box";
 
-import { educationContent, workExperienceContent } from "../../utils/app-utils";
+import {
+  educationContent,
+  experienceHeader,
+  workExperienceContent,
+} from "../../utils/app-utils";
 
 class ExperienceContent extends Component {
   render() {
@@ -16,11 +21,18 @@ class ExperienceContent extends Component {
         ))}
 
         {workExperienceContent.map((option, i) => (
-          <CardSubcontent
-            key={i}
-            header={option.header}
-            textcontent={option.textcontent}
-          />
+          <div>
+            <CardSubcontent key={i} header={experienceHeader[i]} />
+            <ExperienceBox
+              key={i + 100}
+              title={option.title}
+              date={option.date}
+              linktext={option.linktext}
+              link={option.link}
+            >
+              {option.description}
+            </ExperienceBox>
+          </div>
         ))}
       </div>
     );
