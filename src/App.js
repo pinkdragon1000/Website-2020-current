@@ -1,56 +1,46 @@
-import React from "react";
-
-import Card from "./components/card";
+import React, { Component } from "react";
 import "./index.css";
-
 import Header from "./components/header";
 import WelcomeContent from "./components/page-content/welcome-content";
 import ExperienceContent from "./components/page-content/experience-content";
 import ProjectsContent from "./components/page-content/projects-content";
 import Tabs from "./components/tabs";
 import TravelContent from "./components/page-content/travel-content";
-function App() {
-  return (
-    <div className="App">
-      <Header
-        imgdir="../me.png"
-        header="Sita Robinson"
-        subheader="Software Developer"
-      />
 
-      <Tabs>
-        <div label="Welcome">
-          <Card>
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header
+          imgdir="../me.png"
+          header="Sita Robinson"
+          subheader="Software Developer"
+        />
+
+        <Tabs>
+          <div label="Welcome">
             <WelcomeContent />
-          </Card>
-        </div>
-        <div label="Experience">
-          <Card>
+          </div>
+          <div label="Experience">
             <ExperienceContent />
-          </Card>
-        </div>
-        <div label="Projects">
-          <Card>
+          </div>
+          <div label="Projects">
             <ProjectsContent />
-          </Card>
-        </div>
+          </div>
 
-        <div label="Places I've Traveled">
-          <Card>
+          <div label="Places I've Traveled">
             <TravelContent />
-          </Card>
-        </div>
+          </div>
 
-        <div label="Photos">
-          <Card>
+          <div label="Photos">
             <TravelContent />
-          </Card>
-        </div>
-      </Tabs>
+          </div>
+        </Tabs>
 
-      <div className="footer">Ⓒ Sita Robinson 2020</div>
-    </div>
-  );
+        <div className="footer">Ⓒ Sita Robinson 2020</div>
+      </div>
+    );
+  }
 }
 
 export default App;

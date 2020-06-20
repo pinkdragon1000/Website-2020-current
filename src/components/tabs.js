@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Tab from "./tab";
+import Card from "./card";
 
 class Tabs extends Component {
   constructor(props) {
@@ -39,10 +40,12 @@ class Tabs extends Component {
           })}
         </ol>
         <div className="tab-content">
-          {children.map((child) => {
-            if (child.props.label !== activeTab) return undefined;
-            return child.props.children;
-          })}
+          <Card>
+            {children.map((child) => {
+              if (child.props.label !== activeTab) return undefined;
+              return child.props.children;
+            })}
+          </Card>
         </div>
       </div>
     );
