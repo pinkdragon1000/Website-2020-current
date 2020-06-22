@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Tab extends Component {
+class NavbarItem extends Component {
   onClick = () => {
     const { label, onClick } = this.props;
     onClick(label);
@@ -26,4 +26,4 @@ class Tab extends Component {
   }
 }
 
-export default Tab;
+export default NavbarItem;

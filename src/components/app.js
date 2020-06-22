@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../index.css";
 import Header from "./header";
-import Tabs from "./tabs";
+import Navbar from "./navbar";
 import Footer from "./footer";
 
 import {
@@ -21,13 +21,13 @@ class App extends Component {
           subheader={headerData.subheader}
         />
 
-        <Tabs>
+        <Navbar>
           {navbarOptions.map((option, i) => (
             <div key={i} label={option}>
               {navbarComponentOptions[i]}
             </div>
           ))}
-        </Tabs>
+        </Navbar>
 
         <Footer label={footerData} />
       </div>

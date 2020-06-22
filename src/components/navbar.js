@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-import Tab from "./tab";
+import NavbarItem from "./navbar-item";
 import Card from "./card";
 
 import Style from "style-it";
 
-class Tabs extends Component {
+class Navbar extends Component {
   constructor(props) {
     super(props);
 
@@ -59,7 +59,7 @@ class Tabs extends Component {
             const { label } = child.props;
 
             return (
-              <Tab
+              <NavbarItem
                 activeTab={activeTab}
                 key={label}
                 label={label}
@@ -81,4 +81,4 @@ class Tabs extends Component {
   }
 }
 
-export default Tabs;
+export default Navbar;
