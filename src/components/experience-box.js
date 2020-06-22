@@ -1,8 +1,24 @@
 import React, { Component } from "react";
+import Style from "style-it";
 
 class ExperienceBox extends Component {
   render() {
-    return (
+    const styles = `
+    .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 0rem;
+    }
+
+    .date {
+        color: var(--med-grey);
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    `;
+    return Style.it(
+      `${styles}`,
       <div>
         <div className="experience-header">
           <p>{this.props.title}</p>

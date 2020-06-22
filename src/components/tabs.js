@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Tab from "./tab";
 import Card from "./card";
 
+import Style from "style-it";
+
 class Tabs extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +25,34 @@ class Tabs extends Component {
       state: { activeTab },
     } = this;
 
-    return (
+    const styles = `
+        
+    .tab-list-item {
+        display: inline-block;
+        list-style: none;
+        padding: 1rem 1rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    .tab-list {
+        text-align: center;
+    }
+
+    .tab-list-active {
+        font-weight: 600;
+        border-bottom: 0.2rem solid;
+        border-radius: 0.4rem;
+    }
+
+    .tab-list-active::before {
+        content: "✿ ";
+        color: var(--purple);
+    }
+    `;
+
+    return Style.it(
+      `${styles}`,
       <div className="tabs">
         <ol className="tab-list">
           {children.map((child) => {

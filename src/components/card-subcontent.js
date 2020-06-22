@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+import Style from "style-it";
 
 class CardSubcontent extends Component {
   render() {
-    return (
+    const styles = `
+    .card-subcontent-header {
+      text-align: center;
+  }
+    `;
+    return Style.it(
+      `${styles}`,
       <div>
         <h2 className="card-subcontent-header">{this.props.header}</h2>
         <div>{this.props.textcontent}</div>

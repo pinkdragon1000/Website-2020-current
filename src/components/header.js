@@ -1,8 +1,34 @@
 import React, { Component } from "react";
+import Style from "style-it";
 
 class Header extends Component {
   render() {
-    return (
+    const styles = `
+    .gradient-bg {
+      background: var(--gradient);
+      border-radius: 0rem 0rem 2rem 2rem;
+      padding-top: 1.5rem;
+    }
+
+    .header-img {
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+
+    .header {
+      color: var(--white);
+      font-size: 5rem;
+      padding-left: 2rem;
+    }
+
+    .subheader {
+      font-weight: 400;
+      color: var(--white);
+      text-align: center;
+    }
+    `;
+    return Style.it(
+      `${styles}`,
       <div className="gradient-bg">
         <div className="column">
           <div className="row center-container">

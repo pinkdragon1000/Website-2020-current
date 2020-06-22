@@ -1,8 +1,17 @@
 import React, { Component } from "react";
+import Style from "style-it";
 
 class TravelContent extends Component {
   render() {
-    return (
+    const styles = `
+    iframe {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    `;
+    return Style.it(
+      `${styles}`,
       <div>
         <iframe
           title="places"
