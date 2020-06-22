@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CardSubcontent from "../card-subcontent";
-import { welcomeContent } from "../../utils/app-utils";
+import { welcomeContent } from "../../utils/welcome-content-utils";
 
 class WelcomeContent extends Component {
   render() {

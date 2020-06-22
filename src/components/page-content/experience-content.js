@@ -6,7 +6,7 @@ import {
   educationContent,
   experienceHeader,
   workExperienceContent,
-} from "../../utils/app-utils";
+} from "../../utils/experience-content-utils";
 
 class ExperienceContent extends Component {
   render() {
