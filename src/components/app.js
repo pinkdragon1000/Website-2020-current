@@ -4,16 +4,21 @@ import Header from "./header";
 import Tabs from "./tabs";
 import Footer from "./footer";
 
-import { navbarOptions, navbarComponentOptions } from "../utils/app-utils";
+import {
+  headerData,
+  navbarOptions,
+  navbarComponentOptions,
+  footerData,
+} from "../utils/app-utils";
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header
-          imgdir="../me.png"
-          header="Sita Robinson"
-          subheader="Software Developer"
+          imgdir={headerData.imgdir}
+          header={headerData.header}
+          subheader={headerData.subheader}
         />
 
         <Tabs>
@@ -24,7 +29,7 @@ class App extends Component {
           ))}
         </Tabs>
 
-        <Footer label="Ⓒ Sita Robinson 2020" />
+        <Footer label={footerData} />
       </div>
     );
   }

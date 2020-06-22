@@ -5,6 +5,12 @@ import ProjectsContent from "../components/page-content/projects-content";
 import TravelContent from "../components/page-content/travel-content";
 import PhotosContent from "../components/page-content/photos-content";
 
+export const headerData = {
+  imgdir: "../me.png",
+  header: "Sita Robinson",
+  subheader: "Software Developer",
+};
+
 export const navbarOptions = [
   "Welcome",
   "Experience",
@@ -20,3 +26,5 @@ export const navbarComponentOptions = [
   <TravelContent />,
   <PhotosContent />,
 ];
+
+export const footerData = "Ⓒ Sita Robinson 2020";
