@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../index.css";
-import Header from "./header";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Header from "./reusable-components/header";
+import Navbar from "./reusable-components/navbar";
+import Footer from "./reusable-components/footer";
 
 import {
   headerData,

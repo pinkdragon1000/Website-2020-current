@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CardSubcontent from "../card-subcontent";
+import CardSubcontent from "../reusable-components/card-subcontent";
 import { welcomeContent } from "../../utils/welcome-content-utils";
 
 class WelcomeContent extends Component {
