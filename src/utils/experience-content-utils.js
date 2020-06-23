@@ -12,14 +12,14 @@ export const experienceHeader = ["Work Experience"];
 export const workExperienceContent = [
   {
     title: "Software Developer",
-    date: "dates here",
+    date: "July 13, 2020 - ",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
     description: <div></div>,
   },
   {
     title: "Data Science Teaching Assistant",
-    date: "dates here",
+    date: "April 6, 2020 - June 11, 2020",
     link: "https://drexel.edu/cci/",
     linktext: "Drexel University College of Computing and Informatics",
     description: (
@@ -36,7 +36,7 @@ export const workExperienceContent = [
 
   {
     title: "Data Science Co-op",
-    date: "dates here",
+    date: "September 24, 2018 - March 20, 2019",
     link: "https://www.elapservices.com/",
     linktext: "ELAP Services",
     description: (
@@ -59,7 +59,7 @@ export const workExperienceContent = [
   },
   {
     title: "Software Engineering Intern",
-    date: "dates here",
+    date: "June 19, 2017 - August 25, 2017",
     link: "https://corporate.comcast.com/",
     linktext: "Comcast",
     description: (

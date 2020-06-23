@@ -2,7 +2,7 @@ import React from "react";
 export const projectsContent = [
   {
     title: "Toast",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/cci-toast",
     description: (
       <div>
         A financial planning application for financial advisors and their
@@ -13,7 +13,7 @@ export const projectsContent = [
   },
   {
     title: "Zesty",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/Zesty",
     description: (
       <div>
         A recipe management and grocery list generator app created using HTML,
@@ -24,7 +24,7 @@ export const projectsContent = [
   },
   {
     title: "Listy",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/Listy",
     description: (
       <div>
         A web app that allows people to make their own checklists and share with
@@ -35,7 +35,7 @@ export const projectsContent = [
   },
   {
     title: "NOVA Datascience Signin and Attendee Randomizer",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/NOVA-Data-Science-Signin-Form",
     description: (
       <div>
         A web app for the NOVA DataScience Meetup Group that includes a sign-in
@@ -46,7 +46,7 @@ export const projectsContent = [
   },
   {
     title: "BuddyU App",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/BuddyUApp",
     description: (
       <div>
         An android social app for Drexel University students to collaborate on
@@ -57,7 +57,7 @@ export const projectsContent = [
   },
   {
     title: "Bank Churn Modeling",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/Bank-Churn-Modelling",
     description: (
       <div>
         Predicting whether a customer is likely to leave (churn) from the bank
@@ -67,7 +67,7 @@ export const projectsContent = [
   },
   {
     title: "Credit Card Fraud Detection",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/Credit-Card-Fraud-Detection",
     description: (
       <div>
         Binary classification problem to predict whether a transaction is
@@ -77,7 +77,7 @@ export const projectsContent = [
   },
   {
     title: "Malaria Detection",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/Malaria-Detection",
     description: (
       <div>
         Used a CNN model to classify images as being parasitized or not.
@@ -87,7 +87,8 @@ export const projectsContent = [
   },
   {
     title: "Fashion MNIST Clothing Classification",
-    link: "https://drexel.edu/cci/",
+    link:
+      "https://github.com/pinkdragon1000/Fashion-MNIST-Clothing-Classification",
     description: (
       <div>
         Used deep learning algorithms and techniques to classify clothing
@@ -97,7 +98,7 @@ export const projectsContent = [
   },
   {
     title: "News Tweet Analysis",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/News-Tweet-Analysis",
     description: (
       <div>
         Performed natural language processing on Twitter feeds using the Tweepy
@@ -107,7 +108,7 @@ export const projectsContent = [
   },
   {
     title: "Mushroom Classification",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/Mushroom-Classification",
     description: (
       <div>
         Used the Python Scikit-Learn library to train and test the "Mushroom
@@ -119,7 +120,7 @@ export const projectsContent = [
   },
   {
     title: "Black Friday Analysis",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/Black-Friday-Project",
     description: (
       <div>
         Performed exploratory analysis of Black Friday data using Python. In
@@ -133,7 +134,7 @@ export const projectsContent = [
   },
   {
     title: "Student Performance Analysis",
-    link: "https://drexel.edu/cci/",
+    link: "https://github.com/pinkdragon1000/Student-Performance-Analysis",
     description: (
       <div>
         Built machine learning models using random forest to predict what
