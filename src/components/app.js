@@ -7,7 +7,6 @@ import Footer from "./reusable-components/footer";
 import {
   headerData,
   navbarOptions,
-  navbarComponentOptions,
   socialBoxOptions,
   footerData,
 } from "../utils/app-utils";
@@ -26,8 +25,8 @@ class App extends Component {
 
         <Navbar>
           {navbarOptions.map((option, i) => (
-            <div key={i} label={option}>
-              {navbarComponentOptions[i]}
+            <div key={i} label={option.name}>
+              {option.component}
             </div>
           ))}
         </Navbar>

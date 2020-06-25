@@ -12,19 +12,26 @@ export const headerData = {
 };
 
 export const navbarOptions = [
-  "Welcome",
-  "Experience",
-  "Projects",
-  "Places I've Traveled",
-  "Photos",
-];
-
-export const navbarComponentOptions = [
-  <WelcomeContent />,
-  <ExperienceContent />,
-  <ProjectsContent />,
-  <TravelContent />,
-  <PhotosContent />,
+  {
+    name: "Welcome",
+    component: <WelcomeContent />,
+  },
+  {
+    name: "Experience",
+    component: <ExperienceContent />,
+  },
+  {
+    name: "Projects",
+    component: <ProjectsContent />,
+  },
+  {
+    name: "Places I've Traveled",
+    component: <TravelContent />,
+  },
+  {
+    name: "Photos",
+    component: <PhotosContent />,
+  },
 ];
 
 export const socialBoxOptions = [
