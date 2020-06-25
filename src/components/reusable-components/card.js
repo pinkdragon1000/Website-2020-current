@@ -8,7 +8,7 @@ class Card extends Component {
       background-color: var(--grey);
       border-radius: 8.75rem;
       height: 100%;
-      min-height: 30rem;
+      min-height: 26rem;
       width: 70vw;
       padding: 3rem;
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import Style from "style-it";
 
 class Icon extends React.Component {
   getViewBox() {
@@ -46,15 +47,18 @@ class Icon extends React.Component {
   }
 
   render() {
-    return (
+    const styles = `
+    svg {
+        padding-left: 1.5rem;
+    }
+    `;
+
+    return Style.it(
+      `${styles}`,
       <svg
         width={this.props.width || 24}
         height={this.props.height || 24}
         fill={this.props.fill || "none"}
-        stroke={this.props.stroke || "var(--toast-neutral-1)"}
-        strokeWidth={this.props.strokeWidth || 2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
         xmlns="http://www.w3.org/2000/svg"
         viewBox={this.getViewBox()}
         xmlnsXlink="http://www.w3.org/1999/xlink"
