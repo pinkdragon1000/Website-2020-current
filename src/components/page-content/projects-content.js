@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ProjectCard from "../reusable-components/project-card";
-import ProjRow from "../reusable-components/project-row";
+import { ProjectCard, ProjRow } from "../export-components";
 import { projectsContent } from "../../utils/projects-content-utils";
 
 class ProjectsContent extends Component {

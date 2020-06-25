@@ -1,16 +1,12 @@
 import React, { Component } from "react";
 import "../index.css";
-import Header from "./reusable-components/header";
-import Navbar from "./reusable-components/navbar";
-import Footer from "./reusable-components/footer";
-
+import { Header, Navbar, Footer, SocialBox } from "./export-components";
 import {
   headerData,
   navbarOptions,
   socialBoxOptions,
   footerData,
 } from "../utils/app-utils";
-import SocialBox from "./reusable-components/social-box";
 
 class App extends Component {
   render() {

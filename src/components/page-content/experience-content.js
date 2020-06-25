@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import CardSubcontent from "../reusable-components/card-subcontent";
-import ExperienceBox from "../reusable-components/experience-box";
+import { CardSubcontent, ExperienceBox } from "../export-components";
 
 import {
   educationContent,

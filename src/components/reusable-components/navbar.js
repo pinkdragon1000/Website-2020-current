@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-import NavbarItem from "./navbar-item";
-import Card from "./card";
+import { NavbarItem, Card } from "../export-components";
 
 import Style from "style-it";
 

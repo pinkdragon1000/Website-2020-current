@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Icon from "./icon";
+import { Icon } from "../export-components";
 
 class SocialBox extends Component {
   render() {
