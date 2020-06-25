@@ -8,8 +8,10 @@ import {
   headerData,
   navbarOptions,
   navbarComponentOptions,
+  socialBoxOptions,
   footerData,
 } from "../utils/app-utils";
+import SocialBox from "./reusable-components/social-box";
 
 class App extends Component {
   render() {
@@ -19,6 +21,7 @@ class App extends Component {
           imgdir={headerData.imgdir}
           header={headerData.header}
           subheader={headerData.subheader}
+          socialbox={<SocialBox options={socialBoxOptions} />}
         />
 
         <Navbar>

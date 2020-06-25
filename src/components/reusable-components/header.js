@@ -36,6 +36,7 @@ class Header extends Component {
             <h1 className="header">{this.props.header}</h1>
           </div>
           <h1 className="subheader">{this.props.subheader}</h1>
+          {this.props.socialbox}
         </div>
       </div>
     );

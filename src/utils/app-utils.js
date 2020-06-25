@@ -27,4 +27,6 @@ export const navbarComponentOptions = [
   <PhotosContent />,
 ];
 
+export const socialBoxOptions = ["envelope", "github", "linkedin"];
+
 export const footerData = "Ⓒ Sita Robinson 2020";
