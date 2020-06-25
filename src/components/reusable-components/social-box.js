@@ -6,7 +6,15 @@ class SocialBox extends Component {
     return (
       <div className="row center-container">
         {this.props.options.map((option, i) => (
-          <Icon key={i} name={option} fill="white" width={50} height={50} />
+          <a href={option.url} target="blank_">
+            <Icon
+              key={i}
+              name={option.icon}
+              fill="white"
+              width={50}
+              height={50}
+            />
+          </a>
         ))}
       </div>
     );
