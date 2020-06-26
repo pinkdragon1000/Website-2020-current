@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Style from "style-it";
 
-class ExperienceBox extends Component {
+class ExperienceBox extends React.Component {
   render() {
     const styles = `
     .experience-header {

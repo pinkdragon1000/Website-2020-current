@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Style from "style-it";
 
-class Card extends Component {
+class Card extends React.Component {
   render() {
     const styles = `
     .content-text {

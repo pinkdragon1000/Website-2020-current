@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { Icon } from "../export-components";
 
-class SocialBox extends Component {
+class SocialBox extends React.Component {
   render() {
     return (
       <div className="row center-container">

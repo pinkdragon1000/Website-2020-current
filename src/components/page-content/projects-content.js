@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { ProjectCard, ProjRow } from "../export-components";
 import { projectsContent } from "../../utils/projects-content-utils";
 
-class ProjectsContent extends Component {
+class ProjectsContent extends React.Component {
   render() {
     return (
       <div>

@@ -1,13 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import { CardSubcontent, ExperienceBox } from "../export-components";
 
 import {
   educationContent,
   experienceHeader,
   workExperienceContent,
+  volunteerExperienceContent,
 } from "../../utils/experience-content-utils";
 
-class ExperienceContent extends Component {
+class ExperienceContent extends React.Component {
   render() {
     return (
       <div>
@@ -21,6 +22,19 @@ class ExperienceContent extends Component {
 
         <CardSubcontent header={experienceHeader[0]} />
         {workExperienceContent.map((option, i) => (
+          <ExperienceBox
+            key={i + 100}
+            title={option.title}
+            date={option.date}
+            linktext={option.linktext}
+            link={option.link}
+          >
+            {option.description}
+          </ExperienceBox>
+        ))}
+
+        <CardSubcontent header={experienceHeader[1]} />
+        {volunteerExperienceContent.map((option, i) => (
           <ExperienceBox
             key={i + 100}
             title={option.title}

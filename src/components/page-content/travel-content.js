@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Style from "style-it";
 
-class TravelContent extends Component {
+class TravelContent extends React.Component {
   render() {
     const styles = `
     iframe {

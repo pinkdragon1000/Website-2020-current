@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { NavbarItem, Card } from "../export-components";
 
 import Style from "style-it";
 
-class Navbar extends Component {
+class Navbar extends React.Component {
   constructor(props) {
     super(props);
 

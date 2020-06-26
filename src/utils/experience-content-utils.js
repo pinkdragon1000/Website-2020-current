@@ -7,7 +7,7 @@ export const educationContent = [
   },
 ];
 
-export const experienceHeader = ["Work Experience"];
+export const experienceHeader = ["Work Experience", "Volunteer Experience"];
 
 export const workExperienceContent = [
   {
@@ -72,6 +72,56 @@ export const workExperienceContent = [
         <li>
           Participated in Comcast’s Agile software development processes and
           lifecycle.
+        </li>
+      </div>
+    ),
+  },
+];
+
+export const volunteerExperienceContent = [
+  {
+    title: "President of Women in Computing Society",
+    date: "June 18, 2019 - June 11, 2020 (1 school year)",
+    link: "http://drexelwics.acm.org/",
+    linktext: "Women in Computing Society (WiCS)",
+    description: (
+      <div>
+        <li>
+          Planned and moderated 30+ events including tech talks, panels, and
+          social events.
+        </li>
+        <li> Helped bring in more than $2000 in sponsorship</li>
+        <li> Built relationships with members and managed other officers </li>
+        <li>
+          Applied for conference funding and registered WiCS members for the ACM
+          Capital Region Celebration of Women in Computing (CAPWIC) 2020
+          conference. Later cancelled due to COVID.
+        </li>
+      </div>
+    ),
+  },
+  {
+    title: "Treasurer of Women in Computing Society",
+    date: "June 18, 2019 - June 11, 2020 (2 school years)",
+    link: "http://drexelwics.acm.org/",
+    linktext: "Women in Computing Society (WiCS)",
+    description: (
+      <div>
+        <li>
+          Kept records of all transactions/deposits in accounts, managed the
+          budget, reported the financial situation to other officers. Put in
+          purchase requests for items to be purchased out of accounts.
+        </li>
+        <li>
+          Applied for funding through various sources via fundraisers and
+          grants. Applied for conference funding and registered WiCS members for
+          the ACM Philadelphia Region Celebration of Women in Computing
+          (PHICWIC) 2018 conference and also for the ACM CAPWIC 2019 conference.
+        </li>
+        <li>
+          Led a fundraising committee of five WiCS members who assisted in
+          compiling corporate sponsorship contacts and also helped with pr for
+          fundraisers. We brought in more than $200 from fundraisers.
         </li>
       </div>
     ),

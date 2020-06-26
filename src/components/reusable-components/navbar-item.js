@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class NavbarItem extends Component {
+class NavbarItem extends React.Component {
   onClick = () => {
     const { label, onClick } = this.props;
     onClick(label);

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Style from "style-it";
 
-class Header extends Component {
+class Header extends React.Component {
   render() {
     const styles = `
     .gradient-bg {

@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class ProjRow extends Component {
+class ProjRow extends React.Component {
   render() {
     return this.props.index % 3 <= 0 ? (
       <div className="row">{this.props.children}</div>

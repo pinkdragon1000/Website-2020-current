@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "../index.css";
 import { Header, Navbar, Footer, SocialBox } from "./export-components";
 import {
@@ -8,7 +8,7 @@ import {
   footerData,
 } from "../utils/app-utils";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div>

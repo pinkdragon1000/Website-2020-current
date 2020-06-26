@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Style from "style-it";
 
-class CardSubcontent extends Component {
+class CardSubcontent extends React.Component {
   render() {
     const styles = `
     .card-subcontent-header {

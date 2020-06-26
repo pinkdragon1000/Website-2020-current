@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { CardSubcontent } from "../export-components";
 import { welcomeContent } from "../../utils/welcome-content-utils";
 
-class WelcomeContent extends Component {
+class WelcomeContent extends React.Component {
   render() {
     return (
       <div>
