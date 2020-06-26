@@ -102,7 +102,7 @@ export const volunteerExperienceContent = [
   },
   {
     title: "Treasurer of Women in Computing Society",
-    date: "June 18, 2019 - June 11, 2020 (2 school years)",
+    date: "January 22, 2018 to June 17, 2019 (2 school years)",
     link: "http://drexelwics.acm.org/",
     linktext: "Women in Computing Society (WiCS)",
     description: (
