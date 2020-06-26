@@ -6,9 +6,19 @@ Problems with old website
 * A lot of repetitiveness in code
 
 Technique to new website 
-* Using arrays and lists to hold website information.
+* Using arrays, lists, objects (dictionaries) to hold website information.  This information is stored in the utils folder under `src`.   
 * Using the map function to reduce repetitiveness of components. 
 
+
+The idea is to separate the application data from the main project structure (components).
+
+```
+┌─────────────┐     ╭────────────╮    
+│ Application |     |  Project   |
+|     Data    ├─────┤ Structure  |
+|   (utils)   |     |(components)| 
+└─────────────┘     ╰────────────╯   
+```
 
 High Level Project Structure
 ```
