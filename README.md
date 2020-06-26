@@ -6,7 +6,7 @@ Problems with old website
 * A lot of repetitiveness in code
 
 Technique to new website 
-* Using arrays, lists, objects (dictionaries) to hold website information.  This information is stored in the utils folder under `src`.   
+* Using arrays and dictionaries (objects) to hold website information.  This information is stored in the utils folder under `src`.   
 * Using the map function to reduce repetitiveness of components. 
 
 
