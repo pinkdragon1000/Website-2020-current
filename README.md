@@ -37,5 +37,10 @@ Running the application
 npm start
 ```
 
+Deploying the application
+```
+npm run build
+firebase deploy
+```
 
 
