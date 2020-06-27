@@ -9,7 +9,6 @@ export { default as Icon } from "./reusable-components/icon";
 export { default as CardSubcontent } from "./reusable-components/card-subcontent";
 export { default as ExperienceBox } from "./reusable-components/experience-box";
 export { default as ProjectCard } from "./reusable-components/project-card";
-export { default as ProjRow } from "./reusable-components/project-row";
 
 //Page Content
 export { default as WelcomeContent } from "./page-content/welcome-content";
