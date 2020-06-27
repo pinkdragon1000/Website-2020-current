@@ -4,7 +4,7 @@ import { NavbarItem, Card } from "../export-components";
 
 import Style from "style-it";
 
-class Navbar extends React.Component {
+class NavbarandContent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -80,4 +80,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default NavbarandContent;

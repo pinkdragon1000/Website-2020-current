@@ -1,6 +1,11 @@
 import React from "react";
 import "../index.css";
-import { Header, Navbar, Footer, SocialBox } from "./export-components";
+import {
+  Header,
+  NavbarandContent,
+  Footer,
+  SocialBox,
+} from "./export-components";
 import {
   headerData,
   navbarOptions,
@@ -19,13 +24,13 @@ class App extends React.Component {
           socialbox={<SocialBox options={socialBoxOptions} />}
         />
 
-        <Navbar>
+        <NavbarandContent>
           {navbarOptions.map((option, i) => (
             <div key={i} label={option.name}>
               {option.component}
             </div>
           ))}
-        </Navbar>
+        </NavbarandContent>
 
         <Footer label={footerData} />
       </div>

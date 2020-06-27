@@ -1,6 +1,6 @@
 //Reusable Components
 export { default as Header } from "./reusable-components/header";
-export { default as Navbar } from "./reusable-components/navbar";
+export { default as NavbarandContent } from "./reusable-components/navbar-and-content";
 export { default as Footer } from "./reusable-components/footer";
 export { default as SocialBox } from "./reusable-components/social-box";
 export { default as NavbarItem } from "./reusable-components/navbar-item";
