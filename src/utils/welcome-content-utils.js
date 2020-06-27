@@ -1,4 +1,4 @@
-//This files the content used for the welcome section of the application.  Rendered in welcome-content.js
+//This file contains the content used for the welcome section of the application.  Rendered in welcome-content.js
 
 import React from "react";
 export const welcomeContent = [

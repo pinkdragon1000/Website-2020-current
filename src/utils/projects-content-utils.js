@@ -1,4 +1,4 @@
-//This files the content used for projects.  Rendered in projects-content.js
+//This file contains the content used for projects.  Rendered in projects-content.js
 
 import React from "react";
 
