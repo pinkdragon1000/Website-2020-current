@@ -1,4 +1,7 @@
+//This files the content used for projects.  Rendered in projects-content.js
+
 import React from "react";
+
 export const projectsContent = [
   {
     title: "Toast",
@@ -170,6 +173,7 @@ export const projectsContent = [
   },
 ];
 
+//Groups projects into arrays of three to make it easier to put three projects on each row.
 export var projectGroup = [];
 var size = 3;
 while (projectsContent.length > 0)

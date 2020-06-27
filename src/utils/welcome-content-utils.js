@@ -1,3 +1,5 @@
+//This files the content used for the welcome section of the application.  Rendered in welcome-content.js
+
 import React from "react";
 export const welcomeContent = [
   {
@@ -11,9 +13,9 @@ export const welcomeContent = [
       <div>
         Intermediate: Python, HTML/CSS, Javascript, Firebase, Microsoft SQL,
         MySQL, Oracle SQL, MariaDB, Android Studio, Markdown, Jupyter Notebook,
-        C++ <br /> Beginner: R, Node.js, ArcGIS (ArcMap, ArcGIS Online), LaTeX,
-        Java, Unix, Tableau, JQuery Mobile, JQuery, Flask, Ruby on Rails,
-        ReactJS, Hadoop, Apache Spark, Google Cloud, Angular
+        C++, ReactJS <br /> Beginner: R, Node.js, ArcGIS (ArcMap, ArcGIS
+        Online), LaTeX, Java, Unix, Tableau, JQuery Mobile, JQuery, Flask, Ruby
+        on Rails, Hadoop, Apache Spark, Google Cloud, Angular
       </div>
     ),
   },

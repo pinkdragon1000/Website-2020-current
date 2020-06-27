@@ -1,3 +1,5 @@
+//This file contains the data used for the header, navbar and footer in app.js
+
 import React from "react";
 import {
   WelcomeContent,
@@ -7,12 +9,21 @@ import {
   PhotosContent,
 } from "../components/export-components";
 
+//Data used for the header.
 export const headerData = {
   imgdir: "../me.png",
   header: "Sita Robinson",
   subheader: "Software Developer",
 };
 
+//Social box icons and urls.  Part of the header but is optional if you wish.
+export const socialBoxOptions = [
+  { icon: "envelope", url: "mailto:sita.robinson@gmail.com" },
+  { icon: "github", url: "https://github.com/pinkdragon1000" },
+  { icon: "linkedin", url: "https://www.linkedin.com/in/sitarobinson/" },
+];
+
+//Navbar options and components used in the content of the page
 export const navbarOptions = [
   {
     name: "Welcome",
@@ -36,10 +47,5 @@ export const navbarOptions = [
   },
 ];
 
-export const socialBoxOptions = [
-  { icon: "envelope", url: "mailto:sita.robinson@gmail.com" },
-  { icon: "github", url: "https://github.com/pinkdragon1000" },
-  { icon: "linkedin", url: "https://www.linkedin.com/in/sitarobinson/" },
-];
-
+//Data used in the footer.
 export const footerData = "Ⓒ Sita Robinson 2020";

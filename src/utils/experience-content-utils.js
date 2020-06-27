@@ -1,4 +1,7 @@
+//This file contains the content used for the experience section of the application (education, work/volunteer experience).  Rendered in experience-content.js.
+
 import React from "react";
+
 export const educationContent = [
   {
     header: "Education",
