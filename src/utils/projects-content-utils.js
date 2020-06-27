@@ -145,6 +145,29 @@ export const projectsContent = [
       </div>
     ),
   },
+  {
+    title: "Food Production Analysis",
+    link: "",
+    description: (
+      <div>
+        Data pre-processing and exploratory data analysis on the "Who eats the
+        food we grow?" dataset from Kaggle.
+      </div>
+    ),
+  },
+  {
+    title: "Quali",
+    link: "",
+    description: (
+      <div>
+        Developed a web application with backend to match the skills and
+        qualifications needed for a job. Created a web scraper using the
+        Beautiful Soup library in Python to scrape job data from Indeed.com.
+        Leveraged text analytics to match employee skills to job postings. Used
+        Flask which is a framework to run Python as a web server.
+      </div>
+    ),
+  },
 ];
 
 export var array = [];
