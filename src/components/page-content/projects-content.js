@@ -9,16 +9,16 @@ class ProjectsContent extends React.Component {
         {array.map((option, i) => (
           <div className="row">
             <ProjectCard
-              title={option.slice(0, 3)[0].title}
-              description={option.slice(0, 3)[0].description}
+              title={option[0].title}
+              description={option[0].description}
             />
             <ProjectCard
-              title={option.slice(0, 3)[1].title}
-              description={option.slice(0, 3)[1].description}
+              title={option[1].title}
+              description={option[1].description}
             />
             <ProjectCard
-              title={option.slice(0, 3)[2].title}
-              description={option.slice(0, 3)[2].description}
+              title={option[2].title}
+              description={option[2].description}
             />
           </div>
         ))}
