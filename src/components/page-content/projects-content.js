@@ -12,14 +12,22 @@ class ProjectsContent extends React.Component {
               title={option[0].title}
               description={option[0].description}
             />
-            <ProjectCard
-              title={option[1].title}
-              description={option[1].description}
-            />
-            <ProjectCard
-              title={option[2].title}
-              description={option[2].description}
-            />
+            {option[1] === undefined ? (
+              ""
+            ) : (
+              <ProjectCard
+                title={option[1].title}
+                description={option[1].description}
+              />
+            )}
+            {option[2] === undefined ? (
+              ""
+            ) : (
+              <ProjectCard
+                title={option[2].title}
+                description={option[2].description}
+              />
+            )}
           </div>
         ))}
       </div>
