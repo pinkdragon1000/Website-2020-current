@@ -170,6 +170,7 @@ export const projectsContent = [
   },
 ];
 
-export var array = [];
+export var projectGroup = [];
 var size = 3;
-while (projectsContent.length > 0) array.push(projectsContent.splice(0, size));
+while (projectsContent.length > 0)
+  projectGroup.push(projectsContent.splice(0, size));

@@ -1,12 +1,12 @@
 import React from "react";
 import { ProjectCard } from "../export-components";
-import { array } from "../../utils/projects-content-utils";
+import { projectGroup } from "../../utils/projects-content-utils";
 
 class ProjectsContent extends React.Component {
   render() {
     return (
       <div>
-        {array.map((option, i) => (
+        {projectGroup.map((option, i) => (
           <div className="row">
             <ProjectCard
               title={option[0].title}
