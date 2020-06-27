@@ -46,7 +46,7 @@ class NavbarandContent extends React.Component {
 
     .tab-list-active::before {
         content: "✿ ";
-        color: var(--purple);
+        color: var(--light-pink);
     }
     `;
 

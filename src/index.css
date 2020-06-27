@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 :root {
-    --gradient: linear-gradient(45deg, #4383c6, #642a98);
-    --purple: #642a98;
-    --blue: #43a8c6;
+    --gradient: linear-gradient(25deg, #feb692, #ea5455);
+    --dark-pink: #ea5455;
+    --light-pink: #feb692;
     --brown: #2f2d01;
     --white: #ffffff;
-    --grey: #e4e4e4;
+    --grey: #f1efee;
     --med-grey: #808080;
 }
 
