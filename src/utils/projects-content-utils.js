@@ -146,3 +146,7 @@ export const projectsContent = [
     ),
   },
 ];
+
+export var array = [];
+var size = 3;
+while (projectsContent.length > 0) array.push(projectsContent.splice(0, size));
