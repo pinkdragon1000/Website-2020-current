@@ -8,6 +8,7 @@ class Header extends React.Component {
       background: var(--gradient);
       border-radius: 0rem 0rem 2rem 2rem;
       padding-top: 1.5rem;
+      min-width: 618px;
     }
 
     .header-img {
