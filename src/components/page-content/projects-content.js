@@ -20,14 +20,6 @@ class ProjectsContent extends React.Component {
                 description={option[1].description}
               />
             )}
-            {option[2] === undefined ? (
-              ""
-            ) : (
-              <ProjectCard
-                title={option[2].title}
-                description={option[2].description}
-              />
-            )}
           </div>
         ))}
       </div>
