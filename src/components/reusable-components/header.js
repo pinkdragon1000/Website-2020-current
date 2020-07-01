@@ -4,6 +4,9 @@ import Style from "style-it";
 class Header extends React.Component {
   render() {
     const styles = `
+    .row {
+      height: 7rem;
+    }
     .gradient-bg {
       background: var(--gradient);
       border-radius: 0rem 0rem 2rem 2rem;
@@ -12,8 +15,8 @@ class Header extends React.Component {
     }
 
     .header-img {
-      vertical-align: middle;
       border-radius: 50%;
+      margin-top: 5rem;
     }
 
     .header {
