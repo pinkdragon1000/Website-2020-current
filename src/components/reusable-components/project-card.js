@@ -5,7 +5,7 @@ class ProjectCard extends React.Component {
   render() {
     const styles = `
     .project-card {
-        width: 25rem;
+        width: 40rem;
         min-height: 20rem;
         background-color: var(--white);
         border-radius: 4.375rem;

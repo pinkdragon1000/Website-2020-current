@@ -9,7 +9,7 @@ class Card extends React.Component {
       border-radius: 8.75rem;
       height: 100%;
       min-height: 26rem;
-      width: 70vw;
+      width: 85vw;
       padding: 3rem;
   }
     `;
