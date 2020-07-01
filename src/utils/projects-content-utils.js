@@ -175,6 +175,6 @@ export const projectsContent = [
 
 //Groups projects into arrays of three to make it easier to put three projects on each row.
 export var projectGroup = [];
-var size = 3;
+var size = 2;
 while (projectsContent.length > 0)
   projectGroup.push(projectsContent.splice(0, size));
