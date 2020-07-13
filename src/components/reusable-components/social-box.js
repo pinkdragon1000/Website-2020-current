@@ -7,7 +7,12 @@ class SocialBox extends React.Component {
       <div className="row center-container">
         {this.props.options.map((option, i) => (
           <a href={option.url} target="blank_" key={i}>
-            <Icon name={option.icon} fill="white" width={50} height={50} />
+            <Icon
+              name={option.icon}
+              fill={this.props.fill}
+              width={50}
+              height={50}
+            />
           </a>
         ))}
       </div>

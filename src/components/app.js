@@ -21,7 +21,7 @@ class App extends React.Component {
           imgdir={headerData.imgdir}
           header={headerData.header}
           subheader={headerData.subheader}
-          socialbox={<SocialBox options={socialBoxOptions} />}
+          socialbox={<SocialBox fill="white" options={socialBoxOptions} />}
         />
 
         <NavbarandContent>

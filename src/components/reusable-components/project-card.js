@@ -13,12 +13,18 @@ class ProjectCard extends React.Component {
         text-align: center;
         padding: 0.5rem;
     }
+
+    .spacer {
+      padding-top: 6rem;
+    }
     `;
     return Style.it(
       `${styles}`,
       <div className="project-card">
         <p>{this.props.title}</p>
         {this.props.description}
+        <div className="spacer" />
+        {this.props.socialbox}
       </div>
     );
   }

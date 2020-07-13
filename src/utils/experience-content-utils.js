@@ -14,13 +14,6 @@ export const experienceHeader = ["Work Experience", "Volunteer Experience"];
 
 export const workExperienceContent = [
   {
-    title: "Software Developer",
-    date: "July 13, 2020 - ",
-    link: "https://investor.vanguard.com/corporate-portal/",
-    linktext: "Vanguard",
-    description: <div></div>,
-  },
-  {
     title: "Data Science Teaching Assistant",
     date: "April 6, 2020 - June 11, 2020",
     link: "https://drexel.edu/cci/",
