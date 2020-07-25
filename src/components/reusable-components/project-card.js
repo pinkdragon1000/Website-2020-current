@@ -12,10 +12,15 @@ class ProjectCard extends React.Component {
         margin: 1rem;
         text-align: center;
         padding: 0.5rem;
+        bottom: 0rem;
+        position: relative;
     }
 
     .spacer {
-      padding-top: 6rem;
+
+      position: absolute;
+
+  bottom: 0rem;
     }
     `;
     return Style.it(

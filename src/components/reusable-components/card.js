@@ -6,7 +6,6 @@ class Card extends React.Component {
     const styles = `
     .content-text {
       background-color: var(--grey);
-      border-radius: 8.75rem;
       height: 100%;
       min-height: 26rem;
       width: 85vw;
