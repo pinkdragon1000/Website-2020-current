@@ -1,14 +1,15 @@
 //Reusable Components
 export { default as Header } from "./reusable-components/header";
-export { default as NavbarandContent } from "./reusable-components/navbar-and-content";
-export { default as Footer } from "./reusable-components/footer";
 export { default as SocialBox } from "./reusable-components/social-box";
 export { default as NavbarItem } from "./reusable-components/navbar-item";
 export { default as Card } from "./reusable-components/card";
+export { default as NavbarandContent } from "./reusable-components/navbar-and-content";
+export { default as Footer } from "./reusable-components/footer";
 export { default as Icon } from "./reusable-components/icon";
-export { default as CardSubcontent } from "./reusable-components/card-subcontent";
 export { default as ExperienceBox } from "./reusable-components/experience-box";
+export { default as CardSubcontent } from "./reusable-components/card-subcontent";
 export { default as ProjectCard } from "./reusable-components/project-card";
+export { default as PhotoCard } from "./reusable-components/photo-card";
 
 //Page Content
 export { default as WelcomeContent } from "./page-content/welcome-content";
