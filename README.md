@@ -10,7 +10,7 @@ Technique to new website
 * Using the map function to reduce repetitiveness of components. 
 
 
-**[View the application](https://sitarobinson.web.app/)**
+**[View the application](www.sitarobinson.com)**
 
 The idea is to separate the application data from the main project structure (components).
 
