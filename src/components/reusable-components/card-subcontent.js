@@ -6,6 +6,7 @@ class CardSubcontent extends React.Component {
     const styles = `
     .card-subcontent-header {
       text-align: center;
+      color: var(--dark-purple);
   }
     `;
     return Style.it(

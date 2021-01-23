@@ -40,13 +40,14 @@ class NavbarandContent extends React.Component {
 
     .tab-list-active {
         font-weight: 600;
-        border-bottom: 0.2rem solid;
+        border-bottom: 0.2rem solid var(--light-purple);
         border-radius: 0.4rem;
+        color: var(--dark-purple);
     }
 
     .tab-list-active::before {
         content: "✿ ";
-        color: var(--light-pink);
+        color: var(--light-purple);
     }
     `;
 

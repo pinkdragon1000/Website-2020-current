@@ -1,10 +1,19 @@
 import React from "react";
 import { ProjectCard, SocialBox } from "../export-components";
 import { projectGroup } from "../../utils/projects-content-utils";
+import Style from "style-it";
 
 class ProjectsContent extends React.Component {
   render() {
-    return (
+    const styles = `
+    .row center-container {
+      position: absolute; 
+      bottom: 0px; 
+    }
+    `;
+    return Style.it(
+      `${styles}`,
+
       <div>
         {projectGroup.map((option, i) => (
           <div className="row">
@@ -13,8 +22,11 @@ class ProjectsContent extends React.Component {
               description={option[0].description}
               socialbox={
                 <SocialBox
-                  fill="var(--light-pink)"
+                  fill="var(--dark-purple)"
                   options={option[0].socialBoxOptions}
+                  width={30}
+                  height={30}
+                  className="social-box"
                 />
               }
             />
@@ -26,8 +38,11 @@ class ProjectsContent extends React.Component {
                 description={option[1].description}
                 socialbox={
                   <SocialBox
-                    fill="var(--light-pink)"
+                    fill="var(--dark-purple)"
                     options={option[1].socialBoxOptions}
+                    width={30}
+                    height={30}
+                    className="social-box"
                   />
                 }
               />

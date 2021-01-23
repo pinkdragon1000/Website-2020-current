@@ -17,10 +17,8 @@ class ProjectCard extends React.Component {
     }
 
     .spacer {
-
       position: absolute;
-
-  bottom: 0rem;
+      bottom: 0rem;
     }
     `;
     return Style.it(

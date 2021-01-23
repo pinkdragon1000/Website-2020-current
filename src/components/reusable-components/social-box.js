@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import { Icon } from "../export-components";
 
 class SocialBox extends React.Component {
@@ -10,8 +10,8 @@ class SocialBox extends React.Component {
             <Icon
               name={option.icon}
               fill={this.props.fill}
-              width={50}
-              height={50}
+              width={this.props.width || 50}
+              height={this.props.height || 50}
             />
           </a>
         ))}

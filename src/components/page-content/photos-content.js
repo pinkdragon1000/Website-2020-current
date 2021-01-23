@@ -10,7 +10,6 @@ class PhotosContent extends React.Component {
           <div className="row">
             <PhotoCard imagesrc={option[0]} />
             {option[1] === undefined ? "" : <PhotoCard imagesrc={option[1]} />}
-
             {option[2] === undefined ? "" : <PhotoCard imagesrc={option[2]} />}
           </div>
         ))}
