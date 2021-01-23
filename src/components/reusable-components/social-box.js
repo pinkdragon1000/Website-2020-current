@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import { Icon } from "../export-components";
 
 class SocialBox extends React.Component {
