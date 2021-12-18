@@ -14,6 +14,24 @@ export const experienceHeader = ["Work Experience", "Volunteer Experience"];
 
 export const workExperienceContent = [
   {
+    title: "Software Developer I",
+    date: "July 13, 2020 - Present",
+    link: "https://investor.vanguard.com/corporate-portal/",
+    linktext: "Vanguard",
+    description: (
+      <div>
+        <li>
+          API micro-service development using Spring for calculating and
+          displaying brokerage account data (Funds Available, Orders, Ledgers)
+        </li>
+        <li>
+          Worked with team to migrate applications from Pivotal Cloud Foundry
+          (PCF) to AWS ECS
+        </li>
+      </div>
+    ),
+  },
+  {
     title: "Data Science Teaching Assistant",
     date: "April 6, 2020 - June 11, 2020",
     link: "https://drexel.edu/cci/",

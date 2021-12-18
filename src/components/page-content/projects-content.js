@@ -6,9 +6,11 @@ import Style from "style-it";
 class ProjectsContent extends React.Component {
   render() {
     const styles = `
-    .row center-container {
+    .row.center-container {
       position: absolute; 
-      bottom: 0px; 
+      bottom: 1rem;
+      left: 45%;
+      right: 50%; 
     }
     `;
     return Style.it(
