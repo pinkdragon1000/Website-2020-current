@@ -5,7 +5,7 @@ export const welcomeContent = [
   {
     header: "About Me",
     textcontent:
-      "My name is Sita Robinson. I currently work as a Software Developer at Booz Allen Hamilton.  Prior to Booz Allen I worked at Vanguard for two years.  I graduated from Drexel University with a BS in Data Science and minor in Computer Science in 2020. Some of my hobbies include programming, crochet (amigurumi), landscape photography, playing the clarinet, playing Scrabble and traveling around the world. I am a Northern Virginia/Metro D.C. native.",
+      "My name is Sita Robinson. I currently work as a Software Developer at Booz Allen Hamilton.  Prior to Booz Allen, I worked at Vanguard for two years.  I graduated from Drexel University with a BS in Data Science and minor in Computer Science in 2020. Some of my hobbies include programming, crochet (amigurumi), landscape photography, playing the clarinet, playing Scrabble and traveling around the world. I am a Northern Virginia/Metro D.C. native.",
   },
   {
     header: "Skills",

@@ -21,7 +21,7 @@ export const workExperienceContent = [
     description: (
       <div>
         <li>
-          Support camping portion of{" "}
+          Support frontend portion of{" "}
           <a href="https://rec.gov/">https://rec.gov</a> web application using
           React and Redux.
         </li>
