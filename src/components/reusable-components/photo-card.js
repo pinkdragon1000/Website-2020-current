@@ -30,7 +30,12 @@ class PhotoCard extends React.Component {
     return Style.it(
       `${styles}`,
       <div className="photo-card">
-        <img className="image-fit" src={this.props.imagesrc} alt="" />
+        <img
+          className="image-fit"
+          loading="lazy"
+          src={this.props.imagesrc}
+          alt=""
+        />
       </div>
     );
   }

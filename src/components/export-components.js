@@ -15,5 +15,5 @@ export { default as PhotoCard } from "./reusable-components/photo-card";
 export { default as WelcomeContent } from "./page-content/welcome-content";
 export { default as ExperienceContent } from "./page-content/experience-content";
 export { default as ProjectsContent } from "./page-content/projects-content";
-export { default as TravelContent } from "./page-content/travel-content";
 export { default as PhotosContent } from "./page-content/photos-content";
+export { default as TestimonialContent } from "./page-content/testimonial-content";

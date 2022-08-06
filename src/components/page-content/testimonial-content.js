@@ -1,9 +1,9 @@
 import React from "react";
 import { ProjectCard, SocialBox } from "../export-components";
-import { projectGroup } from "../../utils/projects-content-utils";
+import { testimonialGroup } from "../../utils/testimonial-utils";
 import Style from "style-it";
 
-class ProjectsContent extends React.Component {
+class TestimonialContent extends React.Component {
   render() {
     const styles = `
     .row.center-container {
@@ -17,8 +17,8 @@ class ProjectsContent extends React.Component {
       `${styles}`,
 
       <div>
-        {projectGroup.map((option, i) => (
-          <div className="row" key={i + 200}>
+        {testimonialGroup.map((option, i) => (
+          <div className="row" key={i + 300}>
             <ProjectCard
               title={option[0].title}
               description={option[0].description}
@@ -56,4 +56,4 @@ class ProjectsContent extends React.Component {
   }
 }
 
-export default ProjectsContent;
+export default TestimonialContent;

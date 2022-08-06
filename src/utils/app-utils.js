@@ -5,8 +5,8 @@ import {
   WelcomeContent,
   ExperienceContent,
   ProjectsContent,
-  TravelContent,
   PhotosContent,
+  TestimonialContent,
 } from "../components/export-components";
 
 //Data used for the header.
@@ -38,12 +38,12 @@ export const navbarOptions = [
     component: <ProjectsContent />,
   },
   {
-    name: "Places I've Traveled",
-    component: <TravelContent />,
-  },
-  {
     name: "Photos",
     component: <PhotosContent />,
+  },
+  {
+    name: "Testimonials",
+    component: <TestimonialContent />,
   },
 ];
 

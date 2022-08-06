@@ -1,6 +1,6 @@
 import React from "react";
-import PhotoCard from "../reusable-components/photo-card";
 import { photoGroup } from "../../utils/photos-content-utils";
+import PhotoCard from "../reusable-components/photo-card";
 
 class PhotosContent extends React.Component {
   render() {
@@ -8,9 +8,17 @@ class PhotosContent extends React.Component {
       <div>
         {photoGroup.map((option, i) => (
           <div className="row">
-            <PhotoCard imagesrc={option[0]} />
-            {option[1] === undefined ? "" : <PhotoCard imagesrc={option[1]} />}
-            {option[2] === undefined ? "" : <PhotoCard imagesrc={option[2]} />}
+            <PhotoCard imagesrc={require("../../images/" + option[0])} />
+            {option[1] === undefined ? (
+              ""
+            ) : (
+              <PhotoCard imagesrc={require("../../images/" + option[1])} />
+            )}
+            {option[2] === undefined ? (
+              ""
+            ) : (
+              <PhotoCard imagesrc={require("../../images/" + option[2])} />
+            )}
           </div>
         ))}
       </div>

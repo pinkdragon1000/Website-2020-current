@@ -28,6 +28,7 @@ export const projectsContent = [
     ),
     socialBoxOptions: [
       { icon: "code", url: "https://github.com/pinkdragon1000/Zesty" },
+      { icon: "video", url: "https://youtu.be/5NR1RibM4Mc" },
     ],
   },
   {

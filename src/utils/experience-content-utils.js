@@ -14,19 +14,57 @@ export const experienceHeader = ["Work Experience", "Volunteer Experience"];
 
 export const workExperienceContent = [
   {
+    title: "Software Developer, Mid",
+    date: "July 6, 2022 - Present",
+    link: "https://www.boozallen.com/",
+    linktext: "Booz Allen Hamilton",
+    description: (
+      <div>
+        <li>
+          Support camping portion of{" "}
+          <a href="https://rec.gov/">https://rec.gov</a> web application using
+          React and Redux.
+        </li>
+        <li>
+          Worked on Software Studio project developing component libraries using
+          React and Angular for usage throughout Booz Allen.
+        </li>
+      </div>
+    ),
+  },
+  {
+    title: "Software Developer II",
+    date: "February 4, 2022 - June 17, 2022",
+    link: "https://investor.vanguard.com/corporate-portal/",
+    linktext: "Vanguard",
+    description: <div>Refer to Software Dev I description below.</div>,
+  },
+  {
     title: "Software Developer I",
-    date: "July 13, 2020 - Present",
+    date: "July 13, 2020 - February 4th, 2022",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
     description: (
       <div>
         <li>
-          API micro-service development using Spring for calculating and
-          displaying brokerage account data (Funds Available, Orders, Ledgers)
+          Developed Java Spring web services that power the Vanguard mobile and
+          web customer-facing investment platform.
         </li>
         <li>
-          Worked with team to migrate applications from Pivotal Cloud Foundry
-          (PCF) to AWS ECS
+          Worked with team to migrate web services from Pivotal Cloud Foundry to
+          Amazon (AWS) ECS.
+        </li>
+        <li>
+          Performed unit and integration testing using the Junit, Mockito, and
+          Cucumber frameworks.
+        </li>
+        <li>
+          Provided developer support for consumers of our web services. Analyzed
+          web service logs using Splunk and Honeycomb.
+        </li>
+        <li>
+          Worked in a DevOps environment developing, deploying, supporting and
+          troubleshooting our web-services in a production environment.
         </li>
       </div>
     ),

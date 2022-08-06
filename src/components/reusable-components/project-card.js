@@ -11,9 +11,14 @@ class ProjectCard extends React.Component {
         border-radius: 4.375rem;
         margin: 1rem;
         text-align: center;
-        padding: 0.5rem;
+        padding: 2rem;
         bottom: 0rem;
         position: relative;
+    }
+
+    .handleOverflow {
+      height: 15rem;
+      overflow: auto;
     }
 
     .spacer {
@@ -25,7 +30,8 @@ class ProjectCard extends React.Component {
       `${styles}`,
       <div className="project-card">
         <p>{this.props.title}</p>
-        {this.props.description}
+
+        <div className="handleOverflow">{this.props.description}</div>
         <div className="spacer" />
         {this.props.socialbox}
       </div>

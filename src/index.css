@@ -40,3 +40,9 @@ p {
     flex-direction: row;
     justify-content: center;
 }
+
+iframe {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
