@@ -21,13 +21,23 @@ export const workExperienceContent = [
     description: (
       <div>
         <li>
-          Support frontend portion of{" "}
-          <a href="https://rec.gov/">https://rec.gov</a> web application using
-          React and Redux.
+          Support frontend portion using React and Redux of external facing{" "}
+          <a href="https://rec.gov/">https://rec.gov</a> web application and
+          administrative app which allows facility managers to update business
+          rules, content, reservations, and inventory for consumers.
+          Recreation.gov is an e-commerce site that allows to plan trips across
+          the United States including federally managed parks, forests,
+          monuments and waterways. Through the web application, you can reserve
+          campsites, tickets, permits, and digital passes. Check out this video
+          for an overview:{" "}
+          <a href="https://www.youtube.com/watch?v=WWve-5MN9Uk">
+            https://www.youtube.com/watch?v=WWve-5MN9Uk
+          </a>
         </li>
         <li>
-          Worked on Software Studio project developing component libraries using
-          React and Angular for usage throughout Booz Allen.
+          Worked on Software Studio project, an internal CTO initiative,
+          developing component libraries using React and Angular for usage
+          throughout Booz Allen.
         </li>
       </div>
     ),

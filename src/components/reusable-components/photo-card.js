@@ -1,9 +1,8 @@
 import React from "react";
 import Style from "style-it";
 
-class PhotoCard extends React.Component {
-  render() {
-    const styles = `
+export default function PhotoCard(props) {
+  const styles = `
     .photo-card {
         width: 20rem;
         min-height: 15rem;
@@ -27,18 +26,10 @@ class PhotoCard extends React.Component {
       bottom: 0rem;
     }
     `;
-    return Style.it(
-      `${styles}`,
-      <div className="photo-card">
-        <img
-          className="image-fit"
-          loading="lazy"
-          src={this.props.imagesrc}
-          alt=""
-        />
-      </div>
-    );
-  }
+  return Style.it(
+    `${styles}`,
+    <div className="photo-card">
+      <img className="image-fit" loading="lazy" src={props.imagesrc} alt="" />
+    </div>
+  );
 }
-
-export default PhotoCard;

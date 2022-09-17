@@ -1,29 +1,20 @@
 import React from "react";
 
-class NavbarItem extends React.Component {
-  onClick = () => {
-    const { label, onClick } = this.props;
+export default function NavbarItem(props) {
+  const onClick = () => {
+    const { label, onClick } = props;
     onClick(label);
   };
 
-  render() {
-    const {
-      onClick,
-      props: { activeTab, label },
-    } = this;
+  let className = "tab-list-item";
 
-    let className = "tab-list-item";
-
-    if (activeTab === label) {
-      className += " tab-list-active";
-    }
-
-    return (
-      <li className={className} onClick={onClick}>
-        {label}
-      </li>
-    );
+  if (props.activeTab === props.label) {
+    className += " tab-list-active";
   }
-}
 
-export default NavbarItem;
+  return (
+    <li className={className} onClick={onClick}>
+      {props.label}
+    </li>
+  );
+}

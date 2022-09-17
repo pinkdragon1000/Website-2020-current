@@ -1,9 +1,8 @@
 import React from "react";
 import Style from "style-it";
 
-class ExperienceBox extends React.Component {
-  render() {
-    const styles = `
+export default function ExperienceBox(props) {
+  const styles = `
     .experience-header {
         display: flex;
         justify-content: space-between;
@@ -17,18 +16,16 @@ class ExperienceBox extends React.Component {
         font-size: 1.1rem;
     }
     `;
-    return Style.it(
-      `${styles}`,
-      <div>
-        <div className="experience-header">
-          <p>{this.props.title}</p>
-          <a href={this.props.link}>{this.props.linktext}</a>
-        </div>
-        <p className="date">{this.props.date}</p>
-        <ul>{this.props.children}</ul>
-        <br />
+  return Style.it(
+    `${styles}`,
+    <div>
+      <div className="experience-header">
+        <p>{props.title}</p>
+        <a href={props.link}>{props.linktext}</a>
       </div>
-    );
-  }
+      <p className="date">{props.date}</p>
+      <ul>{props.children}</ul>
+      <br />
+    </div>
+  );
 }
-export default ExperienceBox;

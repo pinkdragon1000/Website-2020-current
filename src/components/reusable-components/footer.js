@@ -1,19 +1,12 @@
 import React from "react";
 import Style from "style-it";
 
-class Footer extends React.Component {
-  render() {
-    const styles = `
+export default function Footer(props) {
+  const styles = `
     .footer {
         padding-top: 1rem;
         text-align: center;
     }
     `;
-    return Style.it(
-      `${styles}`,
-      <div className="footer">{this.props.label}</div>
-    );
-  }
+  return Style.it(`${styles}`, <div className="footer">{props.label}</div>);
 }
-
-export default Footer;

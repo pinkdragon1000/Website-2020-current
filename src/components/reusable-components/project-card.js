@@ -1,9 +1,8 @@
 import React from "react";
 import Style from "style-it";
 
-class ProjectCard extends React.Component {
-  render() {
-    const styles = `
+export default function ProjectCard(props) {
+  const styles = `
     .project-card {
         width: 40rem;
         min-height: 20rem;
@@ -26,17 +25,14 @@ class ProjectCard extends React.Component {
       bottom: 0rem;
     }
     `;
-    return Style.it(
-      `${styles}`,
-      <div className="project-card">
-        <p>{this.props.title}</p>
+  return Style.it(
+    `${styles}`,
+    <div className="project-card">
+      <p>{props.title}</p>
 
-        <div className="handleOverflow">{this.props.description}</div>
-        <div className="spacer" />
-        {this.props.socialbox}
-      </div>
-    );
-  }
+      <div className="handleOverflow">{props.description}</div>
+      <div className="spacer" />
+      {props.socialbox}
+    </div>
+  );
 }
-
-export default ProjectCard;

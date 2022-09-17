@@ -1,9 +1,8 @@
 import React from "react";
 import Style from "style-it";
 
-class Header extends React.Component {
-  render() {
-    const styles = `
+export default function Header(props) {
+  const styles = `
     .row {
       height: 7rem;
     }
@@ -30,19 +29,17 @@ class Header extends React.Component {
       text-align: center;
     }
     `;
-    return Style.it(
-      `${styles}`,
-      <div className="gradient-bg">
-        <div className="column">
-          <div className="row center-container">
-            <img className="header-img" src={this.props.imgdir} alt="" />
-            <h1 className="header">{this.props.header}</h1>
-          </div>
-          <h1 className="subheader">{this.props.subheader}</h1>
-          {this.props.socialbox}
+  return Style.it(
+    `${styles}`,
+    <div className="gradient-bg">
+      <div className="column">
+        <div className="row center-container">
+          <img className="header-img" src={props.imgdir} alt="" />
+          <h1 className="header">{props.header}</h1>
         </div>
+        <h1 className="subheader">{props.subheader}</h1>
+        {props.socialbox}
       </div>
-    );
-  }
+    </div>
+  );
 }
-export default Header;

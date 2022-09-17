@@ -1,9 +1,8 @@
 import React from "react";
 import Style from "style-it";
 
-class Card extends React.Component {
-  render() {
-    const styles = `
+export default function Card(props) {
+  const styles = `
     .content-text {
       background-color: var(--grey);
       height: 100%;
@@ -12,12 +11,10 @@ class Card extends React.Component {
       padding: 3rem;
   }
     `;
-    return Style.it(
-      `${styles}`,
-      <div className="column center-container">
-        <div className="content-text">{this.props.children}</div>
-      </div>
-    );
-  }
+  return Style.it(
+    `${styles}`,
+    <div className="column center-container">
+      <div className="content-text">{props.children}</div>
+    </div>
+  );
 }
-export default Card;

@@ -13,29 +13,25 @@ import {
   footerData,
 } from "../utils/app-utils";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header
-          imgdir={headerData.imgdir}
-          header={headerData.header}
-          subheader={headerData.subheader}
-          socialbox={<SocialBox fill="white" options={socialBoxOptions} />}
-        />
+export default function App() {
+  return (
+    <div>
+      <Header
+        imgdir={headerData.imgdir}
+        header={headerData.header}
+        subheader={headerData.subheader}
+        socialbox={<SocialBox fill="white" options={socialBoxOptions} />}
+      />
 
-        <NavbarandContent>
-          {navbarOptions.map((option, i) => (
-            <div key={i} label={option.name}>
-              {option.component}
-            </div>
-          ))}
-        </NavbarandContent>
+      <NavbarandContent>
+        {navbarOptions.map((option, i) => (
+          <div key={i} label={option.name}>
+            {option.component}
+          </div>
+        ))}
+      </NavbarandContent>
 
-        <Footer label={footerData} />
-      </div>
-    );
-  }
+      <Footer label={footerData} />
+    </div>
+  );
 }
-
-export default App;

@@ -1,30 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { NavbarItem, Card } from "../export-components";
 
 import Style from "style-it";
 
-class NavbarandContent extends React.Component {
-  constructor(props) {
-    super(props);
+export default function NavbarandContent(props) {
+  const [activeTab, setActiveTab] = useState(props.children[0].props.label);
 
-    this.state = {
-      activeTab: this.props.children[0].props.label,
-    };
-  }
-
-  onClickTabItem = (tab) => {
-    this.setState({ activeTab: tab });
+  const onClickTabItem = (tab) => {
+    setActiveTab(tab);
   };
 
-  render() {
-    const {
-      onClickTabItem,
-      props: { children },
-      state: { activeTab },
-    } = this;
-
-    const styles = `
+  const styles = `
         
     .tab-list-item {
         display: inline-block;
@@ -51,34 +38,31 @@ class NavbarandContent extends React.Component {
     }
     `;
 
-    return Style.it(
-      `${styles}`,
-      <div className="tabs">
-        <ol className="tab-list">
-          {children.map((child) => {
-            const { label } = child.props;
+  return Style.it(
+    `${styles}`,
+    <div className="tabs">
+      <ol className="tab-list">
+        {props.children.map((child) => {
+          const { label } = child.props;
 
-            return (
-              <NavbarItem
-                activeTab={activeTab}
-                key={label}
-                label={label}
-                onClick={onClickTabItem}
-              />
-            );
+          return (
+            <NavbarItem
+              activeTab={activeTab}
+              key={label}
+              label={label}
+              onClick={onClickTabItem}
+            />
+          );
+        })}
+      </ol>
+      <div className="tab-content">
+        <Card>
+          {props.children.map((child) => {
+            if (child.props.label !== activeTab) return undefined;
+            return child.props.children;
           })}
-        </ol>
-        <div className="tab-content">
-          <Card>
-            {children.map((child) => {
-              if (child.props.label !== activeTab) return undefined;
-              return child.props.children;
-            })}
-          </Card>
-        </div>
+        </Card>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default NavbarandContent;
