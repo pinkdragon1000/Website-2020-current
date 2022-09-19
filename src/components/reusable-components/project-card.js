@@ -10,13 +10,13 @@ export default function ProjectCard(props) {
         border-radius: 4.375rem;
         margin: 1rem;
         text-align: center;
-        padding: 2rem;
+        padding: 1.6rem;
         bottom: 0rem;
         position: relative;
     }
 
     .handleOverflow {
-      height: 15rem;
+      height: 13rem;
       overflow: auto;
     }
 
@@ -29,7 +29,6 @@ export default function ProjectCard(props) {
     `${styles}`,
     <div className="project-card">
       <p>{props.title}</p>
-
       <div className="handleOverflow">{props.description}</div>
       <div className="spacer" />
       {props.socialbox}

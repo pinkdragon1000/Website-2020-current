@@ -4,6 +4,20 @@ import React from "react";
 
 export const projectsContent = [
   {
+    title: "Fin",
+    description: (
+      <div>
+        An application used to keep track of deposits and withdraws in an
+        account. Created using Angular and Spring (Java) API. The Angular
+        frontend application is deployed using Firebase Hosting. The Spring API
+        backend is deployed using Heroku.
+      </div>
+    ),
+    socialBoxOptions: [
+      { icon: "code", url: "https://github.com/pinkdragon1000/Fin" },
+    ],
+  },
+  {
     title: "Toast",
     description: (
       <div>
@@ -75,164 +89,6 @@ export const projectsContent = [
       { icon: "code", url: "https://github.com/pinkdragon1000/BuddyUApp" },
       { icon: "video", url: "https://goo.gl/photos/PXjPnL5U6ujkRPCq8" },
     ],
-  },
-  {
-    title: "Bank Churn Modeling",
-    description: (
-      <div>
-        Predicting whether a customer is likely to leave (churn) from the bank
-        or not using Pyspark (Python) and Hadoop.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/Bank-Churn-Modelling",
-      },
-    ],
-  },
-  {
-    title: "Credit Card Fraud Detection",
-    description: (
-      <div>
-        Binary classification problem to predict whether a transaction is
-        fraudulent or not using Python's Scikit-Learn library.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/Credit-Card-Fraud-Detection",
-      },
-    ],
-  },
-  {
-    title: "Malaria Detection",
-    description: (
-      <div>
-        Used a CNN model to classify images as being parasitized or not.
-        Leveraged the Fast.ai library and Python.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/Malaria-Detection",
-      },
-    ],
-  },
-  {
-    title: "Fashion MNIST Clothing Classification",
-    description: (
-      <div>
-        Used deep learning algorithms and techniques to classify clothing
-        images. Built using Tensorflow, Keras and Python.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url:
-          "https://github.com/pinkdragon1000/Fashion-MNIST-Clothing-Classification",
-      },
-    ],
-  },
-  {
-    title: "News Tweet Analysis",
-    description: (
-      <div>
-        Performed natural language processing on Twitter feeds using the Tweepy
-        streaming API, Python, NLTK, Beautiful Soup and MongoDB Atlas.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/News-Tweet-Analysis",
-      },
-    ],
-  },
-  {
-    title: "Mushroom Classification",
-    description: (
-      <div>
-        Used the Python Scikit-Learn library to train and test the "Mushroom
-        Classification" dataset from Kaggle to predict whether a mushroom is
-        poisonous or edible. Used classification algorithms including SVM, Naive
-        Bayes, and Logistic Regression.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/Mushroom-Classification",
-      },
-    ],
-  },
-  {
-    title: "Black Friday Analysis",
-    description: (
-      <div>
-        Performed exploratory analysis of Black Friday data using Python. In
-        addition, used matrix factorization to study consumer behavior and
-        provide recommendations for potential customers. We also explored the
-        process of vectorization and the process of creating embeddings, using
-        the results to find similar customers, find consumer groups using
-        clustering, and predict what a given customer will buy.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/Black-Friday-Project",
-      },
-    ],
-  },
-  {
-    title: "Student Performance Analysis",
-    description: (
-      <div>
-        Built machine learning models using random forest to predict what
-        factors are most important for student performance in math, writing, and
-        reading exams using the "Student Performance in Exams" dataset from
-        Kaggle. Performed pre-processing and exploratory data analysis. This
-        project was completed using the R language.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/Student-Performance-Analysis",
-      },
-    ],
-  },
-  {
-    title: "Food Production Analysis",
-    description: (
-      <div>
-        Data pre-processing and exploratory data analysis on the "Who eats the
-        food we grow?" dataset from Kaggle.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/Food-Production-Analysis",
-      },
-    ],
-  },
-  {
-    title: "Quali",
-    description: (
-      <div>
-        Developed a web application with backend to match the skills and
-        qualifications needed for a job. Created a web scraper using the
-        Beautiful Soup library in Python to scrape job data from Indeed.com.
-        Leveraged text analytics to match employee skills to job postings. Used
-        Flask which is a framework to run Python as a web server.
-      </div>
-    ),
-    socialBoxOptions: [],
   },
 ];
 

@@ -14,7 +14,6 @@ export default function ProjectsContent() {
     `;
   return Style.it(
     `${styles}`,
-
     <div>
       {projectGroup.map((option, i) => (
         <div className="row" key={i + 200}>

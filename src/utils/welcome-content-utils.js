@@ -16,7 +16,7 @@ export const welcomeContent = [
         Studio
         <br />
         Beginner: R, ArcGIS (ArcMap, ArcGIS Online), Tableau, JQuery, Google
-        Cloud, Angular, AWS
+        Cloud, AWS
         <br />
       </div>
     ),

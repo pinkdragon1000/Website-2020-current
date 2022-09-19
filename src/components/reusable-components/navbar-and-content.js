@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { NavbarItem, Card } from "../export-components";
+import { NavbarItem, Card, ScrollUpButton } from "../export-components";
 
 import Style from "style-it";
 
@@ -12,7 +12,6 @@ export default function NavbarandContent(props) {
   };
 
   const styles = `
-        
     .tab-list-item {
         display: inline-block;
         list-style: none;
@@ -63,6 +62,7 @@ export default function NavbarandContent(props) {
           })}
         </Card>
       </div>
+      <ScrollUpButton />
     </div>
   );
 }

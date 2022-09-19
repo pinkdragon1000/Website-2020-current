@@ -14,7 +14,6 @@ export default function TestimonialContent() {
     `;
   return Style.it(
     `${styles}`,
-
     <div>
       {testimonialGroup.map((option, i) => (
         <div className="row" key={i + 300}>
