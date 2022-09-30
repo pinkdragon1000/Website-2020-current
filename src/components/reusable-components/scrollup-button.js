@@ -24,10 +24,10 @@ export default function ScrollUpButton(props) {
   const styles = `
   .btn-scrollup {
     position: fixed;
-    width: 3.75rem;
-    height: 3.75rem;
-    bottom: 3.75rem;
-    right: 3.75rem;
+    width: 5.75rem;
+    height: 5.75rem;
+    bottom: 1.75rem;
+    right: 2.75rem;
     min-width: 0rem;
     border-radius: 3.125rem;
     background: var(--gradient);

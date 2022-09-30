@@ -1,19 +1,9 @@
 import React from "react";
 import { ProjectCard, SocialBox } from "../export-components";
 import { testimonialGroup } from "../../utils/testimonial-utils";
-import Style from "style-it";
 
 export default function TestimonialContent() {
-  const styles = `
-    .row.center-container {
-      position: absolute; 
-      bottom: 1rem;
-      left: 45%;
-      right: 50%; 
-    }
-    `;
-  return Style.it(
-    `${styles}`,
+  return (
     <div>
       {testimonialGroup.map((option, i) => (
         <div className="row" key={i + 300}>
