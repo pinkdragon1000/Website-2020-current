@@ -1,5 +1,6 @@
 {
     "hosting": {
+        "site": "sitarobinson",
         "public": "build",
         "src": "../src/*",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
