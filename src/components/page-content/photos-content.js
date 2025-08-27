@@ -8,16 +8,8 @@ export default function PhotosContent() {
       {photoGroup.map((option, i) => (
         <div className="row">
           <PhotoCard imagesrc={require("../../images/" + option[0])} />
-          {option[1] === undefined ? (
-            ""
-          ) : (
-            <PhotoCard imagesrc={require("../../images/" + option[1])} />
-          )}
-          {option[2] === undefined ? (
-            ""
-          ) : (
-            <PhotoCard imagesrc={require("../../images/" + option[2])} />
-          )}
+          {option[1] && <PhotoCard imagesrc={require("../../images/" + option[1])} />}
+          {option[2] && <PhotoCard imagesrc={require("../../images/" + option[2])} />}
         </div>
       ))}
     </div>

@@ -20,9 +20,7 @@ export default function ProjectsContent() {
               />
             }
           />
-          {option[1] === undefined ? (
-            ""
-          ) : (
+          {option[1] && (
             <ProjectCard
               title={option[1].title}
               description={option[1].description}

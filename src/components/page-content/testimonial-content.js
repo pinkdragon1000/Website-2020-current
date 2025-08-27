@@ -20,9 +20,7 @@ export default function TestimonialContent() {
               />
             }
           />
-          {option[1] === undefined ? (
-            ""
-          ) : (
+          {option[1] && (
             <ProjectCard
               title={option[1].title}
               description={option[1].description}
