@@ -40,7 +40,7 @@ export const welcomeContent = [
     header: "Favorite Eats",
     textcontent: (
       <div>
-        <iframe type="favEats" src="https://storymaps.arcgis.com/stories/d000920fa6f64d4bbd3901add575b620?cover=false" width="100%" height="700px" frameborder="0" allowfullscreen allow="geolocation" />
+        <iframe title="favEats" src="https://storymaps.arcgis.com/stories/d000920fa6f64d4bbd3901add575b620?cover=false" width="100%" height="700px" frameborder="0" allowfullscreen allow="geolocation" />
       </div>
     )
   },
