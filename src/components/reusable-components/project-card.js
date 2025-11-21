@@ -8,11 +8,16 @@ export default function ProjectCard(props) {
         min-height: 20rem;
         background-color: var(--white);
         border-radius: 4.375rem;
-        margin: 1rem;
-        text-align: center;
+        margin: 1.5rem;
+        text-align: left;
         padding: 1.6rem;
         bottom: 0rem;
         position: relative;
+    }
+
+    .project-card h3 {
+        text-align: center;
+        padding-bottom: 2rem;
     }
 
     .handleOverflow {
@@ -28,7 +33,7 @@ export default function ProjectCard(props) {
   return Style.it(
     `${styles}`,
     <div className="project-card">
-      <p>{props.title}</p>
+      <h3>{props.title}</h3>
       <div className="handleOverflow">{props.description}</div>
       <div className="spacer" />
       {props.socialbox}

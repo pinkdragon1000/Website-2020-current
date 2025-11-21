@@ -20,7 +20,7 @@ export default function ExperienceBox(props) {
     `${styles}`,
     <div>
       <div className="experience-header">
-        <p>{props.title}</p>
+        <h3>{props.title}</h3>
         <a href={props.link}>{props.linktext}</a>
       </div>
       <p className="date">{props.date}</p>

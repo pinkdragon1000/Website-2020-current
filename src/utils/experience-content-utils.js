@@ -4,18 +4,16 @@ import React from "react";
 
 export const educationContent = [
   {
-    header: "Education",
-    textcontent: (
-      <ul>
-        <li>
-          MBA in Business Administration from University of Maryland - Class of 2026
-        </li>
-        <li>
-          Bachelor of Science in Data Science, Minor in Computer Science from Drexel
-          University - Graduated June 2020
-        </li>
-      </ul>
-    ),
+    school: "University of Maryland",
+    degree: "MBA in Business Administration",
+    year: "Class of 2026",
+    logo: "https://umd-brand.transforms.svdcdn.com/production/uploads/images/other-prohibited-testudo-mark.png?w=374&h=400&auto=compress%2Cformat&fit=crop&dm=1614025044&s=5f849d76fe32008055992ca114db14cd",
+  },
+  {
+    school: "Drexel University",
+    degree: "Bachelor of Science in Data Science, Minor in Computer Science",
+    year: "Graduated June 2020",
+    logo: "https://images.seeklogo.com/logo-png/30/1/drexel-university-logo-png_seeklogo-306720.png",
   },
 ];
 

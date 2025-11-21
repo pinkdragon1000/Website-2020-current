@@ -1,5 +1,6 @@
 import React from "react";
-import { CardSubcontent, ExperienceBox } from "../export-components";
+import Style from "style-it";
+import { CardSubcontent, ExperienceBox, EducationCard } from "../export-components";
 
 import {
   educationContent,
@@ -9,15 +10,29 @@ import {
 } from "../../utils/experience-content-utils";
 
 export default function ExperienceContent() {
-  return (
+  const styles = `
+    .education-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  `;
+
+  return Style.it(
+    `${styles}`,
     <div>
-      {educationContent.map((option, i) => (
-        <CardSubcontent
-          key={i}
-          header={option.header}
-          textcontent={option.textcontent}
-        />
-      ))}
+      <CardSubcontent header="Education" />
+      <div className="education-row">
+        {educationContent.map((option, i) => (
+          <EducationCard
+            key={i}
+            school={option.school}
+            degree={option.degree}
+            year={option.year}
+            logo={option.logo}
+          />
+        ))}
+      </div>
 
       <CardSubcontent header={experienceHeader[0]} />
       {workExperienceContent.map((option, i) => (

@@ -27,6 +27,12 @@ p {
   font-size: 1.5rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
 .center-container {
   align-items: center;
 }

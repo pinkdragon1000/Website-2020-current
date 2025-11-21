@@ -48,4 +48,4 @@ export const navbarOptions = [
 ];
 
 //Data used in the footer.
-export const footerData = "Ⓒ Sita Robinson 2020";
+export const footerData = "Ⓒ Sita Robinson 2025";
