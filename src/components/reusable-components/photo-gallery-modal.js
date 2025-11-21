@@ -62,6 +62,7 @@ export default function PhotoGalleryModal(props) {
         document.body.style.overflow = "unset";
       };
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen, currentIndex, isFirstImage, isLastImage]);
 
   React.useEffect(() => {
@@ -168,7 +169,7 @@ export default function PhotoGalleryModal(props) {
         <img
           className="gallery-image"
           src={photos[currentIndex]}
-          alt={`Photo ${currentIndex + 1}`}
+          alt={`gallery-${currentIndex + 1}`}
         />
       </div>
       <CircularButton 
