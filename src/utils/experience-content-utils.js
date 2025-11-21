@@ -23,36 +23,26 @@ export const experienceHeader = ["Work Experience", "Volunteer Experience"];
 
 export const workExperienceContent = [
   {
-    title: "Lead Software Engineer",
+    title: "Software Engineer, 3 (Lead)",
     date: "Dec 15, 2024 - Present",
     link: "https://www.boozallen.com/",
     linktext: "Booz Allen Hamilton",
     description: <div></div>,
   },
   {
-    title: "Software Developer, Mid",
+    title: "Software Engineer, 2 (Staff)",
     date: "July 6, 2022 - Dec 15, 2024",
     link: "https://www.boozallen.com/",
     linktext: "Booz Allen Hamilton",
     description: (
       <div>
-        <li>
-          Support frontend portion using React and Redux of external facing{" "}
-          <a href="https://rec.gov/">https://rec.gov</a> web application and
-          administrative app which allows facility managers to update business rules,
-          content, reservations, and inventory for consumers. Recreation.gov is an
-          e-commerce site that allows to plan trips across the United States including
-          federally managed parks, forests, monuments and waterways. Through the web
-          application, you can reserve campsites, tickets, permits, and digital passes.
-          Check out this video for an overview:{" "}
-          <a href="https://www.youtube.com/watch?v=WWve-5MN9Uk">
-            https://www.youtube.com/watch?v=WWve-5MN9Uk
-          </a>
-        </li>
-        <li>
-          Worked on Software Studio project, an internal CTO initiative, developing
-          component libraries using React and Angular for usage throughout Booz Allen.
-        </li>
+        <li>Developed frontend for the Recreation.gov customer and administrative applications using React and Redux. Recreation.gov is an e-commerce web application
+          that allows you to plan trips across the United States, including federally managed parks, forests, monuments, and waterways.</li>
+        <li>Worked across the project to develop new features, fixed bugs in the application, performed unit and integration testing using React Testing Library, and deployed
+          the app using ArgoCD. Handle service calls from Go APIs using Axios and Redux. Handle rollouts using LaunchDarkly flags. Implemented and updated features
+          using Figma mockups from the design team.</li>
+        <li>Worked with a mixture of functional and class components.</li>
+        <li>Styled components using SCSS</li>
       </div>
     ),
   },

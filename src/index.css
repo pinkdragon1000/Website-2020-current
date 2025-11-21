@@ -6,7 +6,7 @@
   --brown: #2f2d01;
   --white: #ffffff;
   --grey: #f1efee;
-  --med-grey: #808080;
+  --med-grey: #bbbbbb;
 }
 
 body {
@@ -45,4 +45,31 @@ iframe {
   width: 100%;
   display: block;
   margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+table th,
+table td {
+  border: 1px solid var(--med-grey);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: var(--med-grey);
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--grey);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--white);
 }

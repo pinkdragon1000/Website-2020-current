@@ -5,20 +5,61 @@ export const welcomeContent = [
   {
     header: "About Me",
     textcontent:
-      "My name is Sita Robinson. I currently work as a Software Developer at Booz Allen Hamilton.  Prior to Booz Allen, I worked at Vanguard for two years.  I graduated from Drexel University with a BS in Data Science and minor in Computer Science in 2020. Some of my hobbies include programming, crochet (amigurumi), landscape photography, playing the clarinet, playing Scrabble and traveling around the world. I am a Northern Virginia/Metro D.C. native.",
+      "My name is Sita Robinson. I currently work as a Software Developer at Booz Allen Hamilton.  Prior to Booz Allen, I worked at Vanguard for two years.  I graduated from Drexel University with a BS in Data Science and minor in Computer Science in 2020. Some of my hobbies include programming, crochet (amigurumi), landscape photography, quilting, playing Scrabble and traveling around the world. I am a Northern Virginia/Metro D.C. native.",
   },
   {
     header: "Skills",
     textcontent: (
-      <div>
-        Intermediate: Python, HTML/CSS, Javascript, Firebase, Microsoft SQL,
-        MySQL, Oracle SQL, Flask, ReactJS, Angular, Spring Framework, Android
-        Studio
-        <br />
-        Beginner: R, ArcGIS (ArcMap, ArcGIS Online), Tableau, JQuery, Google
-        Cloud, AWS
-        <br />
-      </div>
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Skills</th>
+        </tr>
+        <tr>
+          <td>Frameworks/Libraries</td>
+          <td>React.js, Spring Framework, Flask, Next.js</td>
+        </tr>
+        <tr>
+          <td>State Management</td>
+          <td>Redux</td>
+        </tr>
+        <tr>
+          <td>JS Build Systems</td>
+          <td>Webpack, Vite</td>
+        </tr>
+        <tr>
+          <td>Languages</td>
+          <td>HTML/CSS, SCSS, JavaScript, Node.js, Python, Java, Typescript</td>
+        </tr>
+        <tr>
+          <td>Databases</td>
+          <td>SQL, Firebase, MongoDB Atlas</td>
+        </tr>
+        <tr>
+          <td>Tools</td>
+          <td>Jupyter Notebook, Tableau</td>
+        </tr>
+        <tr>
+          <td>Monitoring Tools</td>
+          <td>Splunk, Honeycomb</td>
+        </tr>
+        <tr>
+          <td>Cloud Computing</td>
+          <td>AWS, Google Cloud</td>
+        </tr>
+        <tr>
+          <td>AI Tools</td>
+          <td>Github Copilot, Amazon Q, Cursor</td>
+        </tr>
+        <tr>
+          <td>UX Collaboration & Prototyping</td>
+          <td>Wireframing/Prototyping (Figma, MockFlow), Responsive Design, Accessibility (WCAG)</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>Jenkins, ArgoCD, Github Actions, Bamboo, Git, Bitbucket, Java Debugger, Chrome Dev Tools</td>
+        </tr>
+      </table>
     ),
   },
   {
