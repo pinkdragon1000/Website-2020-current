@@ -17,8 +17,8 @@ export default function PhotoCard(props) {
     .image-fit{
         border-radius: 4.375rem;
         object-fit: cover; 
-        width:300px; 
-        height:300px; 
+        width: 18.75rem; 
+        height: 18.75rem; 
     }
 
     .spacer {

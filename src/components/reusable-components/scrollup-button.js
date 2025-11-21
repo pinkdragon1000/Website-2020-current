@@ -35,6 +35,9 @@ export default function ScrollUpButton(props) {
     border: none;
     z-index: 1000;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }`;
 
   window.addEventListener("scroll", toggleVisible);
@@ -43,13 +46,13 @@ export default function ScrollUpButton(props) {
     <button
       onClick={scrollToTop}
       className="btn-scrollup"
-      style={{ display: visible ? "inline" : "none" }}
+      style={{ display: visible ? "flex" : "none" }}
     >
       <Icon
         name="arrow-up"
         fill="var(--white)"
-        width={props.width || 30}
-        height={props.height || 30}
+        width={props.width || 1.875}
+        height={props.height || 1.875}
       />
     </button>
   );

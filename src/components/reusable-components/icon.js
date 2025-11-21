@@ -78,23 +78,34 @@ export default function Icon(props) {
 
   const styles = `
     svg {
-      padding: 0.6rem;
+      display: block;
+    }
+    
+    .icon-wrapper {
+      width: ${props.width || 1.5}rem;
+      height: ${props.height || 1.5}rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     `;
 
   return Style.it(
     `${styles}`,
-    <svg
-      width={props.width || 24}
-      height={props.height || 24}
-      fill={props.fill || "none"}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox={getViewBox()}
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-    >
-      <title>{props.title}</title>
+    <div className="icon-wrapper">
+      <svg
+        width="100%"
+        height="100%"
+        fill={props.fill || "none"}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox={getViewBox()}
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <title>{props.title}</title>
 
-      {getPath()}
-    </svg>
+        {getPath()}
+      </svg>
+    </div>
   );
 }

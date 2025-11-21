@@ -5,7 +5,7 @@ export default function Header(props) {
   const styles = `
     .gradient-bg {
       padding: 2rem 1.5rem;
-      min-width: 618px;
+      min-width: 38.625rem;
       background-image: radial-gradient(circle at 38% 55%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 23%,transparent 23%, transparent 78%,transparent 78%, transparent 100%),radial-gradient(circle at 34% 85%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 7%,transparent 7%, transparent 41%,transparent 41%, transparent 100%),radial-gradient(circle at 0% 36%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 2%,transparent 2%, transparent 59%,transparent 59%, transparent 100%),radial-gradient(circle at 42% 37%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 6%,transparent 6%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 48% 39%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 8%,transparent 8%, transparent 90%,transparent 90%, transparent 100%), var(--gradient);
       display: flex;
       flex-direction: column;
@@ -20,13 +20,13 @@ export default function Header(props) {
     }
 
     .header-img {
-      width: 120px;
-      height: 120px;
+      width: 7.5rem;
+      height: 7.5rem;
       border-radius: 50%;
-      border: 4px solid rgba(255, 255, 255, 0.2);
+      border: 0.25rem solid rgba(255, 255, 255, 0.2);
       box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.3),
-        0 0 0 1px rgba(255, 255, 255, 0.1);
+        0 0.5rem 2rem rgba(0, 0, 0, 0.3),
+        0 0 0 0.0625rem rgba(255, 255, 255, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       object-fit: cover;
     }
@@ -40,7 +40,7 @@ export default function Header(props) {
     .header {
       color: var(--white);
       font-size: 3rem;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      text-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3);
       margin: 0;
       line-height: 1.1;
     }
@@ -48,9 +48,9 @@ export default function Header(props) {
     .subheader {
       font-weight: 400;
       color: var(--white);
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+      text-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.2);
       margin: 0;
-      max-width: 600px;
+      max-width: 37.5rem;
     }
   `;
   return Style.it(

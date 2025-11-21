@@ -14,8 +14,8 @@ export default function TestimonialContent() {
               <SocialBox
                 fill="var(--dark-purple)"
                 options={option[0].socialBoxOptions}
-                width={20}
-                height={20}
+                width={1.25}
+                height={1.25}
                 className="social-box"
               />
             }
@@ -28,8 +28,8 @@ export default function TestimonialContent() {
                 <SocialBox
                   fill="var(--dark-purple)"
                   options={option[1].socialBoxOptions}
-                  width={20}
-                  height={20}
+                  width={1.25}
+                  height={1.25}
                   className="social-box"
                 />
               }
