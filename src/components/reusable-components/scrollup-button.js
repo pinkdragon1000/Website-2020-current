@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Style from "style-it";
-import { Icon } from "../export-components";
+import { Icon, CircularButton } from "../export-components";
 
 export default function ScrollUpButton(props) {
   const [visible, setVisible] = useState(false);
@@ -22,31 +22,32 @@ export default function ScrollUpButton(props) {
   };
 
   const styles = `
-  .btn-scrollup {
-    position: fixed;
-    width: 5.75rem;
-    height: 5.75rem;
-    bottom: 1.75rem;
-    right: 2.75rem;
-    min-width: 0rem;
-    border-radius: 3.125rem;
-    background: var(--gradient);
-    box-shadow: 0.125rem 0.125rem 0.1875rem var(--med-grey);
-    border: none;
-    z-index: 1000;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}`;
+    .scrollup-button {
+      position: fixed;
+      bottom: 1.75rem;
+      right: 2.75rem;
+      display: flex;
+    }
+
+    .scrollup-button.scrollup-button-hidden {
+      display: none;
+    }
+  `;
 
   window.addEventListener("scroll", toggleVisible);
+  
   return Style.it(
     `${styles}`,
-    <button
+    <CircularButton
       onClick={scrollToTop}
-      className="btn-scrollup"
-      style={{ display: visible ? "flex" : "none" }}
+      size={4.75}
+      background="var(--gradient)"
+      hoverBackground="var(--gradient)"
+      color="var(--white)"
+      boxShadow="0.125rem 0.125rem 0.1875rem var(--med-grey)"
+      zIndex={1000}
+      ariaLabel="Scroll to top"
+      className={`scrollup-button ${!visible ? 'scrollup-button-hidden' : ''}`}
     >
       <Icon
         name="arrow-up"
@@ -54,6 +55,6 @@ export default function ScrollUpButton(props) {
         width={props.width || 1.875}
         height={props.height || 1.875}
       />
-    </button>
+    </CircularButton>
   );
 }

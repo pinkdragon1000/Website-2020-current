@@ -11,6 +11,15 @@ export default function SocialBox(props) {
       gap: 1.5rem;
       margin-top: 0.8rem;
     }
+
+    .social-box-container a {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    .social-box-container a:hover {
+      transform: scale(1.1);
+    }
   `;
 
   return Style.it(

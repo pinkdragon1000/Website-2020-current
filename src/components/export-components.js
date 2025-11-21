@@ -10,8 +10,11 @@ export { default as ExperienceBox } from "./reusable-components/experience-box";
 export { default as CardSubcontent } from "./reusable-components/card-subcontent";
 export { default as ProjectCard } from "./reusable-components/project-card";
 export { default as PhotoCard } from "./reusable-components/photo-card";
+export { default as PhotoGalleryModal } from "./reusable-components/photo-gallery-modal";
 export { default as ScrollUpButton } from "./reusable-components/scrollup-button";
 export { default as EducationCard } from "./reusable-components/education-card";
+export { default as CircularButton } from "./reusable-components/circular-button";
+export { default as Table } from "./reusable-components/table";
 //Page Content
 export { default as WelcomeContent } from "./page-content/welcome-content";
 export { default as ExperienceContent } from "./page-content/experience-content";

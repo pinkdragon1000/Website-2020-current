@@ -38,7 +38,7 @@ export default function EducationCard(props) {
     .year {
       color: var(--dark-grey);
       font-weight: 400;
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 0.3rem 0;
     }
   `;
