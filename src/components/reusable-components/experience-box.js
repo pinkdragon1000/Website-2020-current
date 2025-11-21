@@ -11,7 +11,7 @@ export default function ExperienceBox(props) {
     }
 
     .date {
-        color: var(--med-grey);
+        color: var(--dark-grey);
         font-weight: 400;
         font-size: 1.1rem;
     }
