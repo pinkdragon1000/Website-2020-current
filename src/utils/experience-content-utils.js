@@ -46,7 +46,7 @@ export const workExperienceContent = [
   },
   {
     title: "Software Developer II",
-    date: "July 4, 2022 - June 17, 2022",
+    date: "February 4th, 2022 - June 17, 2022",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
     description: <div>Refer to Software Dev I description below.</div>,
