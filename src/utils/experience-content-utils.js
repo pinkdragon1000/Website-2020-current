@@ -26,7 +26,7 @@ export const workExperienceContent = [
     link: "https://www.boozallen.com/",
     linktext: "Booz Allen Hamilton",
     logo: "https://specials-images.forbesimg.com/dam/imageserve/68c2ce4531e774b4ac3928cc/400x0.png?cropX1=0&cropX2=700&cropY1=0&cropY2=700",
-    description: <div></div>,
+    description: null,
   },
   {
     title: "Software Engineer, 2 (Staff)",
@@ -48,18 +48,22 @@ export const workExperienceContent = [
   },
   {
     title: "Software Developer II",
-    date: "February 4th, 2022 - June 17, 2022",
+    date: "February 4, 2022 - June 17, 2022",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
     logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGlBCOzS6Gl9g/company-logo_100_100/company-logo_100_100/0/1635426872299/vanguard_logo?e=1765411200&v=beta&t=pJ_2CH-8KmIusOQoC1LqST9Gsu37vgCG-doyVuQMZm4",
-    description: <div><li>Refer to Software Dev I description below.</li></div>,
+    description: (
+      <div>
+        <li>Refer to Software Dev I description below.</li>
+      </div>
+    ),
   },
   {
     title: "Software Developer I",
-    date: "July 13, 2020 - February 4th, 2022",
+    date: "July 13, 2020 - February 4, 2022",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
-    logo: "https://logos-world.net/wp-content/uploads/2021/02/Vanguard-Logo.png",
+    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGlBCOzS6Gl9g/company-logo_100_100/company-logo_100_100/0/1635426872299/vanguard_logo?e=1765411200&v=beta&t=pJ_2CH-8KmIusOQoC1LqST9Gsu37vgCG-doyVuQMZm4",
     description: (
       <div>
         <li>
@@ -174,7 +178,7 @@ export const volunteerExperienceContent = [
     date: "January 22, 2018 to June 17, 2019 (2 school years)",
     link: "http://drexelwics.acm.org/index.html",
     linktext: "Women in Computing Society (WiCS)",
-    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQH6sNXRfgZ7bw/company-logo_200_200/company-logo_200_200/0/1630586996691/drexel_wics_logo?e=1765411200&v=beta&t=1S-tFDwrDDoCRYwosIZW_K04rKby52f8MGs5m8zvm50",
+    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQH6sNXRfgZ7bw/company-logo_100_100/company-logo_100_100/0/1630586996691/drexel_wics_logo?e=1765411200&v=beta&t=_k2BhfzkWJmK8UYPKMMc9NzLbjRnqiAXnLIf65LVjRI",
     description: (
       <div>
         <li>

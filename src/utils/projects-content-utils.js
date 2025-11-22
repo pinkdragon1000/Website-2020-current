@@ -1,6 +1,7 @@
 //This file contains the content used for projects.  Rendered in projects-content.js
 
 import React from "react";
+import { groupArrayBySize } from "./array-utils";
 
 export const projectsContent = [
   {
@@ -93,7 +94,4 @@ export const projectsContent = [
 ];
 
 //Groups projects into arrays of two to make it easier to put two projects on each row.
-export var projectGroup = [];
-var size = 2;
-while (projectsContent.length > 0)
-  projectGroup.push(projectsContent.splice(0, size));
+export const projectGroup = groupArrayBySize(projectsContent, 2);

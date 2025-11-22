@@ -8,8 +8,7 @@ export default function EducationCard(props) {
       display: flex;
       width: 400rem;
       margin: 1rem 0;
-      align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
     .school {
@@ -33,7 +32,7 @@ export default function EducationCard(props) {
 
     return Style.it(
         `${styles}`,
-        <WhiteCard className="education-card">
+        <WhiteCard className="education-card flex-center-no-justify">
             <div className="company-logo">
                 <img
                     src={props.logo}

@@ -1,35 +1,23 @@
 import React from "react";
 import Style from "style-it";
-import { WhiteCard } from "../export-components";
+import { WhiteCard, Stack } from "../export-components";
 
 export default function ExperienceBox(props) {
   const styles = `
     .experience-box {
-      margin-bottom: 1.5rem;
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
       position: relative;
     }
 
     .experience-icon-container {
-      flex-shrink: 0;
-      display: flex;
       flex-direction: column;
-      align-items: center;
       position: relative;
     }
 
     .experience-content {
       flex: 1;
       min-width: 0;
-    }
-
-    .experience-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-      margin-bottom: 0.25rem;
     }
 
     .experience-link {
@@ -60,32 +48,21 @@ export default function ExperienceBox(props) {
       margin-bottom: 0.5rem;
       font-size: 1rem;
     }
-
-    .role-entry {
-      margin-bottom: 1.5rem;
-    }
-
-    .role-entry:last-child {
-      margin-bottom: 0;
-    }
     `;
-  
+
   return Style.it(
     `${styles}`,
     <WhiteCard className="experience-box">
-      <div className="experience-icon-container">
+      <div className="experience-icon-container flex-center-no-justify flex-shrink-0">
         <div className="company-logo">
           {props.logo ? (
             <img src={props.logo} alt={props.linktext} />
           ) : (
-            <div style={{ 
-              width: '100%', 
-              height: '100%', 
-              background: 'var(--light-purple)', 
+            <div className="flex-center-no-justify" style={{
+              width: '100%',
+              height: '100%',
+              background: 'var(--light-purple)',
               color: 'var(--white)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
               fontWeight: 'bold',
               fontSize: '1.5rem'
             }}>
@@ -95,18 +72,16 @@ export default function ExperienceBox(props) {
         </div>
       </div>
       <div className="experience-content">
-        <div className="experience-header">
-          <div>
-            {props.link && <a href={props.link} className="experience-link">{props.linktext}</a>}
-          </div>
-        </div>
-        {props.roles.map((role, index) => (
-          <div key={index} className="role-entry">
-            <h3>{role.title}</h3>
-            <p className="experience-date">{role.date}</p>
-            <ul className="experience-details">{role.description}</ul>
-          </div>
-        ))}
+        {props.link && <a href={props.link} className="experience-link">{props.linktext}</a>}
+        <Stack spacing="large">
+          {props.roles.map((role, index) => (
+            <div key={index}>
+              <h3>{role.title}</h3>
+              <p className="experience-date">{role.date}</p>
+              <ul className="experience-details">{role.description}</ul>
+            </div>
+          ))}
+        </Stack>
       </div>
     </WhiteCard>
   );

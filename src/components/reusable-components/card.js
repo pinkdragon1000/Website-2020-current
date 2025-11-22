@@ -13,7 +13,7 @@ export default function Card(props) {
     `;
   return Style.it(
     `${styles}`,
-    <div className="column center-container">
+    <div className="column flex-center">
       <div className="content-text">{props.children}</div>
     </div>
   );

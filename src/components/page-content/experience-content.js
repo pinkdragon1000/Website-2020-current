@@ -1,6 +1,7 @@
 import React from "react";
 import Style from "style-it";
-import { CardSubcontent, ExperienceBox, EducationCard } from "../export-components";
+import { CardSubcontent, ExperienceBox, EducationCard, Stack } from "../export-components";
+import { groupByConsecutiveProperty } from "../../utils/array-utils";
 
 import {
   educationContent,
@@ -12,9 +13,7 @@ import {
 export default function ExperienceContent() {
   const styles = `
     .education-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 2rem;
+      gap: 1.5rem;
     }
   `;
 
@@ -22,7 +21,7 @@ export default function ExperienceContent() {
     `${styles}`,
     <div>
       <CardSubcontent header="Education" />
-      <div className="education-row">
+      <div className="education-row space-between">
         {educationContent.map((option, i) => (
           <EducationCard
             key={i}
@@ -35,25 +34,8 @@ export default function ExperienceContent() {
       </div>
 
       <CardSubcontent header={experienceHeader[0]} />
-      {(() => {
-        const grouped = [];
-        let currentGroup = [];
-        
-        workExperienceContent.forEach((option, i) => {
-          if (i === 0) {
-            currentGroup.push(option);
-          } else if (option.linktext === workExperienceContent[i - 1].linktext) {
-            currentGroup.push(option);
-          } else {
-            grouped.push([...currentGroup]);
-            currentGroup = [option];
-          }
-        });
-        if (currentGroup.length > 0) {
-          grouped.push(currentGroup);
-        }
-        
-        return grouped.map((group, groupIndex) => (
+      <Stack spacing="large">
+        {groupByConsecutiveProperty(workExperienceContent, "linktext").map((group, groupIndex) => (
           <ExperienceBox
             key={groupIndex}
             roles={group}
@@ -61,29 +43,12 @@ export default function ExperienceContent() {
             link={group[0].link}
             logo={group[0].logo}
           />
-        ));
-      })()}
+        ))}
+      </Stack>
 
       <CardSubcontent header={experienceHeader[1]} />
-      {(() => {
-        const grouped = [];
-        let currentGroup = [];
-        
-        volunteerExperienceContent.forEach((option, i) => {
-          if (i === 0) {
-            currentGroup.push(option);
-          } else if (option.linktext === volunteerExperienceContent[i - 1].linktext) {
-            currentGroup.push(option);
-          } else {
-            grouped.push([...currentGroup]);
-            currentGroup = [option];
-          }
-        });
-        if (currentGroup.length > 0) {
-          grouped.push(currentGroup);
-        }
-        
-        return grouped.map((group, groupIndex) => (
+      <Stack spacing="large">
+        {groupByConsecutiveProperty(volunteerExperienceContent, "linktext").map((group, groupIndex) => (
           <ExperienceBox
             key={groupIndex}
             roles={group}
@@ -91,8 +56,8 @@ export default function ExperienceContent() {
             link={group[0].link}
             logo={group[0].logo}
           />
-        ));
-      })()}
+        ))}
+      </Stack>
     </div>
   );
 }

@@ -13,11 +13,6 @@ export default function ProjectCard(props) {
       height: 13rem;
       overflow: auto;
     }
-
-    .spacer {
-      position: absolute;
-      bottom: 0rem;
-    }
     `;
   return Style.it(
     `${styles}`,
@@ -33,7 +28,6 @@ export default function ProjectCard(props) {
     >
       <h3>{props.title}</h3>
       <div className="handleOverflow">{props.description}</div>
-      <div className="spacer" />
       {props.socialbox}
     </WhiteCard>
   );

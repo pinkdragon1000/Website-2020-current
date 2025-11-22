@@ -33,30 +33,32 @@ export default function PhotosContent() {
 
   return (
     <div>
-      {photoGroup.map((option, i) => {
-        const baseIndex = photoGroup.slice(0, i).reduce((acc, group) => acc + group.filter(Boolean).length, 0);
-        
-        return (
-          <div className="row" key={i} style={{ marginBottom: '1.5rem' }}>
-            <PhotoCard 
-              imagesrc={require("../../images/" + option[0])} 
-              onClick={() => openGallery(baseIndex)}
-            />
-            {option[1] && (
+      <div className="column">
+        {photoGroup.map((option, i) => {
+          const baseIndex = photoGroup.slice(0, i).reduce((acc, group) => acc + group.filter(Boolean).length, 0);
+          
+          return (
+            <div className="row" key={i}>
               <PhotoCard 
-                imagesrc={require("../../images/" + option[1])} 
-                onClick={() => openGallery(baseIndex + 1)}
+                imagesrc={require("../../images/" + option[0])} 
+                onClick={() => openGallery(baseIndex)}
               />
-            )}
-            {option[2] && (
-              <PhotoCard 
-                imagesrc={require("../../images/" + option[2])} 
-                onClick={() => openGallery(baseIndex + 2)}
-              />
-            )}
-          </div>
-        );
-      })}
+              {option[1] && (
+                <PhotoCard 
+                  imagesrc={require("../../images/" + option[1])} 
+                  onClick={() => openGallery(baseIndex + 1)}
+                />
+              )}
+              {option[2] && (
+                <PhotoCard 
+                  imagesrc={require("../../images/" + option[2])} 
+                  onClick={() => openGallery(baseIndex + 2)}
+                />
+              )}
+            </div>
+          );
+        })}
+      </div>
       <PhotoGalleryModal
         isOpen={isModalOpen}
         currentIndex={currentImageIndex}

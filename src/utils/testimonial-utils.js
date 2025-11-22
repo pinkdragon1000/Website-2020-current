@@ -1,6 +1,7 @@
-//This file contains the content used for projects.  Rendered in projects-content.js
+//This file contains the content used for testimonials.  Rendered in testimonial-content.js
 
 import React from "react";
+import { groupArrayBySize } from "./array-utils";
 
 export const testimonialContent = [
   {
@@ -131,7 +132,4 @@ export const testimonialContent = [
 ];
 
 //Groups testimonials into arrays of two to make it easier to put two projects on each row.
-export var testimonialGroup = [];
-var size = 2;
-while (testimonialContent.length > 0)
-  testimonialGroup.push(testimonialContent.splice(0, size));
+export const testimonialGroup = groupArrayBySize(testimonialContent, 2);

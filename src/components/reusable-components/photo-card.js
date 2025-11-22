@@ -5,9 +5,7 @@ export default function PhotoCard(props) {
   const styles = `
     .photo-card {
         margin: 0;
-        text-align: center;
         padding: 0;
-        position: relative;
         cursor: pointer;
         flex-shrink: 0;
     }
@@ -24,11 +22,6 @@ export default function PhotoCard(props) {
     .photo-card:hover .image-fit {
         transform: scale(1.05);
         box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
-    }
-
-    .spacer {
-      position: absolute;
-      bottom: 0rem;
     }
     `;
   return Style.it(

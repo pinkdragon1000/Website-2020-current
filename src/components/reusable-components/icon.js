@@ -84,15 +84,12 @@ export default function Icon(props) {
     .icon-wrapper {
       width: ${props.width || 1.5}rem;
       height: ${props.height || 1.5}rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     `;
 
   return Style.it(
     `${styles}`,
-    <div className="icon-wrapper">
+    <div className="icon-wrapper flex-center">
       <svg
         width="100%"
         height="100%"

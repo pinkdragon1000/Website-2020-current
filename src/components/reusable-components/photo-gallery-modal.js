@@ -81,9 +81,6 @@ export default function PhotoGalleryModal(props) {
       right: 0;
       bottom: 0;
       background: rgba(0, 0, 0, 0.9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       z-index: 10000;
       padding: 1rem;
       gap: 2rem;
@@ -93,10 +90,6 @@ export default function PhotoGalleryModal(props) {
       position: relative;
       width: min(60vw, 700px);
       height: min(70vh, 525px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
     }
 
     .gallery-image {
@@ -147,7 +140,7 @@ export default function PhotoGalleryModal(props) {
 
   return Style.it(
     `${styles}`,
-    <div className="gallery-overlay">
+    <div className="gallery-overlay flex-center">
       <CircularButton 
         buttonRef={closeButtonRef}
         className="close-button" 
@@ -165,7 +158,7 @@ export default function PhotoGalleryModal(props) {
       >
         ‹
       </CircularButton>
-      <div className="gallery-container">
+      <div className="gallery-container flex-center flex-shrink-0">
         <img
           className="gallery-image"
           src={photos[currentIndex]}

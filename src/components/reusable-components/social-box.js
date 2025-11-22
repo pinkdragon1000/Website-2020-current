@@ -5,9 +5,6 @@ import { Icon } from "../export-components";
 export default function SocialBox(props) {
   const styles = `
     .social-box-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       gap: 1.5rem;
       margin-top: 0.8rem;
     }
@@ -24,7 +21,7 @@ export default function SocialBox(props) {
 
   return Style.it(
     `${styles}`,
-    <div className="social-box-container">
+    <div className="social-box-container flex-center">
       {props.options.map((option, i) => (
         <a href={option.url} target="blank_" key={i}>
           <Icon

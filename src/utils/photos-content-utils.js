@@ -1,3 +1,5 @@
+import { groupArrayBySize } from "./array-utils";
+
 const cache = {};
 
 function importAll(r) {
@@ -10,6 +12,4 @@ const images = Object.entries(cache).map((module) =>
   module[0].replace("./", "")
 );
 
-export var photoGroup = [];
-var size = 3;
-while (images.length > 0) photoGroup.push(images.splice(0, size));
+export const photoGroup = groupArrayBySize(images, 3);

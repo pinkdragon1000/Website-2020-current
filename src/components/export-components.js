@@ -16,6 +16,8 @@ export { default as EducationCard } from "./reusable-components/education-card";
 export { default as CircularButton } from "./reusable-components/circular-button";
 export { default as SkillsCard } from "./reusable-components/skills-card";
 export { default as WhiteCard } from "./reusable-components/white-card";
+export { default as Pill } from "./reusable-components/pill";
+export { default as Stack } from "./reusable-components/stack";
 //Page Content
 export { default as WelcomeContent } from "./page-content/welcome-content";
 export { default as ExperienceContent } from "./page-content/experience-content";

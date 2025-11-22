@@ -10,14 +10,10 @@ export default function CircularButton(props) {
       height: ${props.size || 3}rem;
       border-radius: 50%;
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-size: ${props.fontSize || 1.5}rem;
       color: ${props.color || 'var(--brown)'};
       transition: background 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
       z-index: ${props.zIndex || 10000};
-      flex-shrink: 0;
       box-shadow: ${props.boxShadow || '0 0.125rem 0.5rem rgba(0, 0, 0, 0.2)'};
     }
 
@@ -45,7 +41,7 @@ export default function CircularButton(props) {
     `${styles}`,
     <button
       ref={props.buttonRef}
-      className={`circular-button ${props.className || ''}`}
+      className={`circular-button flex-center flex-shrink-0 ${props.className || ''}`}
       onClick={props.onClick}
       disabled={props.disabled}
       aria-label={props.ariaLabel}
