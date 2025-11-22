@@ -4,7 +4,7 @@ import { testimonialGroup } from "../../utils/testimonial-utils";
 
 export default function TestimonialContent() {
   return (
-    <div>
+    <div className="column">
       {testimonialGroup.map((option, i) => (
         <div className="row" key={i + 300}>
           <ProjectCard

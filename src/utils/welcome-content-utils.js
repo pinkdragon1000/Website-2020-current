@@ -1,7 +1,7 @@
 //This file contains the content used for the welcome section of the application.  Rendered in welcome-content.js
 
 import React from "react";
-import { Table } from "../components/export-components";
+import { SkillsCard } from "../components/export-components";
 
 export const welcomeContent = [
   {
@@ -12,25 +12,31 @@ export const welcomeContent = [
   {
     header: "Skills",
     textcontent: (
-      <Table 
-        headers={[
-          { key: "category", label: "Category" },
-          { key: "skills", label: "Skills" }
-        ]}
-        rows={[
-          { category: "Frameworks/Libraries", skills: "React.js, Spring Framework, Flask, Next.js" },
-          { category: "State Management", skills: "Redux" },
-          { category: "JS Build Systems", skills: "Webpack, Vite" },
-          { category: "Languages", skills: "HTML/CSS, SCSS, JavaScript, Node.js, Python, Java, Typescript" },
-          { category: "Databases", skills: "SQL, Firebase, MongoDB Atlas" },
-          { category: "Tools", skills: "Jupyter Notebook, Tableau" },
-          { category: "Monitoring Tools", skills: "Splunk, Honeycomb" },
-          { category: "Cloud Computing", skills: "AWS, Google Cloud" },
-          { category: "AI Tools", skills: "Github Copilot, Amazon Q, Cursor" },
-          { category: "UX Collaboration & Prototyping", skills: "Wireframing/Prototyping (Figma, MockFlow), Responsive Design, Accessibility (WCAG)" },
-          { category: "Other", skills: "Jenkins, ArgoCD, Github Actions, Bamboo, Git, Bitbucket, Java Debugger, Chrome Dev Tools" }
-        ]}
-      />
+      <div className="column">
+        <div className="row">
+          <SkillsCard iconName="layers" category="Frameworks/Libraries" skills="React.js, Spring Framework, Flask, Next.js" />
+          <SkillsCard iconName="layers" category="State Management" skills="Redux" />
+        </div>
+        <div className="row">
+          <SkillsCard iconName="code" category="JS Build Systems" skills="Webpack, Vite" />
+          <SkillsCard iconName="code" category="Languages" skills="HTML/CSS, SCSS, JavaScript, Node.js, Python, Java, Typescript" />
+        </div>
+        <div className="row">
+          <SkillsCard iconName="database" category="Databases" skills="SQL, Firebase, MongoDB Atlas" />
+          <SkillsCard iconName="tool" category="Tools" skills="Jupyter Notebook, Tableau" />
+        </div>
+        <div className="row">
+          <SkillsCard iconName="monitor" category="Monitoring Tools" skills="Splunk, Honeycomb" />
+          <SkillsCard iconName="cloud" category="Cloud Computing" skills="AWS, Google Cloud" />
+        </div>
+        <div className="row">
+          <SkillsCard iconName="sparkles" category="AI Tools" skills="Github Copilot, Amazon Q, Cursor" />
+          <SkillsCard iconName="palette" category="UX Collaboration & Prototyping" skills="Figma, MockFlow, Responsive Design, Accessibility (WCAG)" />
+        </div>
+        <div className="row">
+          <SkillsCard iconName="cog" category="Other" skills="Jenkins, ArgoCD, Github Actions, Bamboo, Git, Bitbucket, Java Debugger, Chrome Dev Tools" />
+        </div>
+      </div>
     ),
   },
   {

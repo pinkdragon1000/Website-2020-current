@@ -7,13 +7,13 @@ export const educationContent = [
     school: "University of Maryland",
     degree: "MBA",
     year: "Class of 2026",
-    logo: "https://umd-brand.transforms.svdcdn.com/production/uploads/images/other-prohibited-testudo-mark.png?w=374&h=400&auto=compress%2Cformat&fit=crop&dm=1614025044&s=5f849d76fe32008055992ca114db14cd",
+    logo: "https://media.licdn.com/dms/image/v2/C560BAQHrhLnmmZTGjQ/company-logo_100_100/company-logo_100_100/0/1631303360671?e=1765411200&v=beta&t=1dAvgtHyfbujCWCQRp_4y14eIpCn-d9SpnPAxXedOpQ",
   },
   {
     school: "Drexel University",
     degree: "BS in Data Science, Minor in Computer Science",
     year: "Graduated June 2020",
-    logo: "https://images.seeklogo.com/logo-png/30/1/drexel-university-logo-png_seeklogo-306720.png",
+    logo: "https://media.licdn.com/dms/image/v2/C510BAQEqp_nXWmHi6Q/company-logo_100_100/company-logo_100_100/0/1631320003902?e=1765411200&v=beta&t=Q_Pg89pWZAQk6GacYnjdtwK4BCKufsudr2L0EIhjjpc",
   },
 ];
 
@@ -25,6 +25,7 @@ export const workExperienceContent = [
     date: "Dec 15, 2024 - Present",
     link: "https://www.boozallen.com/",
     linktext: "Booz Allen Hamilton",
+    logo: "https://specials-images.forbesimg.com/dam/imageserve/68c2ce4531e774b4ac3928cc/400x0.png?cropX1=0&cropX2=700&cropY1=0&cropY2=700",
     description: <div></div>,
   },
   {
@@ -32,6 +33,7 @@ export const workExperienceContent = [
     date: "July 6, 2022 - Dec 15, 2024",
     link: "https://www.boozallen.com/",
     linktext: "Booz Allen Hamilton",
+    logo: "https://specials-images.forbesimg.com/dam/imageserve/68c2ce4531e774b4ac3928cc/400x0.png?cropX1=0&cropX2=700&cropY1=0&cropY2=700",
     description: (
       <div>
         <li>Developed frontend for the Recreation.gov customer and administrative applications using React and Redux. Recreation.gov is an e-commerce web application
@@ -49,13 +51,15 @@ export const workExperienceContent = [
     date: "February 4th, 2022 - June 17, 2022",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
-    description: <div>Refer to Software Dev I description below.</div>,
+    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGlBCOzS6Gl9g/company-logo_100_100/company-logo_100_100/0/1635426872299/vanguard_logo?e=1765411200&v=beta&t=pJ_2CH-8KmIusOQoC1LqST9Gsu37vgCG-doyVuQMZm4",
+    description: <div><li>Refer to Software Dev I description below.</li></div>,
   },
   {
     title: "Software Developer I",
     date: "July 13, 2020 - February 4th, 2022",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
+    logo: "https://logos-world.net/wp-content/uploads/2021/02/Vanguard-Logo.png",
     description: (
       <div>
         <li>
@@ -86,6 +90,7 @@ export const workExperienceContent = [
     date: "April 6, 2020 - June 11, 2020",
     link: "https://drexel.edu/cci/",
     linktext: "Drexel University College of Computing and Informatics",
+    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFqvnZteBtYDA/company-logo_100_100/company-logo_100_100/0/1721842454220/drexel_university_college_of_computing_informatics_logo?e=1765411200&v=beta&t=MHl81owJa2_PRm1HJtDTET_ZbD9eJ0FFi3eLOkLyI5w",
     description: (
       <div>
         <li>
@@ -103,6 +108,7 @@ export const workExperienceContent = [
     date: "September 24, 2018 - March 20, 2019",
     link: "https://www.elapservices.com/",
     linktext: "ELAP Services",
+    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHJDXSlq8T81A/company-logo_200_200/company-logo_200_200/0/1642561819392/imagine_360_health_logo?e=1765411200&v=beta&t=b_6cnvfRP3AwfpFxIydJ7IoibAU-kc_NCARijzIMwDY",
     description: (
       <div>
         <li>Developed a machine learning model to predict customer churn.</li>
@@ -124,6 +130,7 @@ export const workExperienceContent = [
     date: "June 19, 2017 - August 25, 2017",
     link: "https://corporate.comcast.com/",
     linktext: "Comcast",
+    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQEZqcKKlfKeXQ/company-logo_100_100/company-logo_100_100/0/1710183636200/comcast_logo?e=1765411200&v=beta&t=j4OoExj542yLhXwRyEKYraUq11Z8WDtDqA1uTUYwuPI",
     description: (
       <div>
         <li>
@@ -145,6 +152,7 @@ export const volunteerExperienceContent = [
     date: "June 18, 2019 - June 11, 2020 (1 school year)",
     link: "http://drexelwics.acm.org/index.html",
     linktext: "Women in Computing Society (WiCS)",
+    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQH6sNXRfgZ7bw/company-logo_100_100/company-logo_100_100/0/1630586996691/drexel_wics_logo?e=1765411200&v=beta&t=_k2BhfzkWJmK8UYPKMMc9NzLbjRnqiAXnLIf65LVjRI",
     description: (
       <div>
         <li>
@@ -166,6 +174,7 @@ export const volunteerExperienceContent = [
     date: "January 22, 2018 to June 17, 2019 (2 school years)",
     link: "http://drexelwics.acm.org/index.html",
     linktext: "Women in Computing Society (WiCS)",
+    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQH6sNXRfgZ7bw/company-logo_200_200/company-logo_200_200/0/1630586996691/drexel_wics_logo?e=1765411200&v=beta&t=1S-tFDwrDDoCRYwosIZW_K04rKby52f8MGs5m8zvm50",
     description: (
       <div>
         <li>

@@ -5,7 +5,7 @@
   --light-purple: #7935c9;
   --brown: #2f2d01;
   --white: #ffffff;
-  --grey: #f1efee;
+  --grey: #f4f6fa;
   --med-grey: #bbbbbb;
   --dark-grey: #808080;
 }
@@ -28,7 +28,7 @@ p {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 0;
 }
@@ -40,12 +40,31 @@ h3 {
 .column {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 1.5rem;
+}
+
+.company-logo {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 iframe {

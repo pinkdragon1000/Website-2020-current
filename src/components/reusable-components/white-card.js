@@ -1,0 +1,22 @@
+import React from "react";
+import Style from "style-it";
+
+export default function WhiteCard({ children, className = "", style = {} }) {
+  const styles = `
+    .white-card {
+      background: var(--white);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+      flex: 1;
+      min-width: 0;
+    }
+  `;
+
+  return Style.it(
+    `${styles}`,
+    <div className={`white-card ${className}`} style={style}>
+      {children}
+    </div>
+  );
+}

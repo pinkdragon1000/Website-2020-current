@@ -4,7 +4,7 @@ import { projectGroup } from "../../utils/projects-content-utils";
 
 export default function ProjectsContent() {
   return (
-    <div>
+    <div className="column">
       {projectGroup.map((option, i) => (
         <div className="row" key={i + 200}>
           <ProjectCard

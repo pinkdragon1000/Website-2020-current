@@ -14,7 +14,8 @@ export { default as PhotoGalleryModal } from "./reusable-components/photo-galler
 export { default as ScrollUpButton } from "./reusable-components/scrollup-button";
 export { default as EducationCard } from "./reusable-components/education-card";
 export { default as CircularButton } from "./reusable-components/circular-button";
-export { default as Table } from "./reusable-components/table";
+export { default as SkillsCard } from "./reusable-components/skills-card";
+export { default as WhiteCard } from "./reusable-components/white-card";
 //Page Content
 export { default as WelcomeContent } from "./page-content/welcome-content";
 export { default as ExperienceContent } from "./page-content/experience-content";

@@ -1,20 +1,9 @@
 import React from "react";
 import Style from "style-it";
+import { WhiteCard } from "../export-components";
 
 export default function ProjectCard(props) {
   const styles = `
-    .project-card {
-        width: 40rem;
-        min-height: 20rem;
-        background-color: var(--white);
-        border-radius: 4.375rem;
-        margin: 1.5rem;
-        text-align: left;
-        padding: 1.6rem;
-        bottom: 0rem;
-        position: relative;
-    }
-
     .project-card h3 {
         text-align: center;
         padding-bottom: 2rem;
@@ -32,11 +21,20 @@ export default function ProjectCard(props) {
     `;
   return Style.it(
     `${styles}`,
-    <div className="project-card">
+    <WhiteCard 
+      className="project-card" 
+      style={{ 
+        width: '40rem', 
+        minHeight: '20rem', 
+        textAlign: 'left', 
+        padding: '1.6rem',
+        position: 'relative'
+      }}
+    >
       <h3>{props.title}</h3>
       <div className="handleOverflow">{props.description}</div>
       <div className="spacer" />
       {props.socialbox}
-    </div>
+    </WhiteCard>
   );
 }

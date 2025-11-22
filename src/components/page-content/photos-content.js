@@ -37,7 +37,7 @@ export default function PhotosContent() {
         const baseIndex = photoGroup.slice(0, i).reduce((acc, group) => acc + group.filter(Boolean).length, 0);
         
         return (
-          <div className="row" key={i}>
+          <div className="row" key={i} style={{ marginBottom: '1.5rem' }}>
             <PhotoCard 
               imagesrc={require("../../images/" + option[0])} 
               onClick={() => openGallery(baseIndex)}

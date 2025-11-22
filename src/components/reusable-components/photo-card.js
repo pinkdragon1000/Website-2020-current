@@ -4,21 +4,20 @@ import Style from "style-it";
 export default function PhotoCard(props) {
   const styles = `
     .photo-card {
-        width: 20rem;
-        min-height: 15rem;
-        margin: 0.02rem;
+        margin: 0;
         text-align: center;
-        padding: 0.5rem;
-        bottom: 0rem;
+        padding: 0;
         position: relative;
         cursor: pointer;
+        flex-shrink: 0;
     }
 
     .image-fit{
-        border-radius: 4.375rem;
+        border-radius: 1rem;
         object-fit: cover; 
         width: 18.75rem; 
         height: 18.75rem;
+        display: block;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
