@@ -7,14 +7,18 @@ export default function PhotoCard(props) {
         margin: 0;
         padding: 0;
         cursor: pointer;
-        flex-shrink: 0;
+        flex: 1;
+        min-width: 0;
+        max-width: 18.75rem;
     }
 
     .image-fit{
         border-radius: 1rem;
         object-fit: cover; 
-        width: 18.75rem; 
-        height: 18.75rem;
+        width: 100%;
+        max-width: 18.75rem; 
+        height: auto;
+        aspect-ratio: 1;
         display: block;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
