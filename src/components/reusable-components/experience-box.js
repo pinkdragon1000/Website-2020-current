@@ -55,20 +55,7 @@ export default function ExperienceBox(props) {
     <WhiteCard className="experience-box">
       <div className="experience-icon-container flex-center-no-justify flex-shrink-0">
         <div className="company-logo">
-          {props.logo ? (
-            <img src={props.logo} alt={props.linktext} />
-          ) : (
-            <div className="flex-center-no-justify" style={{
-              width: '100%',
-              height: '100%',
-              background: 'var(--light-purple)',
-              color: 'var(--white)',
-              fontWeight: 'bold',
-              fontSize: '1.5rem'
-            }}>
-              {props.linktext ? props.linktext.charAt(0).toUpperCase() : '•'}
-            </div>
-          )}
+          <img src={props.logo} alt={props.linktext} />
         </div>
       </div>
       <div className="experience-content">

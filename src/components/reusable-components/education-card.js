@@ -6,9 +6,9 @@ export default function EducationCard(props) {
     const styles = `
     .education-card {
       display: flex;
-      width: 400rem;
       margin: 1rem 0;
       gap: 1.5rem;
+      align-self: stretch;
     }
 
     .school {

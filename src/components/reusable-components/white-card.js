@@ -1,8 +1,8 @@
 import React from "react";
 import Style from "style-it";
 
-export default function WhiteCard({ children, className = "", style = {} }) {
-  const styles = `
+export default function WhiteCard({ children, className = "" }) {
+    const styles = `
     .white-card {
       background: var(--white);
       border-radius: 1rem;
@@ -13,10 +13,10 @@ export default function WhiteCard({ children, className = "", style = {} }) {
     }
   `;
 
-  return Style.it(
-    `${styles}`,
-    <div className={`white-card ${className}`} style={style}>
-      {children}
-    </div>
-  );
+    return Style.it(
+        `${styles}`,
+        <div className={`white-card ${className}`}>
+            {children}
+        </div>
+    );
 }
