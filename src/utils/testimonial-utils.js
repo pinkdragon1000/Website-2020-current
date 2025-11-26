@@ -8,7 +8,7 @@ export const testimonialContent = [
     title: "Nhi Lam - Vanguard",
     description: (
       <div>
-        "I have a pleasure of working with Sita when she joined Vanguard as a
+        I have a pleasure of working with Sita when she joined Vanguard as a
         developer on my team. I was particularly impressed by Sita's ability to
         dive in any tasks and juggle between many systems/ technology and
         complete her tasks with quality while demonstrating a thorough attention
@@ -19,7 +19,7 @@ export const testimonialContent = [
         I trust that she will always put in enough research and effort to get it
         done with the highest quality. Sita would be an asset to any company or
         team that she joined. I've loved my experience working with Sita, and I
-        know that anyone looking to hire or work with her will, too"
+        know that anyone looking to hire or work with her will, too
       </div>
     ),
     socialBoxOptions: [
@@ -33,7 +33,7 @@ export const testimonialContent = [
     title: "Matt Holtman - ELAP Services",
     description: (
       <div>
-        "To Whom It May Concern: <br />
+        To Whom It May Concern: <br />
         Sita Robinson served ELAP Services as a Data Science Intern from
         September 2018 through March 2019. Done in collaboration with Drexel
         University's Co-op program, the Data Science Internship is part of
@@ -62,7 +62,7 @@ export const testimonialContent = [
         admirable eagerness to learn and contribute. She demonstrated
         outstanding communication and leadership characteristics, and we very
         much enjoyed having her on the team. We thank her for her contributions
-        to ELAP's success."
+        to ELAP's success.
       </div>
     ),
     socialBoxOptions: [
@@ -73,7 +73,7 @@ export const testimonialContent = [
     title: "Steve Tartamella - Comcast",
     description: (
       <div>
-        "I had the pleasure of having Sita join my Engineering team as a
+        I had the pleasure of having Sita join my Engineering team as a
         software development engineer for a ten week internship at Comcast in
         the summer of 2017. Sita's performance during this ten week period
         exceeded my expectations. Although Sita did not have any experience with
@@ -87,7 +87,7 @@ export const testimonialContent = [
         forward to Sita having success in the future as a software development
         engineer as she will be a great asset to any company and team. I highly
         recommend Sita Robinson and would certainly hire her upon graduating
-        from college."
+        from college.
       </div>
     ),
     socialBoxOptions: [
@@ -101,7 +101,7 @@ export const testimonialContent = [
     title: "Dan Grady - Comcast",
     description: (
       <div>
-        "To whom it may concern, <br />I had the pleasure of being a mentor to
+        To whom it may concern, <br />I had the pleasure of being a mentor to
         Sita Robinson during her internship at Comcast. Sita experienced Comcast
         Software life cycle and Agile development work flow. Together with my
         manager, we supervised Sita, during a ten-week internship. During her
@@ -119,7 +119,7 @@ export const testimonialContent = [
         Comcast will be lucky enough to hire her after she completes her
         education, but if you happen to be looking for a developer or any other
         position that Sita is applying to, you would make a great decision
-        choosing her as I would fully endorse the hiring of Sita Robinson."
+        choosing her as I would fully endorse the hiring of Sita Robinson.
       </div>
     ),
     socialBoxOptions: [

@@ -71,6 +71,11 @@ export default function Icon(props) {
           />
         );
 
+      case "quote":
+        return (
+          <path d="M18 7h-3l-2 4v6h6v-6h-3zm-8 0H7L5 11v6h6v-6h-3z" {...props} />
+        )
+
       default:
         return <path />;
     }

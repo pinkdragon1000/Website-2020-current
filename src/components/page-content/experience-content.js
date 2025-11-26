@@ -42,6 +42,7 @@ export default function ExperienceContent() {
             linktext={group[0].linktext}
             link={group[0].link}
             logo={group[0].logo}
+            showDuration={true}
           />
         ))}
       </Stack>
@@ -55,6 +56,7 @@ export default function ExperienceContent() {
             linktext={group[0].linktext}
             link={group[0].link}
             logo={group[0].logo}
+            showDuration={false}
           />
         ))}
       </Stack>

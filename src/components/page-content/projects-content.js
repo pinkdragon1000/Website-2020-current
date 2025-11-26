@@ -10,6 +10,7 @@ export default function ProjectsContent() {
           <ProjectCard
             title={option[0].title}
             description={option[0].description}
+            image={option[0].image}
             socialbox={
               <SocialBox
                 fill="var(--dark-purple)"
@@ -24,6 +25,7 @@ export default function ProjectsContent() {
             <ProjectCard
               title={option[1].title}
               description={option[1].description}
+              image={option[1].image}
               socialbox={
                 <SocialBox
                   fill="var(--dark-purple)"

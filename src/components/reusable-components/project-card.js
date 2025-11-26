@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "style-it";
-import { WhiteCard } from "../export-components";
+import { Icon, WhiteCard } from "../export-components";
 
 export default function ProjectCard(props) {
   const styles = `
@@ -17,9 +17,15 @@ export default function ProjectCard(props) {
         position: relative
     }
 
+    .project-image {
+        padding-top: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
     .handleOverflow {
-      height: 13rem;
-      overflow: auto;
+        height: ${props.image ? '27rem' : '20rem'};
+        overflow: auto;
     }
     `;
   return Style.it(
@@ -27,8 +33,21 @@ export default function ProjectCard(props) {
     <WhiteCard
       className="project-card"
     >
+      {props.showQuote && (
+        <Icon name="quote" fill="var(--dark-purple)" width="3" height="3" opacity="0.3" />
+      )}
       <h3>{props.title}</h3>
-      <div className="handleOverflow">{props.description}</div>
+      <div className="handleOverflow">{props.description}
+
+        {props.image && (
+          <img
+            src={props.image}
+            alt={props.title}
+            className="project-image"
+          />
+        )}
+      </div>
+
       {props.socialbox}
     </WhiteCard>
   );

@@ -10,6 +10,7 @@ export default function TestimonialContent() {
           <ProjectCard
             title={option[0].title}
             description={option[0].description}
+            showQuote={true}
             socialbox={
               <SocialBox
                 fill="var(--dark-purple)"
@@ -24,6 +25,7 @@ export default function TestimonialContent() {
             <ProjectCard
               title={option[1].title}
               description={option[1].description}
+              showQuote={true}
               socialbox={
                 <SocialBox
                   fill="var(--dark-purple)"

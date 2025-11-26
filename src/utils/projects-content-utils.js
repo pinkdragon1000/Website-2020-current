@@ -2,10 +2,17 @@
 
 import React from "react";
 import { groupArrayBySize } from "./array-utils";
+import FinProj from "../project-images/FinProj.jpg";
+import ToastProj from "../project-images/ToastProj.jpg";
+import ZestyProj from "../project-images/ZestyProj.jpg";
+import ListyProj from "../project-images/ListyProj.jpg";
+import NOVADSProj from "../project-images/NOVADSProj.jpg";
+import BuddyUProj from "../project-images/BuddyUProj.jpg";
 
 export const projectsContent = [
   {
     title: "Fin",
+    image: FinProj,
     description: (
       <div>
         An application used to keep track of deposits and withdraws in an
@@ -20,6 +27,7 @@ export const projectsContent = [
   },
   {
     title: "Toast",
+    image: ToastProj,
     description: (
       <div>
         A financial planning application for financial advisors and their
@@ -34,6 +42,7 @@ export const projectsContent = [
   },
   {
     title: "Zesty",
+    image: ZestyProj,
     description: (
       <div>
         A recipe management and grocery list generator app created using HTML,
@@ -48,6 +57,7 @@ export const projectsContent = [
   },
   {
     title: "Listy",
+    image: ListyProj,
     description: (
       <div>
         A web app that allows people to make their own checklists and share with
@@ -62,6 +72,7 @@ export const projectsContent = [
   },
   {
     title: "NOVA Datascience Signin and Attendee Randomizer",
+    image: NOVADSProj,
     description: (
       <div>
         A web app for the NOVA DataScience Meetup Group that includes a sign-in
@@ -79,6 +90,7 @@ export const projectsContent = [
   },
   {
     title: "BuddyU App",
+    image: BuddyUProj,
     description: (
       <div>
         An android social app for Drexel University students to collaborate on
