@@ -110,8 +110,8 @@ export const workExperienceContent = [
   {
     title: "Data Science Co-op",
     date: "September 24, 2018 - March 20, 2019",
-    link: "https://www.elapservices.com/",
-    linktext: "ELAP Services",
+    link: "https://www.imagine360.com/",
+    linktext: "ELAP Services (now Imagine360)",
     logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHJDXSlq8T81A/company-logo_200_200/company-logo_200_200/0/1642561819392/imagine_360_health_logo?e=1765411200&v=beta&t=b_6cnvfRP3AwfpFxIydJ7IoibAU-kc_NCARijzIMwDY",
     description: (
       <div>
