@@ -10,11 +10,11 @@ export default function ProjectCard(props) {
     }
 
     .project-card {
-        width: 40rem; 
+        max-width: 40rem; 
         min-height: 20rem;
         text-align: left;
-        padding: 1.6rem
-        position: relative
+        padding: 1.6rem;
+        position: relative;
     }
 
     .project-image {
@@ -27,18 +27,17 @@ export default function ProjectCard(props) {
         height: ${props.image ? '27rem' : '20rem'};
         overflow: auto;
     }
-    `;
+  `;
+  
   return Style.it(
-    `${styles}`,
-    <WhiteCard
-      className="project-card"
-    >
+    styles,
+    <WhiteCard className="project-card">
       {props.showQuote && (
         <Icon name="quote" fill="var(--dark-purple)" width="3" height="3" opacity="0.3" />
       )}
       <h3>{props.title}</h3>
-      <div className="handleOverflow">{props.description}
-
+      <div className="handleOverflow">
+        {props.description}
         {props.image && (
           <img
             src={props.image}
@@ -47,7 +46,6 @@ export default function ProjectCard(props) {
           />
         )}
       </div>
-
       {props.socialbox}
     </WhiteCard>
   );

@@ -14,7 +14,7 @@ export default function SkillsCard({ category, skills, iconName }) {
   `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <WhiteCard>
       <h3>{category}</h3>
       <br/>

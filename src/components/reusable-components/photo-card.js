@@ -9,14 +9,13 @@ export default function PhotoCard(props) {
         cursor: pointer;
         flex: 1;
         min-width: 0;
-        max-width: 18.75rem;
+        max-width: 26.17rem;
     }
 
     .image-fit{
         border-radius: 1rem;
         object-fit: cover; 
         width: 100%;
-        max-width: 18.75rem; 
         height: auto;
         aspect-ratio: 1;
         display: block;
@@ -29,7 +28,7 @@ export default function PhotoCard(props) {
     }
     `;
   return Style.it(
-    `${styles}`,
+    styles,
     <div className="photo-card" onClick={props.onClick}>
       <img className="image-fit" loading="lazy" src={props.imagesrc} alt="" />
     </div>

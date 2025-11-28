@@ -139,7 +139,7 @@ export default function PhotoGalleryModal(props) {
   `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <div className="gallery-overlay flex-center">
       <CircularButton 
         buttonRef={closeButtonRef}

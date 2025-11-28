@@ -20,7 +20,7 @@ export default function SocialBox(props) {
   `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <div className="social-box-container flex-center">
       {props.options.map((option, i) => (
         <a href={option.url} target="blank_" key={i}>

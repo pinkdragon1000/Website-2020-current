@@ -18,7 +18,7 @@ export default function ExperienceContent() {
   `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <div>
       <CardSubcontent header="Education" />
       <div className="education-row space-between">

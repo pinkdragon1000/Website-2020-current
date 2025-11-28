@@ -49,7 +49,7 @@ export default function Header(props) {
     }
   `;
   return Style.it(
-    `${styles}`,
+    styles,
     <div className="gradient-bg flex-center">
       <Stack spacing="large">
         <div className="profile-container flex-center">

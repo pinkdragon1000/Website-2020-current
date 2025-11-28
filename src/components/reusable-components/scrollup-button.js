@@ -37,7 +37,7 @@ export default function ScrollUpButton(props) {
   window.addEventListener("scroll", toggleVisible);
   
   return Style.it(
-    `${styles}`,
+    styles,
     <CircularButton
       onClick={scrollToTop}
       size={4.75}

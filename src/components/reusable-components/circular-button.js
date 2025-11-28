@@ -38,7 +38,7 @@ export default function CircularButton(props) {
   `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <button
       ref={props.buttonRef}
       className={`circular-button flex-center flex-shrink-0 ${props.className || ''}`}

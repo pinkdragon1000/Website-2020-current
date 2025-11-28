@@ -38,7 +38,7 @@ export default function NavbarandContent(props) {
     `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <div className="tabs">
       <ol className="tab-list">
         {props.children.map((child) => {

@@ -9,10 +9,11 @@ export default function Card(props) {
       min-height: 26rem;
       width: 85vw;
       padding: 3rem;
-  }
-    `;
+    }
+  `;
+  
   return Style.it(
-    `${styles}`,
+    styles,
     <div className="column flex-center">
       <div className="content-text">{props.children}</div>
     </div>

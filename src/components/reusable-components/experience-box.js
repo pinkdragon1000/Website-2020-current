@@ -104,7 +104,7 @@ export default function ExperienceBox(props) {
   const totalDuration = calculateTotalDuration(props.roles);
 
   return Style.it(
-    `${styles}`,
+    styles,
     <WhiteCard className="experience-box">
       <div className="experience-icon-container flex-center-no-justify flex-shrink-0">
         <div className="company-logo">

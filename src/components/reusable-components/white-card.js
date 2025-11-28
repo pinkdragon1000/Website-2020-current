@@ -14,7 +14,7 @@ export default function WhiteCard({ children, className = "" }) {
   `;
 
     return Style.it(
-        `${styles}`,
+        styles,
         <div className={`white-card ${className}`}>
             {children}
         </div>

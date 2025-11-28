@@ -2,41 +2,28 @@ import React from "react";
 import { ProjectCard, SocialBox } from "../export-components";
 import { projectGroup } from "../../utils/projects-content-utils";
 
+const socialBoxProps = {
+  fill: "var(--dark-purple)",
+  width: 1.25,
+  height: 1.25,
+  className: "social-box"
+};
+
+const renderProjectCard = (project) => (
+  <ProjectCard
+    title={project.title}
+    description={project.description}
+    image={project.image}
+    socialbox={<SocialBox {...socialBoxProps} options={project.socialBoxOptions} />}
+  />
+);
+
 export default function ProjectsContent() {
   return (
     <div className="column">
       {projectGroup.map((option, i) => (
         <div className="row" key={i + 200}>
-          <ProjectCard
-            title={option[0].title}
-            description={option[0].description}
-            image={option[0].image}
-            socialbox={
-              <SocialBox
-                fill="var(--dark-purple)"
-                options={option[0].socialBoxOptions}
-                width={1.25}
-                height={1.25}
-                className="social-box"
-              />
-            }
-          />
-          {option[1] && (
-            <ProjectCard
-              title={option[1].title}
-              description={option[1].description}
-              image={option[1].image}
-              socialbox={
-                <SocialBox
-                  fill="var(--dark-purple)"
-                  options={option[1].socialBoxOptions}
-                  width={1.25}
-                  height={1.25}
-                  className="social-box"
-                />
-              }
-            />
-          )}
+          {option.map((project, j) => project && <div key={j}>{renderProjectCard(project)}</div>)}
         </div>
       ))}
     </div>

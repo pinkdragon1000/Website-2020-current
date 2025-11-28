@@ -14,7 +14,7 @@ export default function Pill(props) {
   `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <span className={`pill ${props.className || ''}`}>
       {props.children || props.text}
     </span>

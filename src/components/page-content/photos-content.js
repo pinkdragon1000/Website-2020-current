@@ -39,22 +39,13 @@ export default function PhotosContent() {
           
           return (
             <div className="row" key={i}>
-              <PhotoCard 
-                imagesrc={require("../../images/" + option[0])} 
-                onClick={() => openGallery(baseIndex)}
-              />
-              {option[1] && (
-                <PhotoCard 
-                  imagesrc={require("../../images/" + option[1])} 
-                  onClick={() => openGallery(baseIndex + 1)}
+              {option.map((photo, j) => photo && (
+                <PhotoCard
+                  key={j}
+                  imagesrc={require("../../images/" + photo)}
+                  onClick={() => openGallery(baseIndex + j)}
                 />
-              )}
-              {option[2] && (
-                <PhotoCard 
-                  imagesrc={require("../../images/" + option[2])} 
-                  onClick={() => openGallery(baseIndex + 2)}
-                />
-              )}
+              ))}
             </div>
           );
         })}

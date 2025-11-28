@@ -1,24 +1,25 @@
 import React from "react";
 import Style from "style-it";
 
+const SPACING_MAP = {
+  small: "0.5rem",
+  medium: "1rem",
+  large: "1.5rem"
+};
+
 export default function Stack(props) {
-  const getSpacing = () => {
-    if (props.spacing === "small") return "0.5rem";
-    if (props.spacing === "medium") return "1rem";
-    if (props.spacing === "large") return "1.5rem";
-    return props.spacing || "1rem"; // default to medium
-  };
+  const spacing = SPACING_MAP[props.spacing] || SPACING_MAP.medium;
 
   const styles = `
     .stack {
       display: flex;
       flex-direction: column;
-      gap: ${getSpacing()};
+      gap: ${spacing};
     }
   `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <div className={`stack ${props.className || ''}`}>
       {props.children}
     </div>

@@ -93,7 +93,7 @@ export default function Icon(props) {
     `;
 
   return Style.it(
-    `${styles}`,
+    styles,
     <div className="icon-wrapper flex-center">
       <svg
         width="100%"
