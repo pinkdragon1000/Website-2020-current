@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 :root {
   --gradient: linear-gradient(135deg, var(--dark-purple), var(--light-purple));
   --dark-purple: #032b88;
