@@ -16,7 +16,6 @@ export default function EducationCard(props) {
 
     .school {
       font-weight: bold;
-      font-size: 1.5rem;
       margin: 0;
     }
 

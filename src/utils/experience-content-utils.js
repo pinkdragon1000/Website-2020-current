@@ -25,7 +25,7 @@ export const workExperienceContent = [
     date: "Dec 15, 2024 - Present",
     link: "https://www.boozallen.com/",
     linktext: "Booz Allen Hamilton",
-    logo: "https://specials-images.forbesimg.com/dam/imageserve/68c2ce4531e774b4ac3928cc/400x0.png?cropX1=0&cropX2=700&cropY1=0&cropY2=700",
+    logo: "https://specials-images.forbesimg.com/dam/imageserve/68c2ce4531e774b4ac3928cc/100x0.png?cropX1=0&cropX2=700&cropY1=0&cropY2=700",
     description: null,
   },
   {
@@ -112,7 +112,8 @@ export const workExperienceContent = [
     date: "September 24, 2018 - March 20, 2019",
     link: "https://www.imagine360.com/",
     linktext: "ELAP Services (now Imagine360)",
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHJDXSlq8T81A/company-logo_200_200/company-logo_200_200/0/1642561819392/imagine_360_health_logo?e=1765411200&v=beta&t=b_6cnvfRP3AwfpFxIydJ7IoibAU-kc_NCARijzIMwDY",
+    
+    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHJDXSlq8T81A/company-logo_100_100/company-logo_100_100/0/1642561819392/imagine_360_health_logo?e=1766016000&v=beta&t=KiBAp0_RaqYAFSA7QHU7qkCzC69vunDlpNfV8uuc54Y",
     description: (
       <div>
         <li>Developed a machine learning model to predict customer churn.</li>

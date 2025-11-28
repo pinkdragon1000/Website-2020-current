@@ -4,9 +4,9 @@ import { Icon, WhiteCard } from "../export-components";
 
 export default function ProjectCard(props) {
   const styles = `
-    .project-card h3 {
+    .project-card h2 {
         text-align: center;
-        padding-bottom: 2rem;
+        color: var(--brown);
     }
 
     .project-card {
@@ -36,7 +36,7 @@ export default function ProjectCard(props) {
         {props.showQuote && (
           <Icon name="quote" fill="var(--dark-purple)" width="3" height="3" opacity="0.3" aria-hidden="true" />
         )}
-        <h3>{props.title}</h3>
+        <h2>{props.title}</h2>
         <div className="handleOverflow">
           {props.description}
           {props.image && (
