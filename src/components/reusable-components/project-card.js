@@ -10,7 +10,7 @@ export default function ProjectCard(props) {
     }
 
     .project-card {
-        width: 40rem; 
+        max-width: 40rem; 
         min-height: 20rem;
         text-align: left;
         padding: 1.6rem;
