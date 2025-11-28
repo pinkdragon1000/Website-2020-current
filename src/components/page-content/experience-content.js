@@ -19,7 +19,7 @@ export default function ExperienceContent() {
 
   return Style.it(
     styles,
-    <>
+    <div>
       <CardSubcontent header="Education" />
       <div className="education-row space-between">
         {educationContent.map((option, i) => (
@@ -60,6 +60,6 @@ export default function ExperienceContent() {
           />
         ))}
       </Stack>
-    </>
+    </div>
   );
 }
