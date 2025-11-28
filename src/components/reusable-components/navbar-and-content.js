@@ -40,7 +40,7 @@ export default function NavbarandContent(props) {
   return Style.it(
     styles,
     <div className="tabs">
-      <ol className="tab-list">
+      <ol className="tab-list" role="tablist">
         {props.children.map((child) => {
           const { label } = child.props;
 

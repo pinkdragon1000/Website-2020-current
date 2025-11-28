@@ -25,10 +25,14 @@ export default function NavbarItem(props) {
       onClick={onClick}
       onKeyDown={onKeyDown}
       tabIndex={0}
-      role="tab"
-      aria-selected={props.activeTab === props.label}
+      role="presentation"
     >
-      {props.label}
+      <span
+        role="tab"
+        aria-selected={props.activeTab === props.label}
+      >
+        {props.label}
+      </span>
     </li>
   );
 }
