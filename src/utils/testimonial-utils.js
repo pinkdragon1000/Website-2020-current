@@ -26,6 +26,7 @@ export const testimonialContent = [
       {
         icon: "linkedin",
         url: "https://www.linkedin.com/in/nhi-lam-9755568b/",
+        label: "Nhi Lam's LinkedIn"
       },
     ],
   },
@@ -66,7 +67,7 @@ export const testimonialContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "linkedin", url: "https://www.linkedin.com/in/mattholtman/" },
+      { icon: "linkedin", url: "https://www.linkedin.com/in/mattholtman/", label: "Matt Holtman's LinkedIn" },
     ],
   },
   {
@@ -94,6 +95,7 @@ export const testimonialContent = [
       {
         icon: "linkedin",
         url: "https://www.linkedin.com/in/steventartamella/",
+        label: "Steve Tartamella's profile"
       },
     ],
   },
@@ -126,6 +128,7 @@ export const testimonialContent = [
       {
         icon: "linkedin",
         url: "https://www.linkedin.com/in/dangradyaudubon/",
+        label: "Dan Grady's LinkedIn"
       },
     ],
   },

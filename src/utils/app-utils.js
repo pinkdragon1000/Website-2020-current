@@ -18,9 +18,9 @@ export const headerData = {
 
 //Social box icons and urls.  Part of the header but is optional if you wish.
 export const socialBoxOptions = [
-  { icon: "envelope", url: "mailto:sita.robinson@gmail.com" },
-  { icon: "github", url: "https://github.com/pinkdragon1000" },
-  { icon: "linkedin", url: "https://www.linkedin.com/in/sitarobinson/" },
+  { icon: "envelope", url: "mailto:sita.robinson@gmail.com", label: "Email contact" },
+  { icon: "github", url: "https://github.com/pinkdragon1000", label: "GitHub profile" },
+  { icon: "linkedin", url: "https://www.linkedin.com/in/sitarobinson/", label: "LinkedIn profile" },
 ];
 
 //Navbar options and components used in the content of the page

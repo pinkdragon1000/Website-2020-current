@@ -22,7 +22,7 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/Fin" },
+      { icon: "code", url: "https://github.com/pinkdragon1000/Fin", label: "Fin Github code" },
     ],
   },
   {
@@ -36,8 +36,8 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/cci-toast" },
-      { icon: "video", url: "https://youtu.be/nUC91Z_Uhfw" },
+      { icon: "code", url: "https://github.com/cci-toast", label: "Toast Github code" },
+      { icon: "video", url: "https://youtu.be/nUC91Z_Uhfw", label: "Toast video" },
     ],
   },
   {
@@ -51,8 +51,8 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/Zesty" },
-      { icon: "video", url: "https://youtu.be/5NR1RibM4Mc" },
+      { icon: "code", url: "https://github.com/pinkdragon1000/Zesty", label: "Zesty Github code" },
+      { icon: "video", url: "https://youtu.be/5NR1RibM4Mc", label: "Zesty video" },
     ],
   },
   {
@@ -66,8 +66,8 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/Listy" },
-      { icon: "video", url: "https://photos.app.goo.gl/1W99xsGvydVPLqTh7" },
+      { icon: "code", url: "https://github.com/pinkdragon1000/Listy", label: "Listy Github code" },
+      { icon: "video", url: "https://photos.app.goo.gl/1W99xsGvydVPLqTh7", label: "Listy video" },
     ],
   },
   {
@@ -84,8 +84,9 @@ export const projectsContent = [
       {
         icon: "code",
         url: "https://github.com/pinkdragon1000/NOVA-Data-Science-Signin-Form",
+        label: "NOVA Datascience Github code"
       },
-      { icon: "video", url: "https://photos.app.goo.gl/LdME7wobGzXXXxAr5" },
+      { icon: "video", url: "https://photos.app.goo.gl/LdME7wobGzXXXxAr5", label: "NOVA Datascience video" },
     ],
   },
   {
@@ -99,8 +100,8 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/BuddyUApp" },
-      { icon: "video", url: "https://goo.gl/photos/PXjPnL5U6ujkRPCq8" },
+      { icon: "code", url: "https://github.com/pinkdragon1000/BuddyUApp", label: "BuddyU App Github code" },
+      { icon: "video", url: "https://goo.gl/photos/PXjPnL5U6ujkRPCq8", label: "BuddyU App video" },
     ],
   },
 ];

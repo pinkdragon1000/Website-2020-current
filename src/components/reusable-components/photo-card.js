@@ -1,7 +1,40 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Style from "style-it";
 
-export default function PhotoCard(props) {
+function PhotoCard(props) {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    if (cardRef.current && props.onRefReady) {
+      props.onRefReady(cardRef.current);
+    }
+  }, [props]);
+
+  const handleClick = () => {
+    props.onClick(cardRef.current);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      props.onClick(cardRef.current);
+    }
+  };
+
+  // Extract a readable description from the photo filename
+  const getPhotoDescription = (filename) => {
+    if (!filename) return "Photo";
+    // Remove file extension and convert to readable format
+    const nameWithoutExt = filename.replace(/\.(jpg|jpeg|png|gif|webp|svg)$/i, '');
+    // Replace underscores and hyphens with spaces, capitalize words
+    const readable = nameWithoutExt
+      .replace(/[_-]/g, ' ')
+      .replace(/\b\w/g, char => char.toUpperCase());
+    return readable;
+  };
+
+  const photoDescription = getPhotoDescription(props.photoName);
+
   const styles = `
     .photo-card {
         margin: 0;
@@ -10,6 +43,12 @@ export default function PhotoCard(props) {
         flex: 1;
         min-width: 0;
         max-width: 26.17rem;
+    }
+
+    .photo-card:focus {
+        outline: 2px solid var(--light-purple);
+        outline-offset: 2px;
+        border-radius: 1rem;
     }
 
     .image-fit{
@@ -29,8 +68,18 @@ export default function PhotoCard(props) {
     `;
   return Style.it(
     styles,
-    <div className="photo-card" onClick={props.onClick}>
-      <img className="image-fit" loading="lazy" src={props.imagesrc} alt="" />
+    <div 
+      ref={cardRef}
+      className="photo-card" 
+      onClick={handleClick}
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
+      role="button"
+      aria-label={`Open ${photoDescription} in gallery`}
+    >
+      <img className="image-fit" loading="lazy" src={props.imagesrc} alt={photoDescription} />
     </div>
   );
 }
+
+export default PhotoCard;

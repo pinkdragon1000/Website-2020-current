@@ -6,17 +6,26 @@ import PhotoGalleryModal from "../reusable-components/photo-gallery-modal";
 export default function PhotosContent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const photoCardRefs = React.useRef([]);
 
   // Flatten all photos into a single array
   const allPhotos = photoGroup.flat().map(photo => require("../../images/" + photo));
 
-  const openGallery = (index) => {
+  const openGallery = (index, element) => {
+    photoCardRefs.current[index] = element;
     setCurrentImageIndex(index);
     setIsModalOpen(true);
   };
 
   const closeGallery = () => {
     setIsModalOpen(false);
+    // Return focus to the current photo card (not the one originally clicked)
+    setTimeout(() => {
+      const elementToFocus = photoCardRefs.current[currentImageIndex];
+      if (elementToFocus) {
+        elementToFocus.focus();
+      }
+    }, 0);
   };
 
   const nextImage = () => {
@@ -39,13 +48,20 @@ export default function PhotosContent() {
           
           return (
             <div className="row" key={i}>
-              {option.map((photo, j) => photo && (
-                <PhotoCard
-                  key={j}
-                  imagesrc={require("../../images/" + photo)}
-                  onClick={() => openGallery(baseIndex + j)}
-                />
-              ))}
+              {option.map((photo, j) => {
+                const photoIndex = baseIndex + j;
+                return photo && (
+                  <PhotoCard
+                    key={j}
+                    imagesrc={require("../../images/" + photo)}
+                    photoName={photo}
+                    onClick={(element) => openGallery(photoIndex, element)}
+                    onRefReady={(element) => {
+                      photoCardRefs.current[photoIndex] = element;
+                    }}
+                  />
+                );
+              })}
             </div>
           );
         })}

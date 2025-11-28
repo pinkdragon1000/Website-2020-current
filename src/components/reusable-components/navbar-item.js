@@ -6,6 +6,13 @@ export default function NavbarItem(props) {
     onClick(label);
   };
 
+  const onKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onClick();
+    }
+  };
+
   let className = "tab-list-item";
 
   if (props.activeTab === props.label) {
@@ -13,7 +20,14 @@ export default function NavbarItem(props) {
   }
 
   return (
-    <li className={className} onClick={onClick}>
+    <li 
+      className={className} 
+      onClick={onClick}
+      onKeyDown={onKeyDown}
+      tabIndex={0}
+      role="tab"
+      aria-selected={props.activeTab === props.label}
+    >
       {props.label}
     </li>
   );

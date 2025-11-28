@@ -23,7 +23,13 @@ export default function SocialBox(props) {
     styles,
     <div className="social-box-container flex-center">
       {props.options.map((option, i) => (
-        <a href={option.url} target="blank_" key={i}>
+        <a 
+          href={option.url} 
+          target="blank_" 
+          key={i}
+          aria-label={option.label}
+          rel="noopener noreferrer"
+        >
           <Icon
             name={option.icon}
             fill={props.fill}
