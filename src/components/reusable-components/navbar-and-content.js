@@ -40,28 +40,30 @@ export default function NavbarandContent(props) {
   return Style.it(
     styles,
     <div className="tabs">
-      <ol className="tab-list" role="tablist">
-        {props.children.map((child) => {
-          const { label } = child.props;
+      <nav>
+        <ol className="tab-list" role="tablist">
+          {props.children.map((child) => {
+            const { label } = child.props;
 
-          return (
-            <NavbarItem
-              activeTab={activeTab}
-              key={label}
-              label={label}
-              onClick={onClickTabItem}
-            />
-          );
-        })}
-      </ol>
-      <div className="tab-content">
+            return (
+              <NavbarItem
+                activeTab={activeTab}
+                key={label}
+                label={label}
+                onClick={onClickTabItem}
+              />
+            );
+          })}
+        </ol>
+      </nav>
+      <main className="tab-content">
         <Card>
           {props.children.map((child) => {
             if (child.props.label !== activeTab) return undefined;
             return child.props.children;
           })}
         </Card>
-      </div>
+      </main>
       <ScrollUpButton />
     </div>
   );

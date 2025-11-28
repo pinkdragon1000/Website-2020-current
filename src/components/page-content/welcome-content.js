@@ -4,7 +4,7 @@ import { welcomeContent } from "../../utils/welcome-content-utils";
 
 export default function WelcomeContent() {
   return (
-    <div>
+    <>
       {welcomeContent.map((option, i) => (
         <CardSubcontent
           key={i}
@@ -12,6 +12,6 @@ export default function WelcomeContent() {
           textcontent={option.textcontent}
         />
       ))}
-    </div>
+    </>
   );
 }

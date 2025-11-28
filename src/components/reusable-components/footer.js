@@ -7,5 +7,5 @@ export default function Footer(props) {
         padding-top: 1rem;
     }
     `;
-  return Style.it(styles, <div className="footer flex-center">{props.label}</div>);
+  return Style.it(styles, <footer className="footer flex-center">{props.label}</footer>);
 }

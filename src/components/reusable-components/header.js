@@ -50,7 +50,7 @@ export default function Header(props) {
   `;
   return Style.it(
     styles,
-    <div className="gradient-bg flex-center">
+    <header className="gradient-bg flex-center">
       <Stack spacing="large">
         <div className="profile-container flex-center">
           <img className="header-img" src={props.imgdir} alt="Sita Robinson" />
@@ -61,6 +61,6 @@ export default function Header(props) {
         </div>
         {props.socialbox}
       </Stack>
-    </div>
+    </header>
   );
 }
