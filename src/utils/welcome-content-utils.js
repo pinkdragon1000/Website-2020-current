@@ -1,7 +1,8 @@
 //This file contains the content used for the welcome section of the application.  Rendered in welcome-content.js
 
 import React from "react";
-import { SkillsCard } from "../components/export-components";
+import { SkillsCard, TravelMap } from "../components/export-components";
+import { travelLocations } from "./travel-locations";
 
 export const welcomeContent = [
   {
@@ -41,17 +42,6 @@ export const welcomeContent = [
   },
   {
     header: "Places I've Traveled",
-    textcontent: (
-      <div>
-        <iframe
-          title="places"
-          width="100%"
-          height="640px"
-          src="https://www.arcgis.com/apps/View/index.html?appid=4a73d707660146828bffd29123f7804f"
-          frameBorder="0"
-          scrolling="no"
-        />
-      </div>
-    ),
+    textcontent: <TravelMap locations={travelLocations} />,
   },
 ];

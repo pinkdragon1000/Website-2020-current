@@ -87,8 +87,62 @@ h3 {
   align-items: baseline;
 }
 
-iframe {
-  width: 100%;
-  display: block;
-  margin: auto;
+/* Leaflet map mobile responsiveness */
+.leaflet-container {
+  font-family: "Open Sans", sans-serif;
 }
+
+.leaflet-popup-content {
+  font-size: 14px;
+  color: var(--brown);
+  font-weight: 500;
+}
+
+.leaflet-popup-content strong {
+  color: var(--brown);
+  font-weight: 600;
+}
+
+/* Ensure map attribution has sufficient contrast */
+.leaflet-control-attribution a {
+  color: #032b88;
+  font-weight: 500;
+}
+
+.leaflet-control-attribution {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--brown);
+  font-size: 11px;
+}
+
+/* Fix contrast for zoom controls */
+.leaflet-control-zoom a {
+  color: #000;
+  background-color: #fff;
+}
+
+.leaflet-control-zoom a:hover {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+/* Ensure all leaflet text has good contrast */
+.leaflet-container a {
+  color: #032b88;
+}
+
+.leaflet-bar a {
+  color: #000;
+}
+
+/* Legend specific styling */
+.info.legend {
+  background-color: #fff;
+  color: var(--brown);
+}
+
+.info.legend h3,
+.info.legend h4 {
+  color: var(--brown);
+}
+

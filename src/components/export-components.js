@@ -18,6 +18,7 @@ export { default as SkillsCard } from "./reusable-components/skills-card";
 export { default as WhiteCard } from "./reusable-components/white-card";
 export { default as Pill } from "./reusable-components/pill";
 export { default as Stack } from "./reusable-components/stack";
+export { default as TravelMap } from "./reusable-components/travel-map";
 //Page Content
 export { default as WelcomeContent } from "./page-content/welcome-content";
 export { default as ExperienceContent } from "./page-content/experience-content";
