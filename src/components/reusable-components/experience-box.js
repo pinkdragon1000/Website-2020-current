@@ -124,7 +124,7 @@ export default function ExperienceBox(props) {
             <div key={index}>
               <h3>{role.title}</h3>
               <p className="experience-date">{role.date}</p>
-              <ul className="experience-details">{role.description}</ul>
+              <div>{role.description}</div>
             </div>
           ))}
         </Stack>

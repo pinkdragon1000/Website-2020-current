@@ -2,18 +2,27 @@
 
 import React from "react";
 
+import UMDLogo from '../experience-images/schoolImages/UMD.jpg';
+import DrexelLogo from '../experience-images/schoolImages/Drexel.jpg';
+import ComcastLogo from '../experience-images/workExpImages/Comcast.jpg';
+import Imagine360Logo from '../experience-images/workExpImages/Imagine360.jpg';
+import DrexelCCILogo from '../experience-images/workExpImages/DrexelCCI.jpg';
+import VanguardLogo from '../experience-images/workExpImages/Vanguard.jpg';
+import BoozAllenLogo from '../experience-images/workExpImages/BoozAllen.jpg';
+import DrexelWiCSLogo from '../experience-images/volunteerImages/WiCS.jpg';
+
 export const educationContent = [
   {
     school: "University of Maryland",
     degree: "MBA",
     year: "Class of 2026",
-    logo: "https://media.licdn.com/dms/image/v2/C560BAQHrhLnmmZTGjQ/company-logo_100_100/company-logo_100_100/0/1631303360671?e=1765411200&v=beta&t=1dAvgtHyfbujCWCQRp_4y14eIpCn-d9SpnPAxXedOpQ",
+    logo: UMDLogo,
   },
   {
     school: "Drexel University",
     degree: "BS in Data Science, Minor in Computer Science",
     year: "Graduated June 2020",
-    logo: "https://media.licdn.com/dms/image/v2/C510BAQEqp_nXWmHi6Q/company-logo_100_100/company-logo_100_100/0/1631320003902?e=1765411200&v=beta&t=Q_Pg89pWZAQk6GacYnjdtwK4BCKufsudr2L0EIhjjpc",
+    logo: DrexelLogo,
   },
 ];
 
@@ -25,7 +34,7 @@ export const workExperienceContent = [
     date: "Dec 15, 2024 - Present",
     link: "https://www.boozallen.com/",
     linktext: "Booz Allen Hamilton",
-    logo: "https://specials-images.forbesimg.com/dam/imageserve/68c2ce4531e774b4ac3928cc/100x0.png?cropX1=0&cropX2=700&cropY1=0&cropY2=700",
+    logo: BoozAllenLogo,
     description: null,
   },
   {
@@ -33,9 +42,9 @@ export const workExperienceContent = [
     date: "July 6, 2022 - Dec 15, 2024",
     link: "https://www.boozallen.com/",
     linktext: "Booz Allen Hamilton",
-    logo: "https://specials-images.forbesimg.com/dam/imageserve/68c2ce4531e774b4ac3928cc/400x0.png?cropX1=0&cropX2=700&cropY1=0&cropY2=700",
+    logo: BoozAllenLogo,
     description: (
-      <div>
+      <ul className="experience-details">
         <li>Developed frontend for the Recreation.gov customer and administrative applications using React and Redux. Recreation.gov is an e-commerce web application
           that allows you to plan trips across the United States, including federally managed parks, forests, monuments, and waterways.</li>
         <li>Worked across the project to develop new features, fixed bugs in the application, performed unit and integration testing using React Testing Library, and deployed
@@ -43,7 +52,7 @@ export const workExperienceContent = [
           using Figma mockups from the design team.</li>
         <li>Worked with a mixture of functional and class components.</li>
         <li>Styled components using SCSS</li>
-      </div>
+      </ul>
     ),
   },
   {
@@ -51,11 +60,11 @@ export const workExperienceContent = [
     date: "February 4, 2022 - June 17, 2022",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGlBCOzS6Gl9g/company-logo_100_100/company-logo_100_100/0/1635426872299/vanguard_logo?e=1765411200&v=beta&t=pJ_2CH-8KmIusOQoC1LqST9Gsu37vgCG-doyVuQMZm4",
+    logo: VanguardLogo,
     description: (
-      <div>
+      <ul className="experience-details">
         <li>Refer to Software Dev I description below.</li>
-      </div>
+      </ul>
     ),
   },
   {
@@ -63,9 +72,9 @@ export const workExperienceContent = [
     date: "July 13, 2020 - February 4, 2022",
     link: "https://investor.vanguard.com/corporate-portal/",
     linktext: "Vanguard",
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGlBCOzS6Gl9g/company-logo_100_100/company-logo_100_100/0/1635426872299/vanguard_logo?e=1765411200&v=beta&t=pJ_2CH-8KmIusOQoC1LqST9Gsu37vgCG-doyVuQMZm4",
+    logo: VanguardLogo,
     description: (
-      <div>
+      <ul className="experience-details">
         <li>
           Developed Java Spring web services that power the Vanguard mobile and web
           customer-facing investment platform.
@@ -86,7 +95,7 @@ export const workExperienceContent = [
           Worked in a DevOps environment developing, deploying, supporting and
           troubleshooting our web-services in a production environment.
         </li>
-      </div>
+      </ul>
     ),
   },
   {
@@ -94,16 +103,16 @@ export const workExperienceContent = [
     date: "April 6, 2020 - June 11, 2020",
     link: "https://drexel.edu/cci/",
     linktext: "Drexel University College of Computing and Informatics",
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFqvnZteBtYDA/company-logo_100_100/company-logo_100_100/0/1721842454220/drexel_university_college_of_computing_informatics_logo?e=1765411200&v=beta&t=MHl81owJa2_PRm1HJtDTET_ZbD9eJ0FFi3eLOkLyI5w",
+    logo: DrexelCCILogo,
     description: (
-      <div>
+      <ul className="experience-details">
         <li>
           Held office hours for 5 hours a week to answer questions about assignments in a
           number of topics including Python basics and libraries for data analysis (numpy,
           pandas, and matplotlib){" "}
         </li>
         <li>Graded assignments and provided feedback</li>
-      </div>
+      </ul>
     ),
   },
 
@@ -112,10 +121,9 @@ export const workExperienceContent = [
     date: "September 24, 2018 - March 20, 2019",
     link: "https://www.imagine360.com/",
     linktext: "ELAP Services (now Imagine360)",
-    
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHJDXSlq8T81A/company-logo_100_100/company-logo_100_100/0/1642561819392/imagine_360_health_logo?e=1766016000&v=beta&t=KiBAp0_RaqYAFSA7QHU7qkCzC69vunDlpNfV8uuc54Y",
+    logo: Imagine360Logo,
     description: (
-      <div>
+      <ul className="experience-details">
         <li>Developed a machine learning model to predict customer churn.</li>
         <li> Leveraged Python packages including Pandas.</li>
         <li>
@@ -127,7 +135,7 @@ export const workExperienceContent = [
         <li>Developed tools in Python for streamlining ETL processes.</li>
         <li>Presented at a machine learning workshop on a bi-weekly basis</li>
         <li>Developed data visualizations using Tableau.</li>
-      </div>
+      </ul>
     ),
   },
   {
@@ -135,9 +143,9 @@ export const workExperienceContent = [
     date: "June 19, 2017 - August 25, 2017",
     link: "https://corporate.comcast.com/",
     linktext: "Comcast",
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQEZqcKKlfKeXQ/company-logo_100_100/company-logo_100_100/0/1710183636200/comcast_logo?e=1765411200&v=beta&t=j4OoExj542yLhXwRyEKYraUq11Z8WDtDqA1uTUYwuPI",
+    logo: ComcastLogo,
     description: (
-      <div>
+      <ul className="experience-details">
         <li>
           Developed and enhanced a web-based system used to manage operational IP video
           delivery infrastructure.
@@ -146,7 +154,7 @@ export const workExperienceContent = [
         <li>
           Participated in Comcast's Agile software development processes and lifecycle.
         </li>
-      </div>
+      </ul>
     ),
   },
 ];
@@ -157,9 +165,9 @@ export const volunteerExperienceContent = [
     date: "June 18, 2019 - June 11, 2020 (1 school year)",
     link: "http://drexelwics.acm.org/index.html",
     linktext: "Women in Computing Society (WiCS)",
-    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQH6sNXRfgZ7bw/company-logo_100_100/company-logo_100_100/0/1630586996691/drexel_wics_logo?e=1765411200&v=beta&t=_k2BhfzkWJmK8UYPKMMc9NzLbjRnqiAXnLIf65LVjRI",
+    logo: DrexelWiCSLogo,
     description: (
-      <div>
+      <ul className="experience-details">
         <li>
           Planned and moderated 30+ events including tech talks, panels, and social
           events.
@@ -171,7 +179,7 @@ export const volunteerExperienceContent = [
           Region Celebration of Women in Computing (CAPWIC) 2020 conference. Later
           cancelled due to COVID.
         </li>
-      </div>
+      </ul>
     ),
   },
   {
@@ -179,9 +187,9 @@ export const volunteerExperienceContent = [
     date: "January 22, 2018 to June 17, 2019 (2 school years)",
     link: "http://drexelwics.acm.org/index.html",
     linktext: "Women in Computing Society (WiCS)",
-    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQH6sNXRfgZ7bw/company-logo_100_100/company-logo_100_100/0/1630586996691/drexel_wics_logo?e=1765411200&v=beta&t=_k2BhfzkWJmK8UYPKMMc9NzLbjRnqiAXnLIf65LVjRI",
+    logo: DrexelWiCSLogo,
     description: (
-      <div>
+      <ul className="experience-details">
         <li>
           Kept records of all transactions/deposits in accounts, managed the budget,
           reported the financial situation to other officers. Put in purchase requests for
@@ -198,7 +206,7 @@ export const volunteerExperienceContent = [
           corporate sponsorship contacts and also helped with pr for fundraisers. We
           brought in more than $200 from fundraisers.
         </li>
-      </div>
+      </ul>
     ),
   },
 ];
