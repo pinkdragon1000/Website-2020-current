@@ -4,10 +4,27 @@ import { Stack } from "../export-components";
 
 export default function Header(props) {
   const styles = `
+    @keyframes move-circles {
+      0%, 100% {
+        background-position: 38% 55%, 34% 85%, 0% 36%, 42% 37%, 48% 39%;
+      }
+      25% {
+        background-position: 60% 70%, 20% 60%, 80% 50%, 30% 20%, 70% 80%;
+      }
+      50% {
+        background-position: 15% 40%, 75% 30%, 45% 80%, 85% 65%, 25% 15%;
+      }
+      75% {
+        background-position: 50% 25%, 40% 90%, 10% 60%, 65% 45%, 80% 55%;
+      }
+    }
+
     .gradient-bg {
       padding: 2rem 1.5rem;
       min-width: 38.625rem;
       background-image: radial-gradient(circle at 38% 55%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 23%,transparent 23%, transparent 78%,transparent 78%, transparent 100%),radial-gradient(circle at 34% 85%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 7%,transparent 7%, transparent 41%,transparent 41%, transparent 100%),radial-gradient(circle at 0% 36%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 2%,transparent 2%, transparent 59%,transparent 59%, transparent 100%),radial-gradient(circle at 42% 37%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 6%,transparent 6%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 48% 39%, hsla(149,0%,62%,0.1) 0%, hsla(149,0%,62%,0.1) 8%,transparent 8%, transparent 90%,transparent 90%, transparent 100%), var(--gradient);
+      background-size: 200% 200%, 200% 200%, 200% 200%, 200% 200%, 200% 200%, 100% 100%;
+      animation: move-circles 70s ease-in-out infinite;
       flex-direction: column;
     }
 
