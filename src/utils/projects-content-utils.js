@@ -2,6 +2,7 @@
 
 import React from "react";
 import { groupArrayBySize } from "./array-utils";
+import FamilyTreeProj from "../project-images/FamilyTreeProj.jpg";
 import FinProj from "../project-images/FinProj.jpg";
 import ToastProj from "../project-images/ToastProj.jpg";
 import ZestyProj from "../project-images/ZestyProj.jpg";
@@ -10,6 +11,21 @@ import NOVADSProj from "../project-images/NOVADSProj.jpg";
 import BuddyUProj from "../project-images/BuddyUProj.jpg";
 
 export const projectsContent = [
+  {
+    title: "Family Tree",
+    image: FamilyTreeProj,
+    description: (
+      <div>
+        An interactive family tree visualization built with React and D3.js. Click nodes to expand and collapse
+        branches, hover for detailed tooltips with photos and biographical information. Features adjustable text
+        size, zoom/pan navigation, and auto-centering. Hosted on Firebase.
+      </div>
+    ),
+    socialBoxOptions: [
+      { icon: "code", url: "https://github.com/pinkdragon1000/FamilyTree", label: "Family Tree Github code" },
+      { icon: "link", url: "https://smrfamilytree.web.app/", label: "Family Tree link" }
+    ],
+  },
   {
     title: "Fin",
     image: FinProj,
