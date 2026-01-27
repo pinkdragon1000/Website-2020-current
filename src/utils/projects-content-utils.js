@@ -7,9 +7,6 @@ import FamilyTreeProj from "../project-images/FamilyTreeProj.jpg";
 import FinProj from "../project-images/FinProj.jpg";
 import ToastProj from "../project-images/ToastProj.jpg";
 import ZestyProj from "../project-images/ZestyProj.jpg";
-import ListyProj from "../project-images/ListyProj.jpg";
-import NOVADSProj from "../project-images/NOVADSProj.jpg";
-import BuddyUProj from "../project-images/BuddyUProj.jpg";
 
 export const projectsContent = [
   {
@@ -117,75 +114,6 @@ export const projectsContent = [
         icon: "video",
         url: "https://youtu.be/5NR1RibM4Mc",
         label: "Zesty video",
-      },
-    ],
-  },
-  {
-    title: "Listy",
-    image: ListyProj,
-    description: (
-      <div>
-        A web app that allows people to make their own checklists and share with
-        other members. Uses HTML, Javascript, JQuery Mobile, Bootstrap, MySQL,
-        and NodeJS.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/Listy",
-        label: "Listy Github code",
-      },
-      {
-        icon: "video",
-        url: "https://photos.app.goo.gl/1W99xsGvydVPLqTh7",
-        label: "Listy video",
-      },
-    ],
-  },
-  {
-    title: "NOVA Datascience Signin and Attendee Randomizer",
-    image: NOVADSProj,
-    description: (
-      <div>
-        A web app for the NOVA DataScience Meetup Group that includes a sign-in
-        form and a randomizer for prizes. Uses Firebase which is a NoSQL
-        Database along with HTML and Javascript.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/NOVA-Data-Science-Signin-Form",
-        label: "NOVA Datascience Github code",
-      },
-      {
-        icon: "video",
-        url: "https://photos.app.goo.gl/LdME7wobGzXXXxAr5",
-        label: "NOVA Datascience video",
-      },
-    ],
-  },
-  {
-    title: "BuddyU App",
-    image: BuddyUProj,
-    description: (
-      <div>
-        An android social app for Drexel University students to collaborate on
-        their schedules with the goal of making class time more efficient,
-        collaborative, and fun. Made using Firebase and Android Studio.
-      </div>
-    ),
-    socialBoxOptions: [
-      {
-        icon: "code",
-        url: "https://github.com/pinkdragon1000/BuddyUApp",
-        label: "BuddyU App Github code",
-      },
-      {
-        icon: "video",
-        url: "https://goo.gl/photos/PXjPnL5U6ujkRPCq8",
-        label: "BuddyU App video",
       },
     ],
   },
