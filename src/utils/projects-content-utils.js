@@ -2,6 +2,7 @@
 
 import React from "react";
 import { groupArrayBySize } from "./array-utils";
+import SnailandProj from "../project-images/SnailandProj.jpg";
 import FamilyTreeProj from "../project-images/FamilyTreeProj.jpg";
 import FinProj from "../project-images/FinProj.jpg";
 import ToastProj from "../project-images/ToastProj.jpg";
@@ -16,16 +17,44 @@ export const projectsContent = [
     image: FamilyTreeProj,
     description: (
       <div>
-        An interactive family tree visualization built with React and D3.js. Click nodes to expand and collapse
-        branches, hover for detailed tooltips with photos and biographical information. Features adjustable text
-        size, zoom/pan navigation, and auto-centering. Hosted on Firebase.
+        An interactive family tree visualization built with React and D3.js.
+        Click nodes to expand and collapse branches, hover for detailed tooltips
+        with photos and biographical information. Features adjustable text size,
+        zoom/pan navigation, and auto-centering. Hosted on Firebase.
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/FamilyTree", label: "Family Tree Github code" },
-      { icon: "link", url: "https://smrfamilytree.web.app/", label: "Family Tree link" }
+      {
+        icon: "code",
+        url: "https://github.com/pinkdragon1000/FamilyTree",
+        label: "Family Tree Github code",
+      },
+      {
+        icon: "link",
+        url: "https://smrfamilytree.web.app/",
+        label: "Family Tree link",
+      },
     ],
   },
+  {
+    title: "Snailand",
+    image: SnailandProj,
+    description: (
+      <div>
+        Snailand is a snail-themed endless runner built with React, featuring
+        character selection, a canvas‑based game loop with obstacles and star
+        pickups, plus sound effects.
+      </div>
+    ),
+    socialBoxOptions: [
+      {
+        icon: "code",
+        url: "https://github.com/pinkdragon1000/Snailand",
+        label: "Snailand Github code",
+      },
+    ],
+  },
+
   {
     title: "Fin",
     image: FinProj,
@@ -38,7 +67,11 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/Fin", label: "Fin Github code" },
+      {
+        icon: "code",
+        url: "https://github.com/pinkdragon1000/Fin",
+        label: "Fin Github code",
+      },
     ],
   },
   {
@@ -52,8 +85,16 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/cci-toast", label: "Toast Github code" },
-      { icon: "video", url: "https://youtu.be/nUC91Z_Uhfw", label: "Toast video" },
+      {
+        icon: "code",
+        url: "https://github.com/cci-toast",
+        label: "Toast Github code",
+      },
+      {
+        icon: "video",
+        url: "https://youtu.be/nUC91Z_Uhfw",
+        label: "Toast video",
+      },
     ],
   },
   {
@@ -67,8 +108,16 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/Zesty", label: "Zesty Github code" },
-      { icon: "video", url: "https://youtu.be/5NR1RibM4Mc", label: "Zesty video" },
+      {
+        icon: "code",
+        url: "https://github.com/pinkdragon1000/Zesty",
+        label: "Zesty Github code",
+      },
+      {
+        icon: "video",
+        url: "https://youtu.be/5NR1RibM4Mc",
+        label: "Zesty video",
+      },
     ],
   },
   {
@@ -82,8 +131,16 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/Listy", label: "Listy Github code" },
-      { icon: "video", url: "https://photos.app.goo.gl/1W99xsGvydVPLqTh7", label: "Listy video" },
+      {
+        icon: "code",
+        url: "https://github.com/pinkdragon1000/Listy",
+        label: "Listy Github code",
+      },
+      {
+        icon: "video",
+        url: "https://photos.app.goo.gl/1W99xsGvydVPLqTh7",
+        label: "Listy video",
+      },
     ],
   },
   {
@@ -100,9 +157,13 @@ export const projectsContent = [
       {
         icon: "code",
         url: "https://github.com/pinkdragon1000/NOVA-Data-Science-Signin-Form",
-        label: "NOVA Datascience Github code"
+        label: "NOVA Datascience Github code",
       },
-      { icon: "video", url: "https://photos.app.goo.gl/LdME7wobGzXXXxAr5", label: "NOVA Datascience video" },
+      {
+        icon: "video",
+        url: "https://photos.app.goo.gl/LdME7wobGzXXXxAr5",
+        label: "NOVA Datascience video",
+      },
     ],
   },
   {
@@ -116,8 +177,16 @@ export const projectsContent = [
       </div>
     ),
     socialBoxOptions: [
-      { icon: "code", url: "https://github.com/pinkdragon1000/BuddyUApp", label: "BuddyU App Github code" },
-      { icon: "video", url: "https://goo.gl/photos/PXjPnL5U6ujkRPCq8", label: "BuddyU App video" },
+      {
+        icon: "code",
+        url: "https://github.com/pinkdragon1000/BuddyUApp",
+        label: "BuddyU App Github code",
+      },
+      {
+        icon: "video",
+        url: "https://goo.gl/photos/PXjPnL5U6ujkRPCq8",
+        label: "BuddyU App video",
+      },
     ],
   },
 ];
