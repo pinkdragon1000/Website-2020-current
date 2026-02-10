@@ -49,6 +49,11 @@ export const projectsContent = [
         url: "https://github.com/pinkdragon1000/Snailand",
         label: "Snailand Github code",
       },
+      {
+        icon: "link",
+        url: "https://snailand.web.app/",
+        label: "Snailand link",
+      },
     ],
   },
 
