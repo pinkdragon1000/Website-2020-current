@@ -16,8 +16,8 @@ export const projectsContent = [
     description: (
       <div>
         A frontend-focused demo of a Chesapeake-themed brunch restaurant
-        experience, showcasing personalized menu recommendations and a full
-        cart-to-checkout ordering flow.
+        experience, showcasing personalized menu recommendations and a simulated
+        cart-to-checkout ordering flow.  Built with Next.js, Tailwind CSS and hosted via Vercel.  Development was supported by AI-assisted workflows using Claude Code.
       </div>
     ),
     socialBoxOptions: [
