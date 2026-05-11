@@ -2,6 +2,7 @@
 
 import React from "react";
 import { groupArrayBySize } from "./array-utils";
+import BayBenedictProj from "../project-images/BayBenedictProj.jpg";
 import SnailandProj from "../project-images/SnailandProj.jpg";
 import FamilyTreeProj from "../project-images/FamilyTreeProj.jpg";
 import FinProj from "../project-images/FinProj.jpg";
@@ -10,14 +11,39 @@ import ZestyProj from "../project-images/ZestyProj.jpg";
 
 export const projectsContent = [
   {
+    title: "Bay Benedict Restaurant",
+    image: BayBenedictProj,
+    description: (
+      <div>
+        A frontend-focused demo of a Chesapeake-themed brunch restaurant
+        experience, showcasing personalized menu recommendations and a full
+        cart-to-checkout ordering flow.
+      </div>
+    ),
+    socialBoxOptions: [
+      {
+        icon: "code",
+        url: "https://github.com/pinkdragon1000/Bay-Benedict-Restaurant",
+        label: "Bay Benedict Restaurant Github code",
+      },
+      {
+        icon: "link",
+        url: "https://bay-benedict-restaurant.vercel.app/",
+        label: "Bay Benedict Restaurant link",
+      },
+    ],
+  },
+  {
     title: "Family Tree",
     image: FamilyTreeProj,
     description: (
       <div>
         An interactive family tree visualization built with React and D3.js.
-        Click nodes to expand and collapse branches, hover for detailed tooltips
-        with photos and biographical information. Features adjustable text size,
-        zoom/pan navigation, and auto-centering. Hosted on Firebase.
+        Browse through expandable family cards organized by founding couples,
+        drill into generations, view ancestor lines, and explore family photos,
+        or switch to a zoomable tree view with hover tooltips and biographical
+        details. Search by name to jump to any family member across both views.
+        Hosted on Firebase.
       </div>
     ),
     socialBoxOptions: [
@@ -39,7 +65,7 @@ export const projectsContent = [
     description: (
       <div>
         Snailand is a snail-themed endless runner built with React, featuring
-        character selection, a canvas‑based game loop with obstacles and star
+        character selection, a canvas-based game loop with obstacles and star
         pickups, plus sound effects.
       </div>
     ),
