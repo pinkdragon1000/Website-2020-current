@@ -2,12 +2,12 @@
 
 import React from "react";
 import { groupArrayBySize } from "./array-utils";
-import BayBenedictProj from "../project-images/BayBenedictProj.jpg";
-import SnailandProj from "../project-images/SnailandProj.jpg";
-import FamilyTreeProj from "../project-images/FamilyTreeProj.jpg";
-import FinProj from "../project-images/FinProj.jpg";
-import ToastProj from "../project-images/ToastProj.jpg";
-import ZestyProj from "../project-images/ZestyProj.jpg";
+import BayBenedictProj from "../project-images/BayBenedictProj.webp";
+import SnailandProj from "../project-images/SnailandProj.webp";
+import FamilyTreeProj from "../project-images/FamilyTreeProj.webp";
+import FinProj from "../project-images/FinProj.webp";
+import ToastProj from "../project-images/ToastProj.webp";
+import ZestyProj from "../project-images/ZestyProj.webp";
 
 export const projectsContent = [
   {
