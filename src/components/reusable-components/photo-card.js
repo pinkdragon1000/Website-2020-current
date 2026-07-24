@@ -77,7 +77,14 @@ function PhotoCard(props) {
       role="button"
       aria-label={`Open ${photoDescription} in gallery`}
     >
-      <img className="image-fit" loading="lazy" src={props.imagesrc} alt={photoDescription} />
+      <img
+        className="image-fit"
+        loading="lazy"
+        src={props.imagesrc}
+        srcSet={props.srcSet}
+        sizes={props.sizes}
+        alt={photoDescription}
+      />
     </div>
   );
 }

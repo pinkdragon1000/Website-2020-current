@@ -3,6 +3,35 @@ import { photoGroup } from "../../utils/photos-content-utils";
 import PhotoCard from "../reusable-components/photo-card";
 import PhotoGalleryModal from "../reusable-components/photo-gallery-modal";
 
+//Smaller renditions of each photo, used by the grid.  The grid never shows a tile
+//wider than ~419px, so downloading the full size image for it wastes bandwidth.
+//Photos small enough that no rendition was generated simply fall back to the full
+//size file, which is already tiny.
+const thumbContext = require.context("../../image-thumbs", false, /\.webp$/);
+const thumbs = {};
+thumbContext.keys().forEach((key) => {
+  thumbs[key.replace("./", "")] = thumbContext(key);
+});
+
+//The tiles sit three to a row, so each is roughly a third of the viewport until
+//it hits its 419px cap.
+const GRID_SIZES = "(min-width: 1400px) 419px, 31vw";
+
+const getGridSources = (photo) => {
+  const stem = photo.replace(/\.[^.]+$/, "");
+  const small = thumbs[`${stem}-400.webp`];
+  const medium = thumbs[`${stem}-800.webp`];
+
+  //Only use a srcset when there is a rendition big enough for a retina tile,
+  //otherwise the browser would be stuck picking something too small.
+  if (!medium) return {};
+
+  return {
+    srcSet: [small && `${small} 400w`, `${medium} 800w`].filter(Boolean).join(", "),
+    sizes: GRID_SIZES,
+  };
+};
+
 export default function PhotosContent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -54,6 +83,7 @@ export default function PhotosContent() {
                   <PhotoCard
                     key={j}
                     imagesrc={require("../../images/" + photo)}
+                    {...getGridSources(photo)}
                     photoName={photo}
                     onClick={(element) => openGallery(photoIndex, element)}
                     onRefReady={(element) => {

@@ -1,7 +1,7 @@
 //This file contains the content used for the welcome section of the application.  Rendered in welcome-content.js
 
 import React, { lazy, Suspense } from "react";
-import { SkillsCard } from "../components/export-components";
+import { SkillsCard, Skeleton } from "../components/export-components";
 import { travelLocations } from "./travel-locations";
 
 //Leaflet is a large dependency, so the map is code split out of the main bundle
@@ -47,14 +47,8 @@ export const welcomeContent = [
   {
     header: "Places I've Traveled",
     textcontent: (
-      //The fallback reserves the map's height so nothing shifts when it loads.
-      <Suspense
-        fallback={
-          <div className="flex-center" style={{ height: "640px" }}>
-            Loading map…
-          </div>
-        }
-      >
+      //The fallback matches the map's height so nothing shifts when it loads.
+      <Suspense fallback={<Skeleton height="640px" />}>
         <TravelMap locations={travelLocations} />
       </Suspense>
     ),

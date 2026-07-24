@@ -15,7 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "thumbs": "bash scripts/generate-thumbs.sh"
   },
   "eslintConfig": {
     "extends": "react-app"

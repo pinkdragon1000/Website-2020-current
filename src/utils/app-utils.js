@@ -4,6 +4,7 @@ import React, { lazy } from "react";
 //Welcome is the tab shown on load, so it stays in the main bundle.  The rest are
 //code split and only downloaded when their tab is selected.
 import WelcomeContent from "../components/page-content/welcome-content";
+import { ContentSkeleton, PhotoGridSkeleton } from "../components/export-components";
 
 const ExperienceContent = lazy(() =>
   import("../components/page-content/experience-content")
@@ -32,7 +33,8 @@ export const socialBoxOptions = [
   { icon: "linkedin", url: "https://www.linkedin.com/in/sitarobinson/", label: "LinkedIn profile" },
 ];
 
-//Navbar options and components used in the content of the page
+//Navbar options and components used in the content of the page.  The fallback is
+//shown while a code split tab downloads, so it is shaped like that tab's content.
 export const navbarOptions = [
   {
     name: "Welcome",
@@ -41,18 +43,22 @@ export const navbarOptions = [
   {
     name: "Experience",
     component: <ExperienceContent />,
+    fallback: <ContentSkeleton />,
   },
   {
     name: "Projects",
     component: <ProjectsContent />,
+    fallback: <ContentSkeleton />,
   },
   {
     name: "Photos",
     component: <PhotosContent />,
+    fallback: <PhotoGridSkeleton />,
   },
   {
     name: "Testimonials",
     component: <TestimonialContent />,
+    fallback: <ContentSkeleton />,
   },
 ];
 

@@ -25,7 +25,7 @@ export default function App() {
 
       <NavbarandContent>
         {navbarOptions.map((option, i) => (
-          <div key={i} label={option.name}>
+          <div key={i} label={option.name} fallback={option.fallback}>
             {option.component}
           </div>
         ))}

@@ -1,6 +1,6 @@
 import React, { useState, Suspense } from "react";
 
-import { NavbarItem, Card, ScrollUpButton } from "../export-components";
+import { NavbarItem, Card, ScrollUpButton, ContentSkeleton } from "../export-components";
 
 import Style from "style-it";
 
@@ -10,6 +10,11 @@ export default function NavbarandContent(props) {
   const onClickTabItem = (tab) => {
     setActiveTab(tab);
   };
+
+  //The tab being shown, used for both its content and its loading placeholder.
+  const activeChild = props.children.find(
+    (child) => child.props.label === activeTab
+  );
 
   const styles = `
     .tab-list-item {
@@ -58,11 +63,8 @@ export default function NavbarandContent(props) {
       </nav>
       <main className="tab-content">
         <Card>
-          <Suspense fallback={<div className="flex-center">Loading…</div>}>
-            {props.children.map((child) => {
-              if (child.props.label !== activeTab) return undefined;
-              return child.props.children;
-            })}
+          <Suspense fallback={activeChild?.props.fallback ?? <ContentSkeleton />}>
+            {activeChild ? activeChild.props.children : undefined}
           </Suspense>
         </Card>
       </main>
