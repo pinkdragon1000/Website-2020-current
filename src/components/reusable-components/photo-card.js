@@ -1,14 +1,34 @@
 import React, { useRef, useEffect } from "react";
 import Style from "style-it";
+import { Skeleton } from "./skeleton";
 
 function PhotoCard(props) {
   const cardRef = useRef(null);
+  const imgRef = useRef(null);
+  const reportedRef = useRef(false);
+  const { onLoaded } = props;
 
   useEffect(() => {
     if (cardRef.current && props.onRefReady) {
       props.onRefReady(cardRef.current);
     }
   }, [props]);
+
+  //A cached image can already be complete before React attaches onLoad, so the
+  //row would wait forever for an event that never fires.
+  useEffect(() => {
+    if (reportedRef.current || !onLoaded) return;
+    if (imgRef.current && imgRef.current.complete) {
+      reportedRef.current = true;
+      onLoaded();
+    }
+  }, [onLoaded]);
+
+  const handleSettled = () => {
+    if (reportedRef.current || !onLoaded) return;
+    reportedRef.current = true;
+    onLoaded();
+  };
 
   const handleClick = () => {
     props.onClick(cardRef.current);
@@ -65,26 +85,61 @@ function PhotoCard(props) {
         transform: scale(1.05);
         box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
     }
+
+    .photo-frame {
+        position: relative;
+    }
+
+    .photo-placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .image-fit.is-loading {
+        opacity: 0;
+    }
+
+    .image-fit.is-ready {
+        opacity: 1;
+        transition: opacity 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
     `;
+
+  //The whole row is revealed at once, so a slow connection shows a block of
+  //placeholders filling in together rather than photos popping in one by one.
+  const revealed = props.revealed !== false;
+
   return Style.it(
     styles,
-    <div 
+    <div
       ref={cardRef}
-      className="photo-card" 
+      className="photo-card"
       onClick={handleClick}
       onKeyDown={handleKeyDown}
       tabIndex={0}
       role="button"
       aria-label={`Open ${photoDescription} in gallery`}
     >
-      <img
-        className="image-fit"
-        loading="lazy"
-        src={props.imagesrc}
-        srcSet={props.srcSet}
-        sizes={props.sizes}
-        alt={photoDescription}
-      />
+      <div className="photo-frame">
+        <img
+          ref={imgRef}
+          className={`image-fit ${revealed ? "is-ready" : "is-loading"}`}
+          loading="lazy"
+          src={props.imagesrc}
+          srcSet={props.srcSet}
+          sizes={props.sizes}
+          alt={photoDescription}
+          onLoad={handleSettled}
+          onError={handleSettled}
+        />
+        {!revealed && (
+          <div className="photo-placeholder">
+            <Skeleton aspect="1" radius="1rem" />
+          </div>
+        )}
+      </div>
     </div>
   );
 }
