@@ -1,8 +1,12 @@
 //This file contains the content used for the welcome section of the application.  Rendered in welcome-content.js
 
-import React from "react";
-import { SkillsCard, TravelMap } from "../components/export-components";
+import React, { lazy, Suspense } from "react";
+import { SkillsCard } from "../components/export-components";
 import { travelLocations } from "./travel-locations";
+
+//Leaflet is a large dependency, so the map is code split out of the main bundle
+//and only downloaded once the rest of the page has rendered.
+const TravelMap = lazy(() => import("../components/reusable-components/travel-map"));
 
 export const welcomeContent = [
   {
@@ -42,6 +46,17 @@ export const welcomeContent = [
   },
   {
     header: "Places I've Traveled",
-    textcontent: <TravelMap locations={travelLocations} />,
+    textcontent: (
+      //The fallback reserves the map's height so nothing shifts when it loads.
+      <Suspense
+        fallback={
+          <div className="flex-center" style={{ height: "640px" }}>
+            Loading map…
+          </div>
+        }
+      >
+        <TravelMap locations={travelLocations} />
+      </Suspense>
+    ),
   },
 ];

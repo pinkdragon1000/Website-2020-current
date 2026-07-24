@@ -1,13 +1,22 @@
 //This file contains the data used for the header, navbar and footer in app.js
 
-import React from "react";
-import {
-  WelcomeContent,
-  ExperienceContent,
-  ProjectsContent,
-  PhotosContent,
-  TestimonialContent,
-} from "../components/export-components";
+import React, { lazy } from "react";
+//Welcome is the tab shown on load, so it stays in the main bundle.  The rest are
+//code split and only downloaded when their tab is selected.
+import WelcomeContent from "../components/page-content/welcome-content";
+
+const ExperienceContent = lazy(() =>
+  import("../components/page-content/experience-content")
+);
+const ProjectsContent = lazy(() =>
+  import("../components/page-content/projects-content")
+);
+const PhotosContent = lazy(() =>
+  import("../components/page-content/photos-content")
+);
+const TestimonialContent = lazy(() =>
+  import("../components/page-content/testimonial-content")
+);
 
 //Data used for the header.
 export const headerData = {

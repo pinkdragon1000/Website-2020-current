@@ -18,10 +18,6 @@ export { default as SkillsCard } from "./reusable-components/skills-card";
 export { default as WhiteCard } from "./reusable-components/white-card";
 export { default as Pill } from "./reusable-components/pill";
 export { default as Stack } from "./reusable-components/stack";
-export { default as TravelMap } from "./reusable-components/travel-map";
-//Page Content
-export { default as WelcomeContent } from "./page-content/welcome-content";
-export { default as ExperienceContent } from "./page-content/experience-content";
-export { default as ProjectsContent } from "./page-content/projects-content";
-export { default as PhotosContent } from "./page-content/photos-content";
-export { default as TestimonialContent } from "./page-content/testimonial-content";
+//Page Content and TravelMap are intentionally not re-exported here.  They are
+//code split via React.lazy (see app-utils.js and welcome-content-utils.js), and
+//re-exporting them from this barrel would pull them back into the main bundle.

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 
 import { NavbarItem, Card, ScrollUpButton } from "../export-components";
 
@@ -58,10 +58,12 @@ export default function NavbarandContent(props) {
       </nav>
       <main className="tab-content">
         <Card>
-          {props.children.map((child) => {
-            if (child.props.label !== activeTab) return undefined;
-            return child.props.children;
-          })}
+          <Suspense fallback={<div className="flex-center">Loading…</div>}>
+            {props.children.map((child) => {
+              if (child.props.label !== activeTab) return undefined;
+              return child.props.children;
+            })}
+          </Suspense>
         </Card>
       </main>
       <ScrollUpButton />
